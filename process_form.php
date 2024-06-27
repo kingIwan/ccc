@@ -1,5 +1,5 @@
 <?php
-$recaptchaSecretKey = 'YOUR_RECAPTCHA_SECRET_KEY'; // Replace with your secret key
+$recaptchaSecretKey = '6Ldv5gEqAAAAB_kImMdcA_S58B21Abm45KclSKC'; // Replace with your secret key
 $recaptchaResponse = $_POST['recaptchaResponse']; // Get the reCAPTCHA response token from the form
 
 $data = [
