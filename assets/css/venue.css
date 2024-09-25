@@ -43,7 +43,9 @@ body {
     line-height: 47px;
     position: relative;
     width: 50%;
-    left: -9%;
+}
+.venue-hero-img {
+    width: 60%;
 }
 .venue-video img:nth-child(1) {
     width: 100%;
@@ -144,6 +146,7 @@ body {
 .hero-list li{
     line-height: 24px;
     display: flex;
+    width: 80%;
     color: var(--white);
 }
 .listing {

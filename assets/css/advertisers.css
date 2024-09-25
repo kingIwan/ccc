@@ -42,7 +42,6 @@ body {
     line-height: 47px;
     position: relative;
     width: 40%;
-    left: -9%;
 }
 .hero-video img:nth-child(1) {
     position: absolute;
@@ -73,6 +72,7 @@ body {
 .hero-container {
     display: flex;
     margin-top: 8%;
+    gap: 55px;
     align-items: center ;
 }
 .hero-text h1 {
