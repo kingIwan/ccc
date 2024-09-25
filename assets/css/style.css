@@ -153,7 +153,7 @@ button{
     color: var(--link-color);
     background: transparent;
     border-radius: 4px;
-    font-size: 11px;
+    font-size: 20px;
 }
 .login-button{
 	opacity: 0px;
@@ -1738,7 +1738,7 @@ margin-bottom: 30px;
 		flex-direction: column;
 	}
 	.section-subscription {
-		margin-top: 0px;
+		margin-top: 20px;
 	}
 	.header-title {
 		justify-content: space-between;
