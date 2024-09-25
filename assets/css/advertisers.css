@@ -424,11 +424,6 @@ body {
         height: 100px;
     }
 }
-@media screen and (max-width: 1400px) {
-    .hero-section {
-        margin-right: 0px !important;
-    }
-}
 @media (min-width: 769px) and (max-width: 1080px) {
     .hero-text {
         width: 100%;
