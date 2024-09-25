@@ -6,7 +6,7 @@ body {
 	color: #666666;
 	font-family: "Poppins", sans-serif;
 	margin: 0;
-	height: 3000px;
+	height: 2870px;
 	background-image: url('/assets/image/home-page-bg.png'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -190,14 +190,7 @@ h1, p {
 .hero-content p {
     max-width: 650px;
 }
-.btn-trns {
-    padding: 6px 12px 6px 12px;
-    border: 1px solid #0886FB;
-    color: var(--link-color);
-    background: transparent;
-    border-radius: 4px;
-    font-size: 11px;
-}
+
 .hero-content img {
     margin-bottom: 15px;
 }

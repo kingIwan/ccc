@@ -17,92 +17,11 @@
 </head>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <input type="checkbox" name="check" id="check">
-      <div class="logo-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="23" viewBox="0 0 116 23" fill="none">
-          <path
-            d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-          <path
-            d="M20.4618 13.8632C20.6375 12.0062 20.8285 10.2736 20.9546 8.53697C21.0463 7.32172 20.4618 6.62386 19.2888 6.6038C15.1205 6.51958 10.9484 6.45541 6.77627 6.40327C4.93091 6.3792 3.08172 6.40327 1.24018 6.40327C1.05679 2.69736 3.09319 0.282911 6.51647 0.254836C11.9609 0.206708 17.4053 0.214729 22.8496 0.254836C25.8603 0.278901 27.5758 2.17998 27.4459 5.31636C27.3809 6.88054 27.2434 8.45275 26.9874 9.99687C26.5671 12.5357 25.7724 13.3137 23.354 13.6827C22.3797 13.8311 21.3825 13.8151 20.4541 13.8712L20.4618 13.8632Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-          <path
-            d="M7.0351 8.16026C6.84025 9.80064 6.58809 11.2445 6.51168 12.7004C6.3856 15.0667 6.76384 15.5199 8.98362 15.548C13.5607 15.6082 18.1417 15.5881 22.7188 15.5961C23.8879 15.5961 25.057 15.5961 26.2261 15.5961C26.2681 19.6831 24.2929 21.8168 20.5372 21.8168C15.2762 21.8208 10.0152 21.8248 4.75037 21.8168C1.57161 21.8127 -0.14003 19.9879 0.00897487 16.6469C0.0853874 14.9424 0.253495 13.2258 0.547683 11.5493C0.891539 9.59209 1.904 8.68165 3.77229 8.42898C4.83442 8.28459 5.91184 8.24449 7.02746 8.15625L7.0351 8.16026Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-          <path
-            d="M96.7939 0.539509C96.4538 2.27615 96.1138 3.99274 95.7394 5.89783C94.8912 5.89783 94.0392 5.8858 93.191 5.89783C89.9129 5.94997 88.2089 7.22538 87.3951 10.5663C86.566 13.9714 85.9509 17.4367 85.183 20.8618C85.0989 21.2308 84.629 21.7682 84.3272 21.7803C82.1112 21.8605 79.8952 21.8244 77.5188 21.8244C78.1377 18.7241 78.7223 15.7602 79.3221 12.8003C79.624 11.3123 79.9182 9.82432 80.2735 8.34838C81.5037 3.24273 83.5974 1.14513 88.5795 0.595659C91.2578 0.298866 93.9933 0.54352 96.7939 0.54352V0.539509Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-          <path
-            d="M96.1287 13.6347H92.7168C92.5449 11.1762 92.6977 10.9957 94.8411 10.9957C98.826 10.9957 102.811 10.9957 106.949 10.9957C107.289 13.4944 107.621 15.9449 107.954 18.3955C108.057 18.4155 108.16 18.4396 108.267 18.4596C109.1 16.9075 110.047 15.4075 110.743 13.7872C111.74 11.481 113.318 10.5946 115.797 11.124C115.48 11.6976 115.186 12.2591 114.865 12.8005C113.432 15.227 112.076 17.7056 110.513 20.0359C109.971 20.842 108.997 21.584 108.095 21.8206C106.349 22.2778 105.604 21.6201 105.237 19.7591C104.725 17.1602 104.255 14.5532 103.686 11.5412C103.407 12.4676 103.246 13.0011 103.044 13.6708H97.3436C99.2081 14.8741 99.2157 14.8741 98.7687 17.0719C98.4478 18.6441 98.1039 20.2083 97.7639 21.7885H94.5202C95.0474 19.1174 95.5632 16.5024 96.1287 13.6388V13.6347Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-          <path
-            d="M59.5964 13.6025C62.1562 15.3191 64.7848 16.2696 67.528 16.4421C70.6876 16.4421 73.4003 16.3739 76.3345 16.3739C76.5103 19.6587 74.7184 21.8004 71.7651 21.8285C68.1393 21.8646 64.5135 21.8966 60.8877 21.7924C56.3297 21.66 54.3124 19.2817 54.5417 14.5089C54.5722 13.8431 54.5761 13.1613 54.7327 12.5236C55.3325 10.045 55.8521 7.53426 56.6583 5.12783C57.537 2.50482 59.4741 0.764171 62.1065 0.587699C65.8851 0.335024 69.7134 0.218713 73.4767 0.575667C76.8885 0.900535 78.2487 2.95803 78.0767 6.55966C78.0118 7.96341 77.7252 9.38722 77.3355 10.7388C76.7739 12.684 75.4481 13.6346 73.45 13.6105C69.3275 13.5664 65.2012 13.5985 61.0788 13.5985C60.6509 13.5985 60.2268 13.5985 59.6002 13.5985L59.5964 13.6025ZM63.4514 8.64523C65.3884 8.64523 67.2873 8.72144 69.1708 8.58908C69.6217 8.557 70.2139 7.89122 70.3896 7.38186C70.5042 7.05298 70.0878 6.21875 69.7287 6.06233C68.0858 5.3404 66.3627 5.32035 64.7313 6.10645C63.8143 6.55164 63.3864 7.44202 63.4514 8.64924V8.64523Z"
-            fill="white" style="fill:white;fill-opacity:1;" />
-        </svg>
-      </div>
-
-      <div class="nav-btn">
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link" style="--i: .6s">
-              <a href="/index.html">Venues</a>
-            </li>
-            <li class="nav-link" style="--i: .85s">
-              <a href="/advertiser.html">Advertisers</a>
-            </li>
-            <li class="nav-link" style="--i: 1.35s">
-              <a href="/channel.html">Channels</a>
-            </li>
-            <li class="nav-link" style="--i: 1.1s">
-              <a href="#">Resourcers<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                  viewBox="0 0 20 20">
-                  <path fill="currentColor" d="m15 8l-4.03 6L7 8z" />
-                </svg></a>
-              <div class="dropdown">
-                <ul>
-                  <li class="dropdown-link">
-                    <a href="#">About US</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="http://blog.over.tv">Blog</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#">Cases Studies</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="log-sign" style="--i: 1.8s">
-          <a href="#contact" class="btn transparent"
-            onclick="event.preventDefault(); scrollToTarget('contact');"><button class="contact-button">Get Your Free
-              Player <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
-                  fill="white" />
-              </svg>
-            </button>
-          </a>
-          <a href="#" class="btn solid"><button class="login-button">Login</button></a>
-        </div>
-      </div>
-
-      <div class="hamburger-menu-container">
-        <div class="hamburger-menu">
-          <div></div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- End Header -->
+  <!-- Header -->
+  <div id="header-container"></div>
+  <!-- Body -->
   <div class="wrapper">
     <div class="container">
-      <!-- ======= Title ======= -->
       <div class="title wow fadeInUp" data-wow-delay="0.1s">
         <h1>Monetize Your Screens,</h1>
         <span>Engage Your Customers</span>
@@ -111,12 +30,8 @@
             channels featuring viral entertainment, sports, lifestyle, kids' content, and more.</p>
         </div>
       </div>
-      <!-- End Title -->
-      <!-- ======= Section 1 ======= -->
       <div class="section-1">
-        <!-- <img src="assets/image/section-1.png" width="100%"></img> -->
         <div class="section-1-title wow fadeInUp" data-wow-delay="0.3s">
-          <!-- <img src="assets/image/section-1-back.png" width="100%" height="470px"></img> -->
           <img src="assets/image/section-1-logo1.png" width="15%"></img>
           <img class="overtv-overlays" src="assets/image/section-1-logo1.png" width="15%"></img>
           <video width="" height="" loop autoplay muted>
@@ -126,7 +41,8 @@
         <div class="section-1-title my-2 mt-md-4">
           <button class="btn-trns mb-1">Who trusts us</button>
           <h1 class="wow fadeInUp">Make Every Screen Work for You</h1>
-          <p class="wow fadeInUp">Transform your venue with content that entertains, drives purchases, and blocks out competing ads.</p>
+          <p class="wow fadeInUp">Transform your venue with content that entertains, drives purchases, and blocks out
+            competing ads.</p>
         </div>
         <div class="card-group more-card-group">
           <div class="card wow fadeInUp">
@@ -135,7 +51,8 @@
             </div>
             <div class="card-text">
               <div class="card-title">More Revenue</div>
-              <div class="card-content">Earn revenue from every ad displayed, while entertaining your audience with curated content.</div>
+              <div class="card-content">Earn revenue from every ad displayed, while entertaining your audience with
+                curated content.</div>
             </div>
           </div>
           <div class="card wow fadeInUp">
@@ -144,7 +61,8 @@
             </div>
             <div class="card-text">
               <div class="card-title">More Entertainment</div>
-              <div class="card-content">Leverage the power of viral content to captivate your audience and drive sales</div>
+              <div class="card-content">Leverage the power of viral content to captivate your audience and drive sales
+              </div>
             </div>
           </div>
           <div class="card wow fadeInUp">
@@ -153,13 +71,12 @@
             </div>
             <div class="card-text">
               <div class="card-title">Completely Free</div>
-              <div class="card-content">No contracts, no commitment. Setup in less than 5 minutes and let ads cover all the costs.</div>
+              <div class="card-content">No contracts, no commitment. Setup in less than 5 minutes and let ads cover all
+                the costs.</div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Section 1 -->
-      <!-- ======= Section 2 ======= -->
       <div class="section-2 channel-sec" id="section-2">
         <div class="d-inline">
           <!-- <p class="wow fadeInUp channel-sec-title">Our Channels</p>
@@ -169,32 +86,56 @@
             <img class="wow fadeInUp" src="assets/image/love.png"></img>
             <img class="wow fadeInUp" src="assets//image/paws.png"></img>
             <img class="wow fadeInUp" src="assets/image/brunch.png"></img>
-
           </div> -->
         </div>
         <div class="d-inline for-desk">
           <div class="section-2-card">
             <div class="section-2-card-left wow fadeInUp">
-              <!-- <span></span> -->
               <img src="assets/image/earn-money-ads.png" alt=""></img>
               <!-- <img src="assets/image/section-2-left.png" width="170" height="145"></img> -->
             </div>
             <div class="section-2-card-right wow fadeInUp">
-              <span>
+              <span class="hideforiPad">
                 <h1>Earn Money Every Time an Ad Plays</h1>
-                <p class="block-py-1">Imagine if every time an ad played on your TV, you earned money. With Over Device, that’s exactly what happens. </p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income Stream:</strong> Earn a percentage of the revenue from every ad displayed—effortless revenue, no extra work.</p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Unlimited Earnings:</strong> As more advertisers choose your screens, your earnings increase. More ads, more money in your pocket.</p>
+                <p class="block-py-1">Imagine if every time an ad played on your TV, you earned money. With Over Device,
+                  that’s exactly what happens. </p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income
+                    Stream:</strong> Earn a percentage of the revenue from every ad displayed—effortless revenue, no
+                  extra work.</p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Unlimited
+                    Earnings:</strong> As more advertisers choose your screens, your earnings increase. More ads, more
+                  money in your pocket.</p>
+              </span>
+              <span class="hidepcmb">
+                <h1>Earn Money Every Time an Ad Plays</h1>
+                <p class="block-py-1">Imagine if every time an ad played on your TV, you earned money. With Over Device,
+                  that’s exactly what happens.</p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income
+                    Stream:</strong> Earn a percentage of the revenue from every ad displayed—effortless revenue, no
+                  extra work.</p>
               </span>
             </div>
           </div>
           <div class="section-2-card">
             <div class="section-2-2-card-left wow fadeInUp">
-              <span>
+              <span class="hideforiPad">
                 <h1>Match the Vibe with Curated Channels</h1>
-                <p class="block-py-1">Over ensures your venue’s screens serve as an extension of your brand, creating a perfect environment that customers love.</p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>60+ Curated Channels:</strong> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to bars.</p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Automated Atmosphere:</strong> Over dynamically adjusts content throughout the day, ensuring the right content plays at the right time.</p>
+                <p class="block-py-1">Over ensures your venue’s screens serve as an extension of your brand, creating a
+                  perfect environment that customers love.</p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>60+ Curated
+                    Channels:</strong> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés
+                  to bars.</p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Automated
+                    Atmosphere:</strong> Over dynamically adjusts content throughout the day, ensuring the right content
+                  plays at the right time.</p>
+              </span>
+              <span class="hidepcmb">
+                <h1>Match the Vibe with Curated Channels</h1>
+                <p class="block-py-1">Over ensures your venue’s screens serve as an extension of your brand, creating a
+                  perfect environment that customers love.</p>
+                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income
+                    Stream:</strong> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to
+                  bars.</p>
               </span>
             </div>
             <div class="section-2-2-card-right wow fadeInUp">
@@ -202,35 +143,43 @@
             </div>
           </div>
         </div>
-
         <div class="for-mobile entertain-box-holder">
           <div class="entertainment-box">
             <img src="assets/image/entertainment-box-1.png" width="100%" alt="" />
             <div class="entertain-text">
               <h2>Earn Money Every Time an Ad Plays</h2>
-              <p>Imagine if every time an ad played on your TV, you earned money. With Over Device, that’s exactly what happens.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income Stream:</strong> Earn a percentage of the revenue from every ad displayed—effortless revenue, no extra work.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Unlimited Earnings:</strong> As more advertisers choose your screens, your earnings increase. More ads, more money in your pocket.</p>
+              <p>Imagine if every time an ad played on your TV, you earned money. With Over Device, that’s exactly what
+                happens.</p>
+              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Passive Income
+                  Stream:</strong> Earn a percentage of the revenue from every ad displayed—effortless revenue, no extra
+                work.</p>
+              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Unlimited
+                  Earnings:</strong> As more advertisers choose your screens, your earnings increase. More ads, more
+                money in your pocket.</p>
             </div>
           </div>
           <div class="entertainment-box">
             <img src="assets/image/entertainment-box-2.png" width="100%" alt="" />
             <div class="entertain-text">
               <h2>Match the Vibe with Curated Channels</h2>
-              <p>Over ensures your venue’s screens serve as an extension of your brand, creating a perfect environment that customers love.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>60+ Curated Channels:</strong> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to bars.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Automated Atmosphere:</strong> Over dynamically adjusts content throughout the day, ensuring the right content plays at the right time.</p>
+              <p>Over ensures your venue’s screens serve as an extension of your brand, creating a perfect environment
+                that customers love.</p>
+              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>60+ Curated
+                  Channels:</strong> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to
+                bars.</p>
+              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong>Automated
+                  Atmosphere:</strong> Over dynamically adjusts content throughout the day, ensuring the right content
+                plays at the right time.</p>
             </div>
           </div>
         </div>
 
       </div>
-      <!-- End Section 2 -->
-      <!-- ======= Section 3 ======= -->
       <div class="section-3">
         <div class="section-3-title ">
           <h1 class="wow fadeInUp">Discover Our Diverse Channel Lineup</h1>
-          <p class="wow fadeInUp">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
+          <p class="wow fadeInUp">Our channels cater to every taste, from interactive trivia to the latest viral videos,
+            ensuring your customers stay entertained and engaged.</p>
         </div>
         <div class="section-3-card-group">
           <div class="section-3-card wow fadeInUp">
@@ -281,11 +230,6 @@
 
         </div>
       </div>
-      <!-- End Section 3 -->
-      <!-- End Section 3 -->
-
-      <!-- ======= Section 5 ======= -->
-      <!-- ======= Section 6 ======= -->
       <div class="section-6">
         <div class="section-6-left">
           <button class="scale wow fadeInUp">More Benefits</button>
@@ -302,21 +246,21 @@
         <div class="section-6-right">
           <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.1s">
             <h2>Automated and Effortless Income</h2>
-            <p>Each ad that runs on your screens means more money for your business, with no effort required on your part.</p>
+            <p>Each ad that runs on your screens means more money for your business, with no effort required on your
+              part.</p>
           </div>
           <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.2s">
             <h2>Be the Place People Talk About</h2>
-            <p>Word-of-mouth spreads quickly when your venue becomes the go-to spot for entertainment and atmosphere.</p>
+            <p>Word-of-mouth spreads quickly when your venue becomes the go-to spot for entertainment and atmosphere.
+            </p>
           </div>
           <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.3s">
             <h2>Give Customers a Reason to Stay</h2>
-            <p>Say goodbye to boring, repetitive TV programs. Your customers will enjoy fresh, engaging content that fits your space.</p>
+            <p>Say goodbye to boring, repetitive TV programs. Your customers will enjoy fresh, engaging content that
+              fits your space.</p>
           </div>
         </div>
       </div>
-      <!-- End Section 6 -->
-
-      <!-- ======= Section slider ======= -->
       <div class="section-4" id="section-4">
         <!-- <div class="section-4-title wow fadeInUp">
           <button class="scale">Scale And Elevate Process</button>
@@ -1068,16 +1012,14 @@
           </marquee> -->
         </div>
       </div>
-      <!-- End Section slider -->
-
-      <!-- ======= Section 7 ======= -->
       <div class="section-7">
         <button class="scale wow fadeInUp ">More Benefits</button>
         <h1 class="wow fadeInUp pt-1">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
           <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-7-card-header">
-              <h3>“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+              <h3>“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant
+                environment while also bringing in additional revenue.”</h3>
             </div>
             <div class="section-7-card-content">
               <p>Lucas, Co-Owner, The Urban Café</p>
@@ -1093,7 +1035,8 @@
           </div>
           <div class="section-7-card wow fadeInUp" data-wow-delay="0.3s">
             <div class="section-7-card-header">
-              <h3>“The curated content has kept customers engaged and entertained while increasing our sales. It's like having a personal marketing team on our business.”</h3>
+              <h3>“The curated content has kept customers engaged and entertained while increasing our sales. It's like
+                having a personal marketing team on our business.”</h3>
             </div>
             <div class="section-7-card-content">
               <p>David, Manager, The Corner Bistro</p>
@@ -1102,143 +1045,117 @@
           </div>
         </div>
       </div>
-      <!-- End Section 7 -->
-       <div class="section-subscription">
+      <div class="flip-on-mobile">
+        <div class="section-8">
+          <div class="faq-btn">
+            <button class="scale wow fadeInUp">All You Need to Know</button>
+          </div>
+          <h1>
+            FAQs
+          </h1>
+          <p>No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+          <div class="section-8-wrapper wow fadeInUp">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I install the OverTv device?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Installing the OverTv device is simple and quick. Plug in the device, connect it to your Wi-Fi, and
+                    follow the on-screen instructions. The entire process takes less than 5 minutes.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+
+
+                  <span class="accordion-title"> Why is OverTv free for businesses?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv provides high-quality content for free by incorporating advertisements into the programming.
+                    This model allows us to offer a no-cost service while still delivering engaging entertainment to
+                    your customers.
+
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+
+                  <span class="accordion-title">Can I use my own streaming device with OverTv?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    No, we provide a custom streaming device to ensure the best performance and support. Our device is
+                    optimized for OverTv content, using less bandwidth and offering seamless integration with our
+                    services.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+
+                  <span class="accordion-title">How can I promote my events and special offers with OverTv?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv Ads allows you to create and schedule custom ads that are displayed during commercial breaks.
+                    This ensures your promotions reach customers effectively and at the right time.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+
+
+                  <span class="accordion-title">What type of content does OverTv offer?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv curates a diverse range of content, including viral clips, scenic drone footage, and
+                    interactive trivia. We ensure there's something for everyone, keeping your audience entertained.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-subscription">
         <div class="d-flex header-title">
           <h4>Melhore a experiência do seu local com entretenimento de última geração.</h4>
           <button>Get Your Free OverTV Device Now!</button>
         </div>
-       </div>
-      <!-- ======= Section 9 ======= -->
-      <div class="section-10" id="contact">
-        <div class="section-10-header">
-          <div class="section-10-header-title">
-            <div class="d-flex">
-              <h4>Connect with us and take your </h4>
-              <h4 class="foot-gredient-text"> business to the next level.</h4>
-            </div>
-            <p>We’re here to help, let’s connect.</p>
-          </div>
-          <button>Contact Us</button>
-        </div>
-        <div class="section-10-content">
-          <div class="d-inline">
-            <h5>Explore</h5>
-            <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">Home</a></p>
-            <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">Advertise on Over</a></p>
-            <p><a href="#section-2" onclick="event.preventDefault(); scrollToTarget('section-2');">Channels</a></p>
-            <p><a href="#section-4" onclick="event.preventDefault(); scrollToTarget('section-4');">About us</a></p>
-          </div>
-          <div class="d-inline">
-            <h5>Resources</h5>
-            <p>Help Center</p>
-            <p>Blog</p>
-            <p>Press</p>
-            <p>Careers</p>
-            <p>Distribution Partner</p>
-          </div>
-          <div class="d-inline">
-            <h5>Legal</h5>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Support</p>
-          </div>
-          <div class="d-inline">
-            <h5>Subscribe</h5>
-            <div class="d-flex" style="gap:5px">
-              <input type="email" placeholder="Your email" class="email-input">
-              <button class="subscribe-button"><i class="fa-solid fa-chevron-right"></i></i>
-              </button>
-            </div>
-          </div>
-          <div class="container">
-            <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title"
-                for="faq-drawer">Explore</label>
-              <div class="faq-drawer__content-wrapper">
-                <div class="faq-drawer__content">
-                  <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">Home</a></p>
-                  <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">Advertise on Over</a></p>
-                  <p><a href="#section-2" onclick="event.preventDefault(); scrollToTarget('section-2');">Channels</a></p>
-                  <p><a href="#section-4" onclick="event.preventDefault(); scrollToTarget('section-4');">About us</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title"
-                for="faq-drawer-2">Resources</label>
-              <div class="faq-drawer__content-wrapper">
-                <div class="faq-drawer__content">
-                  <p>Help Center</p>
-                  <p>Blog</p>
-                  <p>Press</p>
-                  <p>Careers</p>
-                  <p>Distribution Partner</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title"
-                for="faq-drawer-3">Legal</label>
-              <div class="faq-drawer__content-wrapper">
-                <div class="faq-drawer__content">
-                  <p>Terms & Conditions</p>
-                  <p>Privacy Policy</p>
-                  <p>Support</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-inline section-subs">
-          <h5>Subscribe</h5>
-          <div class="d-flex" style="gap:5px">
-            <input type="email" placeholder="Your email" class="email-input">
-            <button class="subscribe-button"><i class="fa-solid fa-chevron-right"></i></i>
-            </button>
-          </div>
-        </div>
-        <div class="section-10-footer">
-          <div class="footer-social">
-            <img src="/assets/svg/x-icon.svg"  width="20px"></img>
-            <img src="/assets/svg/instagram-icon.svg"  width="22px"></img>
-            <img src="/assets/svg/linkedin.svg"  width="20px"></img>
-            <img src="/assets/svg/youtube-icon.svg"  width="28px"></img>
-          </div>
-          <p>2024 Over TV © All Rights Reserved.</p>
-        </div>
       </div>
-      <!-- End Section 9 -->
+      <!-- footer -->
+      <div id="footer-container"></div>
     </div>
 
   </div>
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/swiper.min.js"></script>
-
   <script>
-
-
     var swiper = new Swiper(".text-slider", {
       slidesPerView: 4,
       spaceBetween: 10,
-
       speed: 3000,
       autoplay: {
         delay: 0,
         // reverseDirection: true,
       },
-
       loop: true,
       equalHeight: true,
-
-
       allowTouchMove: false,
       breakpoints: {
         640: {
@@ -1289,16 +1206,7 @@
       },
 
     });
-
-
-
-
-
-
-
-
     const items = document.querySelectorAll('.accordion button');
-
     function toggleAccordion() {
       const itemToggle = this.getAttribute('aria-expanded');
 
@@ -1313,6 +1221,20 @@
 
     items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
+  </script>
+  <script>
+    fetch('common/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+    fetch('common/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
   </script>
   <script>
     function scrollToTarget(targetId) {
@@ -1349,8 +1271,9 @@
     });
   </script>
   <!-- Start of overtv Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>
-<!-- End of overtv Zendesk Widget script -->
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>
+  <!-- End of overtv Zendesk Widget script -->
 </body>
 
 </html>

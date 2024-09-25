@@ -15,6 +15,10 @@ body {
   
 :root {
 	--white: #ffffff;
+    --link-color: #0886FB;
+    --light-card: #161616;
+    --light-dark: #1D1D1D;
+    --grey-text: #C4C3C3;
 }
 .d-flex{
 	display: flex;
@@ -79,6 +83,9 @@ body {
 .align-center {
 	align-items: center;
 }
+.hidepcmb {
+	display: none;
+}
 .d-inline{
 	display: flex;
 	flex-direction: column;
@@ -139,6 +146,14 @@ button{
     top: 382px;
     right: -1%;
     z-index: 9;
+}
+.btn-trns {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid #0886FB;
+    color: var(--link-color);
+    background: transparent;
+    border-radius: 4px;
+    font-size: 11px;
 }
 .login-button{
 	opacity: 0px;
@@ -255,7 +270,9 @@ margin-bottom: 30px;
   .nav-link {
 	position: relative;
   }
-  
+  .footer-btn {
+	width: 60px;
+  }
   .nav-link > a {
 	line-height: 3rem;
 	padding: 0 .8rem;
@@ -967,16 +984,26 @@ margin-bottom: 30px;
 	.section-4-title button{
 		display: none;
 	}
+	.affiliate-container .section-4-title button{
+		display: block;
+	}
 	.section-4-title h1{
 		font-size: 40px;
 		font-weight: 600;
 		line-height: 62.9px;
 		max-width: 72%;
-		padding: 10px 0 20px 0;
+		padding: 10px 0 10px 0;
+	}
+	.affiliate-button {
+		padding: 10px 15px 10px 15px;
+		background: linear-gradient(360deg, #2B7FFC 0%, #60EFFF 135.95%);
+		color: var(--white);
+		border: 0px;
+		border-radius: 4px;
 	}
 	.section-4-title p{
 		margin: 0;
-		font-size: 25.89px;
+		font-size: 20px;
 		font-weight: 400;
 		line-height: 35px;
 		max-width: 90%;
@@ -986,12 +1013,13 @@ margin-bottom: 30px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
+		gap: 15px;
 		margin-top: 30px;
 	}
 	.section-4-card{
-		width: 32%;
-		height: 400px;
+		width: 317px;
+		height: 346px;
 		border-radius: 20px;
 		background: #4D93FE;
 		display: flex;
@@ -1007,15 +1035,15 @@ margin-bottom: 30px;
 		align-items: center;
 	}
 	.section-4-card h1{
-		font-size: 25.89px;
+		font-size: 21px;
 		font-weight: 400;
-		line-height: 40.68px;
+		line-height: 33px;
 		padding-bottom: 15px;
 	}
 	.section-4-card p{
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 400;
-		line-height: 23.24px;
+		line-height: 21px;
 		max-width: 80%;
 	}
 	.section-4-slider{
@@ -1397,6 +1425,11 @@ margin-bottom: 30px;
 		flex-direction: column;
 		color: #fff;
 	}
+	.section-8 .faq-btn {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 12px;
+	}
 	.section-7 .section-7-card:nth-child(2) h1{
 		font-size: 26px;
 		font-weight: 400;
@@ -1681,7 +1714,11 @@ margin-bottom: 30px;
 	}
 	.subscribe-button {
 		width: 33px;
+		height: 33px;
+		padding: 0px !important;
 		border-radius: 50%;
+		background: var(--white);
+		color: var(--light-dark);
 	}
 	.email-input::placeholder {
 		font-size: 12px;
@@ -1701,7 +1738,7 @@ margin-bottom: 30px;
 		flex-direction: column;
 	}
 	.section-subscription {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	.header-title {
 		justify-content: space-between;
@@ -2002,7 +2039,7 @@ display: none;
 		left: 25px;
 	}
 	.section-2-card-left img:last-child{
-		width: 140px;
+		width: 100%;
 	}
 	.section-2-2-card-right{
 		width: 50%;
@@ -2425,6 +2462,8 @@ display: none;
 	}
 	.section-4-card-group{
 		flex-direction: column;
+		justify-content: center;
+        align-items: center;
 	}
 	.section-4-card-group .section-4-card{
 		width: 100%;
@@ -2616,7 +2655,7 @@ display: none;
 		color: #ffffffbe;
 	}
 	.section-4-card-group .section-4-card {
-        width: 100%;
+        width: 85%;
         height: fit-content;
         margin-bottom: 20px;
         padding: 40px 20px;
@@ -2817,4 +2856,35 @@ display: none;
 		padding-right: 0;
 	}
 
+  }
+  @media (min-width: 769px) and (max-width: 1080px) {
+	.hideforiPad {
+		display: none;
+	}
+	.hidepcmb {
+        display: flex;
+		flex-direction: column;
+    }
+	.hidepcmb h1 {
+		font-size: 44px;
+		line-height: 44px !important;
+	}
+	.hidepcmb p {
+		font-size: 13px !important;
+	}
+	.section-1-title video {
+		height: 100% !important;
+	}
+	.overtv-overlays {
+		top: 260px;
+	}
+	.wrapper .container .title span {
+		font-size: 60px;
+	}
+	.wrapper .container .title h1 {
+		font-size: 60px;
+	}
+	.section-1 {
+		margin-top: 60px;
+	}
   }
