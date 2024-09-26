@@ -1423,7 +1423,7 @@ margin-bottom: 30px;
 		background-color: #146EF5;
 		padding: 40px;
 		display: flex;
-		flex-direction: column;
+		align-items: center;
 		color: #fff;
 	}
 	.section-8 .faq-btn {
@@ -1431,14 +1431,23 @@ margin-bottom: 30px;
 		justify-content: center;
 		margin-bottom: 12px;
 	}
-	.section-7 .section-7-card:nth-child(2) h1{
+	.section-7 .section-7-card:nth-child(2) h2{
 		font-size: 26px;
-		font-weight: 400;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		gap: 10px;
 		line-height: 57.78px;
 		letter-spacing: -0.39041173458099365px;
 	}
+	.section-7 .section-7-card:nth-child(2) span{ 
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 45px;
+		letter-spacing: -0.31px;
+	}
 	.section-7 .section-7-card:nth-child(2) p{
-		font-size: 15.43px;
+		font-size: 12px;
 		font-weight: 400;
 		line-height: 26.55px;
 	}
@@ -2726,6 +2735,12 @@ display: none;
 	.section-10{
 		padding-top: 40px;
 	}
+	.section-7 .section-7-card:nth-child(2) h2 {
+		font-size: 18px;
+	}
+	.section-7 .section-7-card:nth-child(2) span {
+		font-size: 12px;
+	}
 	.section-10-header{
 		padding-bottom: 60px;
 	}
@@ -2734,6 +2749,12 @@ display: none;
 	.section-1-title img:nth-child(2) {
         top: 100px;
     }
+	.section-7 .section-7-card:nth-child(2) span {
+		font-size: 12px;
+	}
+	.section-7 .section-7-card:nth-child(2) h2 {
+		font-size: 18px;
+	}
   }
   @media (max-width: 500px){
 	.title{
@@ -2882,6 +2903,9 @@ display: none;
 	}
 	.wrapper .container .title span {
 		font-size: 60px;
+	}
+	.section-7 .section-7-card:nth-child(2) h2 {
+		font-size: 18px;
 	}
 	.wrapper .container .title h1 {
 		font-size: 60px;
