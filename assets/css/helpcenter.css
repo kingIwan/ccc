@@ -297,6 +297,12 @@ input[type=text] {
     .help-content {
         flex-direction: column;
     }
+    .privacy-section { 
+        width: 100%;
+    }
+    .general-question h2 { 
+        font-size: 30px;
+    }
     .popular-articles {
         width: 100%;
         padding: 15px;
