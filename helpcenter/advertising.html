@@ -26,7 +26,7 @@
     <div class="hero-helpcenter">
         <div class="container">
             <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
-              <h2>How can we help?</h2>
+              <h2 data-i18n="help_center_title">How can we help?</h2>
               <form>
                 <input type="text" name="search" placeholder="Pesquisa">
               </form>
@@ -36,7 +36,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p>Home <span> > Advertising</span></p>
+                <p ><b data-i18n="home">Home</b> <span data-i18n="home_Advertising"> > Advertising</span></p>
                 <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form>
@@ -47,41 +47,39 @@
       <div class="general-section">
         <div class="general-question">
             <h2>
-               <span><img src="/assets/svg/advertising.svg" alt=""></span> Advertising
+               <span><img src="/assets/svg/advertising.svg" alt=""></span> <span data-i18n="advertising_title">Advertising</span>
             </h2>
             <ul>
                 <li>
-                    <span>Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span>Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span>What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span>I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
             </ul>
         </div>
         <div class="need-support">
-            <h3 class="support-text">Need Support?</h3>
+            <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
             <ul>
-                <li>
-                    Can't find the answer you're looking for?
-                    Don't worry we're here to help!
+                <li data-i18n="support_description">
+                    Can't find the answer you're looking for? Don't worry we're here to help!
                 </li>
             </ul>
-            <button>Contact Support</button>
+            <button data-i18n="contact_support_button">Contact Support</button>
         </div>
       </div>
       <div id="footer-container"></div>
     </div>
-  </div>
-
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <script src="/assets/js/script.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/swiper.min.js"></script>

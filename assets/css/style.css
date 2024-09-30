@@ -157,7 +157,8 @@ button{
 }
 .login-button{
 	opacity: 0px;
-	background-color: #131313;
+	background-color: #131313 !important;
+	background: #131313 !important;
 	outline: 1px solid rgba(255, 255, 255, 1);
 	width: 90px;
 	/* height: 42.46px; */
