@@ -1,10 +1,10 @@
 function loadLanguage(langCode) {
-    let langFile = '/assets/languages/lang-en.json'; 
+    let langFile = 'assets/languages/lang-en.json'; 
 
     if (langCode === 'BR') {
-        langFile = '/assets/languages/lang-pt.json'; 
+        langFile = 'assets/languages/lang-pt.json'; 
     } else if (langCode === 'ES') {
-        langFile = '/assets/languages/lang-es.json'; 
+        langFile = 'assets/languages/lang-es.json'; 
     }
     fetch(langFile)
         .then(response => response.json())
