@@ -7,7 +7,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 	height: 110px !important;
-	background-image: url('assets/image/home-page-bg.png'); 
+	background-image: url('/overtv/assets/image/home-page-bg.png'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -43,7 +43,7 @@ input[type=text] {
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('assets/svg/search-icon.svg');
+    background-image: url('/overtv/assets/svg/search-icon.svg');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 10px 20px 12px 40px;
@@ -135,7 +135,7 @@ input[type=text] {
     border-radius: 24px;
     font-size: 16px;
     background-color: white;
-    background-image: url('assets/svg/search-icon.svg');
+    background-image: url('/overtv/assets/svg/search-icon.svg');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 10px 20px 12px 40px;
