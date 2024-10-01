@@ -28,10 +28,10 @@ function applyTranslations(translations) {
     });
 }
 function getCountryCode() {
-    fetch('http://www.geoplugin.net/json.gp')
+    fetch('https://ipinfo.io/json')
         .then(response => response.json())
         .then(data => {
-            const countryCode = data.geoplugin_countryCode;
+            const countryCode = data.country;
             loadLanguage(countryCode);
         })
         .catch(error => {
