@@ -72,7 +72,7 @@
               </svg>
             </button>
           </a>
-          <a href="venue.php" class="btn solid"><button class="login-button" data-i18n="login">Login</button></a>
+          <a href="/venue.php" class="btn solid"><button class="login-button" data-i18n="login">Login</button></a>
         </div>
       </div>
       <div class="hamburger-menu-container mb-head">
