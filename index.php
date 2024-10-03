@@ -16,7 +16,7 @@
 </head>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
-  <!-- Header -->
+  <!-- Header Container -->
     <?php
     include 'common/header.php';
     ?>
