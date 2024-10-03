@@ -17,7 +17,9 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- Header -->
-  <div id="header-container" class="wow fadeInUp" data-wow-delay="0.01s"></div>
+    <?php
+    include 'common/header.php';
+    ?>
   <!-- Body -->
   <div class="wrapper">
     <div class="container">
@@ -32,6 +34,7 @@
         <div class="section-1-title wow fadeInUp" data-wow-delay="0.3s">
           <img src="assets/image/section-1-logo1.png" width="15%"></img>
           <img class="overtv-overlays" src="assets/image/section-1-logo1.png" width="15%"></img>
+          <!-- <img class="hero-bg" src="assets/image/hero-bg.png" alt=""> -->
           <video width="" height="" loop autoplay muted>
             <source src="assets/image/cover-bg.mp4" type="video/mp4">
           </video>
@@ -40,6 +43,43 @@
           <button class="btn-trns mb-1" data-i18n="about_us_button">About us</button>
           <h1 class="wow fadeInUp" data-i18n="make_every_screen_work">Make Every Screen Work for You</h1>
           <p class="wow fadeInUp" data-i18n="channels_cater">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
+        </div>
+        <div class="more-card-mobile">
+          <div class="custom-revenue-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="custom-revenue-image-container">
+                  <img src="assets/image/earn-revenue.png" alt="Earn Revenue" class="custom-revenue-gradient-image">
+              </div>
+              <div class="custom-revenue-card-text">
+                  <div class="custom-revenue-card-title" data-i18n="more_revenue_title">More Revenue</div>
+                  <div class="custom-revenue-card-content" data-i18n="more_revenue_content">
+                      Earn revenue from every ad displayed, while entertaining your audience with curated content.
+                  </div>
+              </div>
+          </div>
+          <div class="horizontal-card wow fadeInUp" data-wow-delay="0.1s">
+          <div class="custom-card">
+              <div class="custom-image-container">
+                  <img src="assets/image/more-entertainment-snow.png" alt="More Entertainment" class="custom-gradient-image">
+                  <div class="custom-card-text">
+                      <div class="custom-card-title" data-i18n="more_entertainment_title">More Entertainment</div>
+                      <div class="custom-card-content" data-i18n="more_entertainment_content">
+                          Leverage the power of viral content to captivate your audience and drive sales.
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="custom-card">
+              <div class="custom-image-container">
+                  <img src="assets/image/completely-free.png" alt="More Entertainment" class="custom-gradient-image">
+                  <div class="custom-card-text">
+                      <div class="custom-card-title" data-i18n="completely_free_title">Completely Free</div>
+                      <div class="custom-card-content" data-i18n="more_entertainment_content">
+                      No contracts, no commitment. Setup in less than 5 minutes and let ads cover all the costs.
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
         </div>
         <div class="card-group more-card-group">
           <div class="card wow fadeInUp">
@@ -143,9 +183,6 @@
               <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
                   Stream:</strong> <a data-i18n="passive_income_description">Earn a percentage of the revenue from every ad displayed—effortless revenue, no extra
                 work.</a></p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="unlimited_earnings_title">Unlimited
-                  Earnings:</strong><a data-i18n="unlimited_earnings_description"> As more advertisers choose your screens, your earnings increase. More ads, more
-                money in your pocket.</a></p>
             </div>
           </div>
           <div class="entertainment-box">
@@ -157,9 +194,6 @@
               <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">60+ Curated
                   Channels:</strong> <a data-i18n="curated_channels_description">Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to
                 bars.</a></p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="automated_atmosphere_title">Automated
-                  Atmosphere:</strong> <a data-i18n="automated_atmosphere_description">Over dynamically adjusts content throughout the day, ensuring the right content
-                plays at the right time.</a></p>
             </div>
           </div>
         </div>
@@ -222,7 +256,7 @@
       </div>
       <div class="section-6">
         <div class="section-6-left">
-          <button class="scale wow fadeInUp" data-i18n="more_benefits">More Benefits</button>
+          <button class="scale wow fadeInUp" data-i18n="our_channels_button">Our channels</button>
           <h1 class="wow fadeInUp" data-i18n="tv_reimagined_title">TV reimagined for business</h1>
           <p class="wow fadeInUp" data-i18n="business_description_1">Over® offers a comprehensive suite of short-form, audio-optional channels designed for various business settings.</p>
           <p class="wow fadeInUp" data-i18n="business_description_2">Our specialized Over Player provides access to an extensive library of entertainment, ranging from the latest news and sports updates to engaging viral videos and interactive trivia.</p>
@@ -976,20 +1010,20 @@
         <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
         <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
-          <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="section-7-card-header">
-                <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+            <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="section-7-card-header">
+                  <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+              </div>
+              <div class="section-7-card-content">
+                  <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
+                  <h6 data-i18n="read_case_study">Read the case study →</h6>
+              </div>
             </div>
-            <div class="section-7-card-content">
-                <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
-                <h6 data-i18n="read_case_study">Read the case study →</h6>
-            </div>
-        </div>
-        <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
-          <div class="center-div">
-              <h2 data-i18n="annual_passive_income">+$1,200 <span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
+            <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="center-div">
+              <h2><b data-i18n="annual_passive_income">+$1,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
               <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through ads displayed on your screens.</p>
-              <h2 data-i18n="boost_average_order_value">+20% <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
+              <h2 ><b data-i18n="boost_average_order_value">+20%</b> <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
               <p data-i18n="boost_average_order_value_description">Keep guests entertained longer, encouraging them to spend more with every visit.</p>
           </div>
           </div>
@@ -1009,63 +1043,59 @@
           <div class="faq-btn">
             <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
         </div>
-        <h1 data-i18n="faqs_title">FAQs</h1>
-        <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+        <div class="faq-title">
+          <h1 data-i18n="faqs_title">FAQs</h1>
+          <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+        </div>
         <div class="section-8-wrapper wow fadeInUp">
           <div class="accordion">
               <div class="accordion-item">
                   <button id="accordion-button-1" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_install_title">How do I install the OverTv device?</span>
+                      <span class="accordion-title" data-i18n="faq_install_title">How can Over be free?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
                       <p data-i18n="faq_install_description">
-                          Installing the OverTv device is simple and quick. Plug in the device, connect it to your Wi-Fi, and
-                          follow the on-screen instructions. The entire process takes less than 5 minutes.
+                      We're not charging you because we're investing in a bigger vision. Our funding comes from advertisers who see value in reaching your business's audience. This allows you to enjoy our services without any expense.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-2" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_free_title">Why is OverTv free for businesses?</span>
+                      <span class="accordion-title" data-i18n="faq_free_title">How simple is the installation of Over?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
                       <p data-i18n="faq_free_description">
-                          OverTv provides high-quality content for free by incorporating advertisements into the programming.
-                          This model allows us to offer a no-cost service while still delivering engaging entertainment to
-                          your customers.
+                         You can install it completely on your own in less than 2 minutes! Just connect our device to your TV via HDMI, plug it into the power outlet, and connect to the internet. No complications, and you'll be ready to delight your customers.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-3" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_streaming_device_title">Can I use my own streaming device with OverTv?</span>
+                      <span class="accordion-title" data-i18n="faq_streaming_device_title">Can I use my own device?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
                       <p data-i18n="faq_streaming_device_description">
-                          No, we provide a custom streaming device to ensure the best performance and support. Our device is
-                          optimized for OverTv content, using less bandwidth and offering seamless integration with our
-                          services.
+                      Not at the moment. Over TV requires our exclusive device to function fully, ensuring a seamless experience for you and your customers.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-4" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_promote_events_title">How can I promote my events and special offers with OverTv?</span>
+                      <span class="accordion-title" data-i18n="faq_promote_events_title">Simple! By keeping Over TV active for at least 40 hours per month, you start receiving a percentage of the revenue from ads displayed in your establishment.</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
                       <p data-i18n="faq_promote_events_description">
-                          OverTv Ads allows you to create and schedule custom ads that are displayed during commercial breaks.
-                          This ensures your promotions reach customers effectively and at the right time.
+                      We are happy with your interest! We are always innovating, but at the moment our focus is to provide solutions only for commercial environments.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-5" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_content_type_title">What type of content does OverTv offer?</span>
+                      <span class="accordion-title" data-i18n="faq_content_type_title">What do I need to do to make money with Over?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
@@ -1081,12 +1111,14 @@
       </div>
       <div class="section-subscription">
         <div class="d-flex header-title">
-            <h4 data-i18n="subscription_improve_experience">Melhore a experiência do seu local com entretenimento de última geração.</h4>
+            <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>
             <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
         </div>
       </div>
       <!-- footer -->
-      <div id="footer-container"></div>
+      <?php
+      include 'common/footer.php';
+      ?>
     </div>
 
   </div>
@@ -1171,20 +1203,6 @@
 
     items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
-  </script>
-  <script>
-    fetch('common/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading header:', error));
-    fetch('common/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
   </script>
   <script>
     function scrollToTarget(targetId) {

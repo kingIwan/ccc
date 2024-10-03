@@ -19,13 +19,15 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+    include 'common/header.php';
+    ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="container hero-section">
       <div class="venue-container">
         <div class="venue-text wow fadeInUp" data-wow-delay="0.1s">
-          <h1 data-i18n="welcome_message">We’re thrilled to have you onboard!</h1>
+          <h1 data-i18n="welcome_message">You’re One Step Ahead of the Competition!</h1>
           <ul class="hero-list">
               <div class="listing">
                   <div class="hero-listing">01</div>
@@ -55,7 +57,7 @@
         </div>
       </div>
       <div class="venue-container-mobile">
-        <h1 data-i18n="welcome_message">We’re thrilled to have you onboard!</h1>
+        <h1 data-i18n="welcome_message">You’re One Step Ahead of the Competition!</h1>
         <div class="venue-video wow fadeInUp" data-wow-delay="0.3s">
             <img src="assets/image/venue-ipad-background.png" alt="Venue iPad Background">
         </div>
@@ -98,15 +100,15 @@
                 <div class="venue-card-img">
                     <img src="assets/image/venue-card-1.png" alt="">
                 </div>
-                <h2 data-i18n="revenue_each_ad">Revenue for Each Ad</h2>
-                <p data-i18n="earning_with_ads">Start earning with every ad that lights up your screen.</p>
+                <h2 data-i18n="revenue_each_ad">Tailored Content</h2>
+                <p data-i18n="earning_with_ads">+50 channels fully focused on your business.</p>
             </div>
             <div class="venue-card wow fadeInUp">
                 <div class="venue-card-img">
                     <img src="assets/image/venue-card-2.png" alt="">
                 </div>
-                <h2 data-i18n="digital_signage">Digital Signage</h2>
-                <p data-i18n="advertise_products">Advertise your products within every channel.</p>
+                <h2 data-i18n="digital_signage">Revenue for Each Ad</h2>
+                <p data-i18n="advertise_products">Start earning with every ad that lights up your screen.</p>
             </div>
             <div class="venue-card wow fadeInUp">
                 <div class="venue-card-img">
@@ -159,8 +161,8 @@
                 <div class="venue-card-img">
                     <img src="assets/image/venue-card-2.png" alt="">
                 </div>
-                <h2 data-i18n="digital_signage_ipad">Digital Signage</h2>
-                <p data-i18n="advertise_products_ipad">Advertise your products within every channel.</p>
+                <h2 data-i18n="digital_signage_ipad">Revenue for Each Ad</h2>
+                <p data-i18n="advertise_products_ipad">Start earning with every ad that lights up your screen.</p>
             </div>
         </div>
         <div class="ipad-card">
@@ -175,19 +177,21 @@
                 <div class="venue-card-img">
                     <img src="assets/image/venue-card-1.png" alt="">
                 </div>
-                <h2 data-i18n="revenue_each_ad_ipad">Revenue for Each Ad</h2>
-                <p data-i18n="earning_with_ads_ipad">Start earning with every ad that lights up your screen.</p>
+                <h2 data-i18n="revenue_each_ad_ipad">Tailored Content</h2>
+                <p data-i18n="earning_with_ads_ipad">+50 channels fully focused on your business.</p>
             </div>
         </div>
     </div>
       <!-- End Section 7 -->
        <div class="section-subscription hide wow fadeInUp">
         <div class="d-flex header-title">
-          <h4 data-i18n="subscription_improve_experience">Melhore a experiência do seu local com entretenimento de última geração.</h4>
+          <h4 data-i18n="login_sub">Enhance your venue’s experience with cutting-edge entertainment.</h4>
           <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
         </div>
        </div>
-       <div id="footer-container"></div>
+       <?php
+      include 'common/footer.php';
+      ?>
     </div>
   </div>
 

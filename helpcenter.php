@@ -29,7 +29,9 @@
   ></script>
   <body>
     <!-- ======= Header ======= -->
-    <div id="header-container"></div>
+    <?php
+      include 'common/header.php';
+      ?>
     <!-- End Header -->
     <div class="wrapper">
       <div class="hero-helpcenter">
@@ -57,26 +59,26 @@
             <h3 data-i18n="help_topics_title">Help Topics</h3>
             <div class="help-topic">
               <div class="item">
-                <a href="helpcenter/general.html"
+                <a href="helpcenter/general.php"
                   ><span><img src="assets/svg/general-icon.svg" alt="" /></span
                   ><span data-i18n="general_topic">General</span></a
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/settings.html"
+                <a href="helpcenter/settings.php"
                   ><span><img src="assets/svg/setting-icon.svg" alt="" /></span
                   ><span data-i18n="settings_topic">Settings</span></a
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/accounts.html"
+                <a href="helpcenter/accounts.php"
                   ><span
                     ><img src="assets/svg/accounts-icon.svg" alt="" /></span
                   ><span data-i18n="account_topic">Account</span></a
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/digital-signage.html"
+                <a href="helpcenter/digital-signage.php"
                   ><span
                     ><img src="assets/svg/digital-signage.svg" alt="" /></span
                   ><span data-i18n="digital_signage_topic"
@@ -85,13 +87,13 @@
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/content.html"
+                <a href="helpcenter/content.php"
                   ><span><img src="assets/svg/content.svg" alt="" /></span
                   ><span data-i18n="content_topic">Content</span></a
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/advertising.html"
+                <a href="helpcenter/advertising.php"
                   ><span><img src="assets/svg/advertising.svg" alt="" /></span
                   ><span data-i18n="advertising_topic">Advertising</span></a
                 >
@@ -132,7 +134,9 @@
             <button data-i18n="contact_support_button">Contact Support</button>
           </div>
         </div>
-        <div id="footer-container"></div>
+        <?php
+      include 'common/footer.php';
+      ?>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -140,20 +144,6 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-      fetch("common/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading header:", error));
-      fetch("common/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
     <script>
       var swiper = new Swiper(".text-slider", {
         slidesPerView: 4,

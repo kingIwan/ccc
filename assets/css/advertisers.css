@@ -15,6 +15,10 @@ body {
   
 :root {
 	--white: #ffffff;
+    --link-color: #0886FB;
+    --light-card: #161616;
+    --light-dark: #1D1D1D;
+    --grey-text: #C4C3C3;
 }
 .overtv-advertise {
 	position: absolute;
@@ -34,10 +38,6 @@ body {
 /* .hero-section {
     margin-right: 0px !important;
 } */
-.hero-video video {
-    height: inherit !important;
-    aspect-ratio: 0 / 0.43 !important;
-}
 .hero-text {
     line-height: 47px;
     position: relative;
@@ -48,8 +48,8 @@ body {
     bottom: -60px;
     z-index: 9;
     left: -46px;
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
 }
 .hero-text span {
     font-size: 36px;
@@ -72,7 +72,7 @@ body {
 .hero-container {
     display: flex;
     margin-top: 8%;
-    gap: 55px;
+    gap: 25px;
     align-items: center ;
 }
 .hero-text h1 {
@@ -83,13 +83,21 @@ body {
 .hero-text{ 
     width: 40%;
 }
+.ad-section-6 {
+    display: flex;
+    margin-top: 20%;
+    gap: 40px;
+}
 .hero-video {
     position: relative;
     width: 60%;
 }
 .control-section p {
-    color: var(--white);
+    color: var(--grey-text);
     padding-top: 10px;
+}
+.ad-section-6-ads-right img:nth-of-type(2) {
+    display: none;
 }
 .control-section h2 {
     color: var(--white);
@@ -124,12 +132,13 @@ body {
     margin-top: 20px;
 }
 .ads-section-2 {
-    margin-top: 120px;
+    margin-top: 150px;
 }
 .Campaign-section h1{
     color: var(--white);
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 600;
+    line-height: 54.15px;
 }
 .ads-title-under p {
     font-weight: 400;
@@ -138,52 +147,88 @@ body {
 .ads-title-under p {
     color: var(--white);
     font-size: 14px;
+    max-width: 68%;
+}
+.Campaign-section h1:nth-of-type(2), .Campaign-section button:nth-of-type(1) {
+    display: none;
 }
 .image-insight {
-    height: 465px;
-    width: 465px;
+    position: absolute;
+    right: 0;
+    height: 640px;
 }
 .image-insight-container {
-    position: relative;
     display: flex;
     justify-content: end;
     left: 9%;
 }
 .campaign-manage {
     margin-top: 5rem;
-    margin-bottom: 5rem;
 }
-.section-6-ads-left {
+.ad-section-6-ads-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: left;
     color: #fff;
 }
+.insights-section p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39.64px;
+
+}
+.campain-text {
+    margin-left: 34px;
+}
+.active-campaign {
+    background: linear-gradient(360deg, #2B7FFC 0%, #60EFFF 135.95%);
+    color: var(--white);
+    padding: 15px 15px 35px 15px
+}
+.insights-section b {
+    font-size: 14.69px;
+    font-weight: 400;
+    line-height: 25.04px;
+
+}
+.p-15x {
+    padding: 15px;
+}
+.active-svg {
+    filter: brightness(0) invert(1);
+}
+.Campaign-section button {
+    margin-top: 26px;
+}
 .section-realtime {
     padding: 10px 0 10px 0;
     width: 100%;
     display: flex;
+    align-items: end;
 }
-.section-6-ads-right {
+.ad-section-6-ads-right {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.section-6-ads-left h1,
-.section-6-ads-right h1
+.ad-section-6-ads-left h1,
+.ad-section-6-ads-right h1
 {
-    font-size: 42px;
-    color: var(--white);
+    font-size: 40.29px;
     font-weight: 600;
+    line-height: 44px;
+    max-width: 400px;
+    color: var(--white);
 }
-.section-6-ads-left p, .section-6-ads-right p {
-    font-size: 16px;
+.ad-section-6-ads-left p, .ad-section-6-ads-right p {
+    font-size: 15.11px;
     font-weight: 400;
-    line-height: 24px;
-    max-width: 450px;
+    line-height: 23.5px;
     color: #d0d0d0;
+    padding-top: 10px;
+    max-width: 445px;
 }
 .campaign-margin {
     margin-top: 2rem;
@@ -193,20 +238,20 @@ body {
 }
 .realtime-6-ads-left {
     width: 35%;
-    flex-direction: column;
-    justify-content: left;
     color: #fff;
 }
 .realtime-6-ads-left h1 {
     padding-top: 6rem;
-    font-size: 38px;
+    font-size: 43px;
     color: var(--white);
     font-weight: 600;
+    line-height: 54px;
 }
 .realtime-6-ads-left p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    max-width: 330px;
     color: #d0d0d0;
 }
 .realtime-6-ads-right {
@@ -235,6 +280,7 @@ body {
     .hero-container {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
     .hero-text {
         width: 100%;
@@ -242,7 +288,6 @@ body {
     }
     .hero-video { 
         width: 100%;
-        padding-top: 7%;
     }
     .ads-title {
         width: 100%;
@@ -250,6 +295,7 @@ body {
     .hero-video video { 
         position: relative;
         width: 85%;
+        height: 203px !important;
         left: 16%;
     }
 	.overtv-advertise {
@@ -271,11 +317,6 @@ body {
     .work-section p {
         color: var(--white);
         padding-left: 40px;
-    }
-	.section-advertiser-1-title video {
-        height: inherit !important;
-        aspect-ratio: 0 / 0.43 !important;
-        width: calc(100% - 135px) !important;
     }
     .hide-for-desktop {
         display: block;
@@ -346,11 +387,17 @@ body {
     .hero-text { 
         left: 0px;
         line-height: 27px;
-        text-align: center;
+        text-align: start;
         padding-bottom: 20px;
     }
     .sm-block p {
         padding-top: 10px;
+    }
+    .hero-text p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 13.15px;
+
     }
     .sm-block {
         display: block !important;
@@ -387,9 +434,19 @@ body {
     .section-8 h1 { 
         font-size: 21px;
     }
+    .Campaign-section h1:nth-of-type(1) {
+        display: none;
+    }
+    .ad-section-6 {
+        display: none;
+    }
+    .Campaign-section h1:nth-of-type(2), .Campaign-section button:nth-of-type(1) {
+        display: block;
+    }
     .work-section p {
         color: var(--white);
-        padding-left: 35px;
+        padding-left: 22px;
+        padding-top: 5px;
     }
 	.Campaign-section h1 {
 		font-size: 25px;
@@ -398,8 +455,24 @@ body {
     .ads-section-2 { 
         margin-top: 48px;
     }
+    .work-title h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.2px;
+    }
+    .work-title p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
     .Campaign-section {
         padding: 0px 10px 0px 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Campaign-section button:nth-of-type(1) {
+        margin-top: 10px;
     }
     .Campaign-section p {
         text-align: center;
@@ -459,32 +532,84 @@ body {
         padding-top: 25px;
         justify-content: end;
     }
+    .hero-text span { 
+        font-size: 47.45px;
+        font-weight: 700;
+        line-height: 56.94px;
+
+
+    }
+    .hero-text h1 { 
+        font-size: 47.45px;
+        font-weight: 700;
+        line-height: 56.94px;
+    }
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27.49px;
+
+    }
     .wrapper { 
         padding: 30px;
     }
     .image-insight-container { 
         left: 5%;
     }
-    .section-6-ads-right img, .realtime-6-ads-right img {
+    .ad-section-6-ads-right img, .realtime-6-ads-right img {
         width: 100%;
     }
     .mac-ads {
         gap: 25px;
     }
-    .section-6-ads-left h1, .section-6-ads-right h1 {
-        font-size: 36px;
+    .ad-section-6-ads-left h1, .ad-section-6-ads-right h1 {
+        font-size: 26.04px;
+        font-weight: 600;
+        line-height: 35.97px;
+        text-align: left;
+
     }
-    .section-6-ads-left img {
+    .ad-section-6-ads-left p, .ad-section-6-ads-right p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+
+    }
+    .ad-section-6-ads-right img:nth-of-type(1) {
+        display: none;
+    }
+    .ad-section-6-ads-right img:nth-of-type(2) {
+        display: inline;
+    }
+    .ad-section-6-ads-left img {
         width: 100%;
     }
     .hero-video img:nth-child(1) {
         width: 129px;
         bottom: -45px;
-        left: 14%;
+        left: 12%;
         height: 129px;
     }
+    .realtime-6-ads-left h1 {
+        font-size: 30.64px;
+        font-weight: 600;
+        line-height: 38.3px;
+
+    }
+    .realtime-6-ads-left p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .realtime-6-ads-right img {
+        height: 100%;
+    }
     .hero-video video { 
-        width: 78%;
+        width: 616px;
+        height: 381px !important;
+    }
+    .ads-section-2{
+        margin-top: 100px;
     }
     .hero-container {
         display: flex;

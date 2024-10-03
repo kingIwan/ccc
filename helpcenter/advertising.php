@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - General</title>
+  <title>OverTV - Advertising</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -20,24 +20,26 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+  include '../common/header.php';
+  ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="hero-helpcenter">
-      <div class="container">
-          <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
               <h2 data-i18n="help_center_title">How can we help?</h2>
               <form>
                 <input type="text" name="search" placeholder="Pesquisa">
               </form>
-          </div>
-      </div>
-  </div>
-  <div class="breadcrump">
-      <div class="container">
-          <div class="breadcrump-content">
-            <p><b data-i18n="home">Home</b> <span data-i18n="home_general"> > General</span></p>
-              <form>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrump">
+        <div class="container">
+            <div class="breadcrump-content">
+                <p ><b data-i18n="home">Home</b> <span data-i18n="home_Advertising"> > Advertising</span></p>
+                <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form>
             </div>
@@ -45,48 +47,38 @@
     </div>
     <div class="container">
       <div class="general-section">
-          <div class="general-question">
-              <h2>
-                  <span><img src="../assets/svg/general-icon.svg" alt=""></span>
-                  <span data-i18n="general_title">General</span>
-              </h2>
-              <ul>
-                  <li>
-                      <a href="/overtv/faq/how-does-overtv-work-and-how-can-I-start-watching.html"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span></a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                  </li>
-                  <li>
-                      <span data-i18n="how_can_overtv_help_business">How can Over TV help my business?</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                  </li>
-                  <li>
-                      <span data-i18n="over_tv_player_cost">How much does the Over TV player cost?</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                  </li>
-                  <li>
-                      <span data-i18n="best_businesses_for_overtv">What types of businesses are best suited for Over TV?</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                  </li>
-                  <li>
-                      <span data-i18n="como_ganhar_dinheiro">Como posso começar a ganhar dinheiro com o Over TV Player?</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                  </li>
-              </ul>
-          </div>
-          <div class="need-support">
-              <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
-              <ul>
-                  <li data-i18n="support_description">
-                      Can't find the answer you're looking for? Don't worry we're here to help!
-                  </li>
-              </ul>
-              <button data-i18n="contact_support_button">Contact Support</button>
-          </div>
+        <div class="general-question">
+            <h2>
+               <span><img src="../assets/svg/advertising.svg" alt=""></span> <span data-i18n="advertising_title">Advertising</span>
+            </h2>
+            <ul>
+                <li>
+                    <span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="need-support">
+            <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
+            <ul>
+                <li data-i18n="support_description">
+                    Can't find the answer you're looking for? Don't worry we're here to help!
+                </li>
+            </ul>
+            <button data-i18n="contact_support_button">Contact Support</button>
+        </div>
       </div>
       <div id="footer-container"></div>
-  </div>
-  </div>
-
+    </div>
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../assets/js/script.js"></script>

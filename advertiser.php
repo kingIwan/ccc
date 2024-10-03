@@ -19,14 +19,16 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 <body>
-  <div id="header-container"></div>
+  <?php
+    include 'common/header.php';
+    ?>
   <div class="wrapper">
     <div class="container hero-section">
       <div class="hero-container">
         <div class="hero-text wow fadeInUp" data-wow-delay="0.1s">
           <span data-i18n="hero_monopolize_attention">Monopolize Attention.</span>
           <h1 data-i18n="hero_advertise_where_competitors">Advertise Where Your Competitors Can’t Compete</h1>
-          <div class="d-flex sm-block gap-1 mt-1">
+          <div class="d-flex align-center gap-1 mt-1">
               <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
               <p data-i18n="hero_future_arrived">See why the future already arrived</p>
           </div>
@@ -42,34 +44,43 @@
     <div class="container">
       <div class="ads-section-2" id="section-2">
         <div class="Campaign-section">
-            <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work">Make Every Screen Work for You</h1>
-            <p class="wow hide-for-mobile fadeInUp" data-i18n="ads_transform_your_venue">Transform your venue with content that entertains, drives purchases,<br> and blocks out competing ads.</p>
+            <button class="btn-trns mb-1" data-i18n="about_us_button">About us</button>
+            <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work">Step Into The Future of Advertising Today</h1>
+            <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work2">Step Into The Future</h1>
+            
+            <p class="wow hide-for-mobile fadeInUp" data-i18n="ads_transform_your_venue">Enjoy full management capabilities, from budgeting to real-time updates, with no minimum spend required.</p>
             <p class="wow hide-for-desktop fadeInUp" data-i18n="ads_channels_cater_to_taste">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
+            <button class="site-btn" data-i18n="hero_advertise_with_over">Advertise with Over</button>
         </div>
         <div class="d-flex insights-section w-100 hide">
             <div class="w-50">
-                <div class="w-50 d-flex align-center gap-1 campaign-manage">
-                    <img src="assets/svg/Campaign-notification.svg" width="25px">
+                <div class="active-campaign campaign-manage">
+                <div class="d-flex align-center gap-1">
+                    <img src="assets/svg/Campaign-notification.svg" width="25px" class="active-svg">
                     <p data-i18n="ads_campaign_management">Campaign management</p>
                 </div>
-                <div class="w-50 d-flex align-center gap-1">
+                <div class="campain-text">
+                <b data-i18n="ads_campaign_title">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</b>
+                </div>
+                </div>
+                <div class="d-flex align-center gap-1 p-15x">
                     <img src="assets/svg/Campaign-notification.svg" width="25px">
                     <p data-i18n="ads_efficient_setup">Efficient setup</p>
                 </div>
-                <div class="w-50 d-flex align-center gap-1 campaign-margin">
+                <div class=" d-flex align-center gap-1 p-15x">
                     <img src="assets/svg/target-icon.svg" width="25px">
                     <p data-i18n="ads_total_targeting">Total Targeting</p>
                 </div>
-                <div class="w-50 d-flex align-center gap-1 campaign-margin">
+                <div class=" d-flex align-center gap-1 p-15x">
                     <img src="assets/svg/budget-icon.svg" width="25px">
                     <p data-i18n="ads_for_all_budgets">For all budgets</p>
                 </div>
-                <div class="w-50 d-flex align-center gap-1 campaign-margin">
+                <div class="d-flex align-center gap-1 p-15x">
                     <img src="assets/svg/calendar-icon.svg" width="25px">
                     <p data-i18n="ads_programmatic_buying">Programmatic Buying</p>
                 </div>
             </div>
-            <div class="w-50 image-insight-container">
+            <div class=" image-insight-container">
                 <img class="image-insight" src="assets/image/insight-image.png">
             </div>
         </div>
@@ -90,9 +101,9 @@
                 </div>
                 <div class="d-flex work-title mt-2">
                     <img src="assets/svg/pointer-icon.svg" width="10%">
-                    <h2 data-i18n="ads_efficient_setup">Efficient setup</h2>
+                    <h2 data-i18n="Campaign_management">Campaign management</h2>
                 </div>
-                <p data-i18n="ads_create_ad_campaigns">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                <p data-i18n="Campaign_management_text">Test, adjust, and optimize campaigns, and discover tools to help manage campaigns more efficiently.</p>
             </div>
             <div class="work-section">
                 <div class="mt-2">
@@ -100,9 +111,9 @@
                 </div>
                 <div class="d-flex work-title mt-2">
                     <img src="assets/svg/pointer-icon.svg" width="10%">
-                    <h2 data-i18n="ads_efficient_setup">Efficient setup</h2>
+                    <h2 data-i18n="Flexible_Reach">Flexible Reach</h2>
                 </div>
-                <p data-i18n="ads_create_ad_campaigns">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                <p data-i18n="Flexible_Reach_text">Connect with customers on your terms, targeting by country, state, city, block or even individual businesses.</p>
             </div>
             <div class="work-section">
                 <div class="mt-2">
@@ -110,9 +121,9 @@
                 </div>
                 <div class="d-flex work-title mt-2">
                     <img src="assets/svg/pointer-icon.svg" width="10%">
-                    <h2 data-i18n="ads_efficient_setup">Efficient setup</h2>
+                    <h2 data-i18n="ads_for_all_budgets">For all budgets</h2>
                 </div>
-                <p data-i18n="ads_create_ad_campaigns">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                <p data-i18n="ads_for_all_budgets_text">Decide for yourself what price you want to advertise at, whether it's a mini campaign or a mega rollout.</p>
             </div>
             <div class="control-section mt-3">
                 <div class="schedule-section">
@@ -121,7 +132,7 @@
                         <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                     </div>
                     <div class="d-flex justify-center pt-1">
-                        <img src="assets/image/control-section-1.png">
+                        <img src="assets/image/control-section-1.png" width="96%">
                     </div>
                 </div>
                 <div class="Targeting-section mt-2">
@@ -130,7 +141,7 @@
                         <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                     </div>
                     <div class="d-flex justify-center pt-1">
-                        <img src="assets/image/targeting-section.png">
+                        <img src="assets/image/targeting-section.png" width="96%">
                     </div>
                 </div>
                 <div class="Performance-section mt-2">
@@ -139,21 +150,22 @@
                         <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                     </div>
                     <div class="d-flex justify-center pt-1">
-                        <img src="assets/image/performance-section.png">
+                        <img src="assets/image/performance-section.png" width="96%">
                     </div>
                 </div>
             </div>
         </div>
     </div>
       <!-- End Section 2 -->
-      <div class="section-6 mac-ads">
-        <div class="section-6-ads-left">
+      <div class="ad-section-6 mac-ads">
+        <div class="ad-section-6-ads-left">
             <h1 class="wow fadeInUp" data-i18n="ads_full_control_schedule_budget">Full Control of <br> Schedule & Budget</h1>
             <p class="wow fadeInUp py-2" data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
-            <img src="assets/image/schedule-budget.png" width="497px" height="422px">
+            <img src="assets/image/schedule-budget.png" >
         </div>
-        <div class="section-6-ads-right">
-            <img src="assets/image/precision-targeting.png" width="500.1px" height="497.59px">
+        <div class="ad-section-6-ads-right">
+            <img src="assets/image/precision-targeting.png">
+            <img src="assets/image/advertiser-mb.png" >            
             <h1 class="wow fadeInUp pt-1" data-i18n="ads_precision_targeting">Precision Targeting</h1>
             <p class="wow fadeInUp" data-i18n="ads_segment_by">Segment by location, interests, content genre, and even specific devices. You've never seen anything like it.</p>
         </div>
@@ -168,7 +180,7 @@
             <button class="site-btn" data-i18n="realtime_advertise_with_over">Advertise with Over</button>
         </div>
         <div class="realtime-6-ads-right">
-            <img src="assets/image/realtime-section.png" height="426px" width="635px">
+            <img src="assets/image/realtime-section.png" height="426px" width="100%">
         </div>
     </div>
       <!-- ======= Section 7 ======= -->
@@ -176,20 +188,21 @@
         <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
         <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
-          <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="section-7-card-header">
-                <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+            <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="section-7-card-header">
+                  <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+              </div>
+              <div class="section-7-card-content">
+                  <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
+                  <h6 data-i18n="read_case_study">Read the case study →</h6>
+              </div>
             </div>
-            <div class="section-7-card-content">
-                <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
-                <h6 data-i18n="read_case_study">Read the case study →</h6>
-            </div>
-        </div>
-        <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
-          <div class="center-div">
-              <h2 data-i18n="annual_passive_income">+$1,200 <span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
+            <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="center-div">
+            <img src="assets/image/trader-logo.svg" alt="">
+              <h2><b data-i18n="advertiser_passive_income">+$3,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
               <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through ads displayed on your screens.</p>
-              <h2 data-i18n="boost_average_order_value">+20% <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
+              <h2 ><b data-i18n="boost_average_order_value">+20%</b> <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
               <p data-i18n="boost_average_order_value_description">Keep guests entertained longer, encouraging them to spend more with every visit.</p>
           </div>
           </div>
@@ -209,70 +222,63 @@
           <div class="faq-btn">
             <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
         </div>
-        <h1 data-i18n="faqs_title">FAQs</h1>
-        <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+        <div class="faq-title">
+          <h1 data-i18n="faqs_title">FAQs</h1>
+          <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+        </div>
         <div class="section-8-wrapper wow fadeInUp">
           <div class="accordion">
               <div class="accordion-item">
                   <button id="accordion-button-1" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_install_title">How do I install the OverTv device?</span>
+                      <span class="accordion-title" data-i18n="faq_install_title2">Can anyone advertise on Over?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
-                      <p data-i18n="faq_install_description">
-                          Installing the OverTv device is simple and quick. Plug in the device, connect it to your Wi-Fi, and
-                          follow the on-screen instructions. The entire process takes less than 5 minutes.
+                      <p data-i18n="faq_install_description2">
+                      Absolutely! No matter the size of your company, here you have space to grow and reach your audience efficiently. Our Ad Manager allows you to start advertising with any amount and control your campaign in real-time.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-2" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_free_title">Why is OverTv free for businesses?</span>
+                      <span class="accordion-title" data-i18n="faq_free_titl2">What differentiates Over from other platforms?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
-                      <p data-i18n="faq_free_description">
-                          OverTv provides high-quality content for free by incorporating advertisements into the programming.
-                          This model allows us to offer a no-cost service while still delivering engaging entertainment to
-                          your customers.
+                      <p data-i18n="faq_free_description2">
+                      Our platform is unique by combining full control, advanced segmentation, and real-time analysis, something never seen before in out-of-home advertising. Never before has a company given so much power to the advertiser outside the internet.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-3" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_streaming_device_title">Can I use my own streaming device with OverTv?</span>
+                      <span class="accordion-title" data-i18n="faq_streaming_device_title2">How can I track the results of my campaign in real-time?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
-                      <p data-i18n="faq_streaming_device_description">
-                          No, we provide a custom streaming device to ensure the best performance and support. Our device is
-                          optimized for OverTv content, using less bandwidth and offering seamless integration with our
-                          services.
-                      </p>
+                      <p data-i18n="faq_streaming_device_description2">
+                      Over TV equips you with real-time analytics, offering detailed reports on ad impressions, venue types, and audience engagement, empowering you to refine your strategy effectively.</p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-4" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_promote_events_title">How can I promote my events and special offers with OverTv?</span>
+                      <span class="accordion-title" data-i18n="faq_promote_events_title2">Can I choose where and when my ads will be displayed?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
-                      <p data-i18n="faq_promote_events_description">
-                          OverTv Ads allows you to create and schedule custom ads that are displayed during commercial breaks.
-                          This ensures your promotions reach customers effectively and at the right time.
+                      <p data-i18n="faq_promote_events_description2">
+                      You have full control over where and when your ads will be displayed, allowing you to segment by state, city, neighborhood, and even specific devices, ensuring that your ads appear exactly where you want them.
                       </p>
                   </div>
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-5" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_content_type_title">What type of content does OverTv offer?</span>
+                      <span class="accordion-title" data-i18n="faq_streaming_device_title_ads">How does the campaign approval process work?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
-                      <p data-i18n="faq_content_type_description">
-                          OverTv curates a diverse range of content, including viral clips, scenic drone footage, and
-                          interactive trivia. We ensure there's something for everyone, keeping your audience entertained.
-                      </p>
+                      <p data-i18n="faq_content_type_description2">
+                      After submission, our team reviews your ad for quality and compliance, typically within two business days. The approval process is designed to be smooth and supportive, helping your campaign launch without a hitch.                      </p>
                   </div>
               </div>
           </div>
@@ -281,11 +287,13 @@
       </div>
       <div class="section-subscription">
         <div class="d-flex header-title">
-            <h4 data-i18n="subscription_improve_experience">Melhore a experiência do seu local com entretenimento de última geração.</h4>
-            <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
+            <h4 data-i18n="subscription_advertiser">Place your brand in the spotlight by being the first to advertise in future</h4>
+            <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
         </div>
       </div>
-      <div id="footer-container"></div>
+      <?php
+        include 'common/footer.php';
+        ?>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -293,20 +301,6 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/swiper.min.js"></script>
-  <script>
-    fetch('common/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading header:', error));
-    fetch('common/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
   <script>
     var swiper = new Swiper(".text-slider", {
       slidesPerView: 4,

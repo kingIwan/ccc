@@ -22,7 +22,9 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+      include 'common/header.php';
+      ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="container referal-sections">
@@ -138,9 +140,10 @@
           <div class="faq-btn">
             <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
           </div>
+          <div class="faq-title">
           <h1 data-i18n="faqs_title">FAQs</h1>
-          <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions
-            that matter most to you.</p>
+          <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+        </div>
           <div class="section-8-wrapper wow fadeInUp">
             <div class="accordion">
               <div class="accordion-item">
@@ -212,7 +215,9 @@
           </div>
         </div>
       </div>
-      <div id="footer-container"></div>
+      <?php
+      include 'common/footer.php';
+      ?>
     </div>
   </div>
 
@@ -222,20 +227,6 @@
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/swiper.min.js"></script>
-  <script>
-    fetch('common/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading header:', error));
-    fetch('common/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
   <script>
 
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - Accounts</title>
+  <title>OverTV - General</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -19,24 +20,26 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+  include '../common/header.php';
+  ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="hero-helpcenter">
-        <div class="container">
-            <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
               <h2 data-i18n="help_center_title">How can we help?</h2>
               <form>
                 <input type="text" name="search" placeholder="Pesquisa">
               </form>
-            </div>
-        </div>
-    </div>
-    <div class="breadcrump">
-        <div class="container">
-            <div class="breadcrump-content">
-                <p ><b data-i18n="home">Home</b> <span data-i18n="home_accounts"> > Accounts</span></p>
-                <form>
+          </div>
+      </div>
+  </div>
+  <div class="breadcrump">
+      <div class="container">
+          <div class="breadcrump-content">
+            <p><b data-i18n="home">Home</b> <span data-i18n="home_general"> > General</span></p>
+              <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form>
             </div>
@@ -44,38 +47,49 @@
     </div>
     <div class="container">
       <div class="general-section">
-        <div class="general-question">
-            <h2>
-               <span><img src="/../assets/svg/setting-icon.svg" alt=""></span> <span data-i18n="accounts_title">Accounts</span>
-            </h2>
-            <ul>
-                <li>
-                    <span data-i18n="access_dashboard_question">How to access my dashboard?</span> <i class="fa-solid fa-arrow-right"></i>
-                </li>
-                <li>
-                    <span data-i18n="login_not_working_question">My login isn't working. What should I do?</span> <i class="fa-solid fa-arrow-right"></i>
-                </li>
-                <li>
-                    <span data-i18n="terms_of_service_question">What are Over TV's terms of service?</span> <i class="fa-solid fa-arrow-right"></i>
-                </li>
-                <li>
-                    <span data-i18n="return_device_question">I no longer want to use the Over device, how do I return it?</span> <i class="fa-solid fa-arrow-right"></i>
-                </li>
-            </ul>
-        </div>
-        <div class="need-support">
-            <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
-            <ul>
-                <li data-i18n="support_description">
-                    Can't find the answer you're looking for? Don't worry we're here to help!
-                </li>
-            </ul>
-            <button data-i18n="contact_support_button">Contact Support</button>
-        </div>
+          <div class="general-question">
+              <h2>
+                  <span><img src="../assets/svg/general-icon.svg" alt=""></span>
+                  <span data-i18n="general_title">General</span>
+              </h2>
+              <ul>
+                  <li>
+                      <a href="/overtv/faq/how-does-overtv-work-and-how-can-I-start-watching.php"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span></a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li>
+                      <span data-i18n="how_can_overtv_help_business">How can Over TV help my business?</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li>
+                      <span data-i18n="over_tv_player_cost">How much does the Over TV player cost?</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li>
+                      <span data-i18n="best_businesses_for_overtv">What types of businesses are best suited for Over TV?</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+                  <li>
+                      <span data-i18n="como_ganhar_dinheiro">Como posso começar a ganhar dinheiro com o Over TV Player?</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </li>
+              </ul>
+          </div>
+          <div class="need-support">
+              <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
+              <ul>
+                  <li data-i18n="support_description">
+                      Can't find the answer you're looking for? Don't worry we're here to help!
+                  </li>
+              </ul>
+              <button data-i18n="contact_support_button">Contact Support</button>
+          </div>
       </div>
-      <div id="footer-container"></div>
-    </div>
-</div>
+      <?php
+      include '../common/footer.php';
+      ?>
+  </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -83,20 +97,6 @@
   <script src="../assets/js/wow.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/swiper.min.js"></script>
-  <script>
-    fetch('../common/header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading header:', error));
-    fetch('../common/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading footer:', error));
-  </script>
   <script>
 
 

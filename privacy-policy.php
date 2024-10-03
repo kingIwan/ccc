@@ -29,7 +29,9 @@
   ></script>
   <body>
     <!-- ======= Header ======= -->
-    <div id="header-container"></div>
+    <?php
+      include 'common/header.php';
+      ?>
     <!-- End Header -->
     <div class="wrapper">
       <div class="container">
@@ -806,7 +808,9 @@
             </div>
           </div>
         </div>
-        <div id="footer-container"></div>
+        <?php
+      include 'common/footer.php';
+      ?>
       </div>
     </div>
 
@@ -815,20 +819,6 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/swiper.min.js"></script>
-    <script>
-      fetch("common/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading header:", error));
-      fetch("common/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
     <script>
       var swiper = new Swiper(".text-slider", {
         slidesPerView: 4,

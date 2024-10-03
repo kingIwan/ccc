@@ -6,7 +6,7 @@ body {
 	color: #666666;
 	font-family: "Poppins", sans-serif;
 	margin: 0;
-	height: 2870px;
+	height: 2000px;
 	background-image: url('/overtv/assets/image/home-page-bg.png'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
   }
   .hero-channel {
     height: 500px;
-    background-image: url('/overtv/assets/image/channel-hero-bg.png'); 
+    background-image: url('/assets/image/channel-hero-bg.png'); 
     background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -33,6 +33,12 @@ body {
     flex-direction: column;
     text-align: center;
     min-height: 500px;
+}
+.hero-content h1 {
+    font-size: 67.59px;
+    font-weight: 800;
+    line-height: 77.59px;
+
 }
 .video-content {
     background: var(--light-dark);
@@ -120,6 +126,9 @@ body {
     text-align: left;
     margin-bottom: 6px;
 }
+.mb-button {
+    display: none;
+}
 .moretv-card {
     max-width: 350px;
     overflow: hidden;
@@ -151,8 +160,9 @@ body {
     text-align: left;
 }
 .hero-content span {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 67.59px;
+    font-weight: 800;
+    line-height: 67.59px;
     text-align: center;
     background: linear-gradient(0deg, #146EF5 0%, #60EFFF 70.76%);
     background-clip: text;
@@ -189,11 +199,53 @@ h1, p {
     color: var(--white);
 }
 .hero-content p {
-    max-width: 650px;
+    max-width: 770px;
+    color: var(--grey-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.37px;
+    padding-top: 10px;
 }
 
 .hero-content img {
-    margin-bottom: 15px;
+    margin-bottom: 45px;
+}
+.video-section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.44px;
+    color: var(--grey-text);
+    padding-top: 10px;
+
+}
+.video-section h1 {
+    font-size: 36.43px;
+    font-weight: 600;
+    line-height: 43.71px;
+}
+.video-content h1 {
+    font-size: 53.11px;
+    font-weight: 600;
+}
+.sevice-text h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33.64px;
+
+}
+.sevice-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.7px;
+    color: var(--grey-text);
+}
+.video-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.78px;
+    color: var(--white);
+    max-width: 86%;
+    padding-top: 20px;
 }
 .video-section {
     display: flex;
@@ -213,18 +265,31 @@ h1, p {
         min-height: 380px;
     }
     .hero-content h1 {
-        font-size: 26px;
-        line-height: 22px;
+        font-size: 25.95px;
+        font-weight: 800;
+        line-height: 25.95px;
     }
     .hero-content span {
-        font-size: 26px;
+        font-family: Poppins;
+        font-size: 25.95px;
+        font-weight: 800;
+        line-height: 25.95px;
     }
     .hero-content p {
-        padding-top: 10px;
         font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
     }
     .text-center h1 {
-        font-size: 21px;
+        font-size: 21.42px;
+        font-weight: 600;
+        line-height: 25.71px;
+
+    }
+    .text-center p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.49px;
     }
     .blue-wd-5 {
         width: 21px;
@@ -246,6 +311,9 @@ h1, p {
     }
     .hide-mobile {
         display: none;
+    }
+    .mb-button {
+        display: flex;
     }
     .mobile-service-section {
         margin-top: 20px;
@@ -276,9 +344,17 @@ h1, p {
     }
     .addition-content h1 {
         font-size: 12px;
+        font-weight: 600;
+
     }
     .addition-content p {
-        font-size: 8px;
+        font-size: 8.5px;
+        font-weight: 400;
+        line-height: 11px;
+        padding-top: 0px;
+    }
+    .section-subscription {
+        display: none;
     }
     .card-text-tv h2 {
         margin-bottom: 5px;
@@ -326,5 +402,49 @@ h1, p {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .hero-content h1 {
+        font-size: 39.75px;
+        font-weight: 800;
+        line-height: 39.75px;
+    }
+    .hero-content span {
+        font-size: 39.75px;
+        font-weight: 800;
+        line-height: 39.75px;
+    }
+    .hero-content p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.68px;
+        max-width: 500px;
+    }
+    .video-section h1 {
+        font-size: 21.42px;
+        font-weight: 600;
+        line-height: 25.71px;
+    }
+    .video-content h1{
+        font-size: 31.23px;
+        font-weight: 600;
+    }
+    .sevice-text h1 {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 19.78px;
+
+    }
+    .sevice-text p {
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 10.41px;
+    }
+    .sevice-text h1 {
+        margin-bottom: 0px;
+    }
+    .video-section p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.49px;
     }
 }

@@ -92,6 +92,9 @@ body {
     font-weight: 600;
     margin-top: 30px;
 }
+.rewards-img2 {
+    display: none;
+}
 .privacy-link {
     margin-top: 15px;
 }
@@ -153,9 +156,9 @@ body {
     padding-bottom: 0px;
 }
 .affiliate-video {
-    background: linear-gradient(360deg, #2B7FFC 0%, #60EFFF 135.95%);
+    background: linear-gradient(180deg, #2B7FFC 0%, #60EFFF 135.95%);
     width: 100%;
-    height: 448.1px;
+    height: 550px;
     border-radius: 25px;
     position: relative;
     margin-top: 40px;
@@ -167,14 +170,14 @@ body {
     left: 0;
     margin: 0 auto;
     width: calc(100% - 100px) !important;
-    height: 450px !important;
+    height: 577px !important;
     border: 8px solid #020202;
     object-fit: cover;
     background-color: black;
 }
 .affiliate-video img:nth-child(1) {
     position: absolute;
-    bottom: -27px;
+    bottom: -28px;
     right: 2%;
     z-index: 9;
 }
@@ -182,8 +185,20 @@ body {
     margin-top: 20px;
 }
 .affiliate-container .section-4-title {
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
+.section-4-title h1 {
+    font-size: 38.98px;
+    font-weight: 600;
+    line-height: 46.77px;
+}
+.section-4-title p { 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.87px;
+    color: var(--grey-text);
+}
+
 .support-grow {
     display: flex;
     flex-direction: column;
@@ -214,13 +229,21 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 35px;
+}
+.margin-affiliate {
+    margin-top: 12% !important;
+}
+.title-break {
+    display: flex;
+    flex-direction: column;
 }
 .reward-text h2 {
     font-size: 85.84px;
     font-weight: 500;
     line-height: 84.12px;
     color: var(--white);
+    padding-top: 40px;
 }
 .reward-text {
     width: 34%;
@@ -290,6 +313,29 @@ body {
     }
     .affiliate-video {
         height: 210px;
+        border-radius: 8px;
+    }
+    .section-4-title h1 { 
+        font-size: 24.9px;
+        font-weight: 700;
+        line-height: 28.27px;
+
+    }
+    .section-4-title p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.5px;
+    }
+    .reward-text img {
+        width: 22px;
+    }
+    .rewards-img {
+        display: none;
+    }
+    .rewards-img2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .affiliate-video video {
         top: 40px;
@@ -375,5 +421,23 @@ body {
     }
     .image-square {
         left: 15%;
+    }
+    .affiliate-video {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: auto;
+        height: 366px;
+    }
+    .rewards-img {
+        display: none;
+    }
+    .rewards-img2 {
+        display: inline;
+    }
+    .rewards-img2 img {
+        width: 100%;
+    }
+    .affiliate-video video {
+        height: 383px !important
     }
 }

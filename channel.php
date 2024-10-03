@@ -28,19 +28,19 @@
   ></script>
   <body>
     <!-- ======= Header ======= -->
-    <div id="header-container"></div>
+    <?php
+    include 'common/header.php';
+    ?>
     <!-- End Header -->
     <div class="wrapper">
       <div class="hero-channel">
         <div class="container">
           <div class="hero-content wow fadeInUp" data-wow-delay="0.1s">
             <img src="assets/svg/white-logo.svg" alt="Logo" />
-            <h1 data-i18n="hero_see_why_the_future">See why the future</h1>
-            <span data-i18n="hero_already_arrived">already arrived</span>
+            <h1 data-i18n="hero_see_why_the_future">Step Into the</h1>
+            <span data-i18n="hero_already_arrived">Future of Entertainment</span>
             <p data-i18n="hero_over_60_channels">
-              Over 60 channels covering the best content in sports,
-              entertainment, plus viral videos and engaging trivia, enhancing
-              the ambiance and guest experience at your venue.
+            Elevate the energy at your venue with nonstop entertainment—sports highlights, viral trends, and interactive trivia—curated to keep your guests entertained and immersed in the moment
             </p>
             <button data-i18n="hero_get_your_free_player">
               Get Your Free Player
@@ -231,77 +231,78 @@
             data-wow-delay="0.1s"
             data-i18n="moretv_section_title"
           >
-            More Than a Game
+            Explore
           </h3>
           <div class="moretv-content">
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
               <img src="assets/image/dynasty-image.png" width="100%" />
               <div class="card-text-tv">
-                <h2 data-i18n="moretv_documentary">DOCUMENTARY</h2>
                 <h4 data-i18n="moretv_title">
-                  The Dynasty: New England Patriots
+                  Europe
                 </h4>
-                <p data-i18n="moretv_description">
-                  Brady, Belichick, and Kraft reveal the inside story of the
-                  team’s remarkable reign.
-                </p>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
               <img src="assets/image/dynasty-image.png" width="100%" />
               <div class="card-text-tv">
-                <h2 data-i18n="moretv_documentary">DOCUMENTARY</h2>
                 <h4 data-i18n="moretv_title">
-                  The Dynasty: New England Patriots
+                  Europe
                 </h4>
-                <p data-i18n="moretv_description">
-                  Brady, Belichick, and Kraft reveal the inside story of the
-                  team’s remarkable reign.
-                </p>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
               <img src="assets/image/dynasty-image.png" width="100%" />
               <div class="card-text-tv">
-                <h2 data-i18n="moretv_documentary">DOCUMENTARY</h2>
                 <h4 data-i18n="moretv_title">
-                  The Dynasty: New England Patriots
+                  Europe
                 </h4>
-                <p data-i18n="moretv_description">
-                  Brady, Belichick, and Kraft reveal the inside story of the
-                  team’s remarkable reign.
-                </p>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
               <img src="assets/image/dynasty-image.png" width="100%" />
               <div class="card-text-tv">
-                <h2 data-i18n="moretv_documentary">DOCUMENTARY</h2>
                 <h4 data-i18n="moretv_title">
-                  The Dynasty: New England Patriots
+                  Europe
                 </h4>
-                <p data-i18n="moretv_description">
-                  Brady, Belichick, and Kraft reveal the inside story of the
-                  team’s remarkable reign.
-                </p>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
               <img src="assets/image/dynasty-image.png" width="100%" />
               <div class="card-text-tv">
-                <h2 data-i18n="moretv_documentary">DOCUMENTARY</h2>
                 <h4 data-i18n="moretv_title">
-                  The Dynasty: New England Patriots
+                  Europe
                 </h4>
-                <p data-i18n="moretv_description">
-                  Brady, Belichick, and Kraft reveal the inside story of the
-                  team’s remarkable reign.
-                </p>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="moretv_title">
+                  Europe
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="moretv_title">
+                  Europe
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="moretv_title">
+                  Europe
+                </h4>
               </div>
             </div>
           </div>
         </div>
-
+        <div class="mb-button">
+          <button style="width: 100%;" data-i18n="subscription_get_device">Get </button>
+        </div>
         <div class="section-subscription wow fadeInUp" data-wow-delay="0.1s">
           <div class="d-flex header-title">
             <h4 data-i18n="subscription_improve_experience">
@@ -313,30 +314,16 @@
             </button>
           </div>
         </div>
-        <div id="footer-container"></div>
+        <?php
+        include 'common/footer.php';
+        ?>
       </div>
     </div>
-
+    <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/js/swiper.min.js"></script>
-    <script>
-      fetch("common/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading header:", error));
-      fetch("common/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
     <script>
       var swiper = new Swiper(".text-slider", {
         slidesPerView: 4,

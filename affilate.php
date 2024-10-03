@@ -19,12 +19,14 @@
 
 <body>
     <!-- ======= Header ======= -->
-    <div id="header-container"></div>
+    <?php
+      include 'common/header.php';
+      ?>
     <!-- End Header -->
     <div class="wrapper">
         <div class="container affiliate-container">
             <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                <h1 data-i18n="turn_referrals">Turn Referrals <span data-i18n="into_revenue">into Revenue</span></h1>
+                <h1 class="title-break"><b data-i18n="turn_referrals">Turn Referrals</b> <span data-i18n="into_revenue">into Revenue</span></h1>
                 <div class="title-under">
                     <p data-i18n="business_network_description">Turn your business network into a source of income. As
                         our distribution partner, you’ll profit
@@ -40,12 +42,11 @@
             </div>
             <div class="section-4" id="section-4">
                 <div class="section-4-title wow fadeInUp">
-                    <button class="scale" data-i18n="how_it_works">How it works</button>
+                    <button class="scale" data-i18n="Benefits">Benefits</button>
                     <h1 data-i18n="start_earning_title">Start Earning Today as a Distribution Partner</h1>
                     <p data-i18n="earning_resources_description">Everything you need to succeed with resources and
                         expert materials to connect with new venues, ensuring steady and growing earnings.</p>
-                    <button class="affiliate-button" data-i18n="get_started_button"><strong>Get started</strong> — it's
-                        free</button>
+                    <button class="affiliate-button" data-i18n="get_started_button"><strong>Get started</strong></button>
                 </div>
                 <div class="section-4-card-group">
                     <div class="section-4-card wow fadeInUp">
@@ -85,9 +86,8 @@
                             </svg>
 
                         </div>
-                        <h1 data-i18n="first_mover_advantage_title">First Mover Advantage</h1>
-                        <p data-i18n="first_mover_advantage_description">Bring the innovation that will define the
-                            future of in-venue entertainment and position yourself as an industry leader.</p>
+                        <h1 data-i18n="first_mover_advantage_title2">Earnings in Real Time</h1>
+                        <p data-i18n="first_mover_advantage_description2">See exactly how much you’re earning in real time, with a powerful dashboard built for business growth.</p>
                     </div>
                     <div class="section-4-card wow fadeInUp">
                         <div class="section-4-card-icon">
@@ -131,34 +131,36 @@
                     </div>
                 </div>
             </div>
-            <div class="support-grow wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <div class="support-grow wow fadeInUp" data-wow-delay="0.1s">
                 <img src="assets/image/affiliate-section-grow.png" alt="">
                 <h2 data-i18n="full_support_title">Full Support to Help You Grow</h2>
                 <p data-i18n="full_support_description">Our dedicated team is focused on helping you grow and reach your
                     biggest goals, quickly and efficiently</p>
-            </div>
-            <div class="affiliate-rewards">
+            </div> -->
+            <div class="affiliate-rewards margin-affiliate">
                 <div class="reward-text wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 data-i18n="revenue_share_title">
-                        Earn
+                    <h2 >
+                        <b data-i18n="revenue_share_title">Earn
                         rewards by
                         Revenue
-                        Share
+                        Share</b> <span><img src="assets/image/money-img.png" alt=""></span>
                     </h2>
                     <p data-i18n="revenue_share_description">Earn a guaranteed 5% on every ad displayed at any venue you
                         connect. The more screens, the more ads, the more you earn</p>
-                    <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong> — it's
-                        free</button>
+                    <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong> </button>
                 </div>
                 <div class="rewards-img wow fadeInUp" data-wow-delay="0.1s">
                     <img src="assets/image/reward-section.png" alt="">
                     <div class="image-square">
                     </div>
                 </div>
+                <div class="rewards-img2 wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="assets/image/control-section-1.png" alt="">
+                </div>
             </div>
-            <div class="section-earn-rewards wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <div class="section-earn-rewards wow fadeInUp" data-wow-delay="0.1s">
                 <img src="assets/image/earn-more-section.png" alt="">
-            </div>
+            </div> -->
             <div class="section-4-slider">
                 <div class="swiper text-slider kenwheeler">
                     <div class="swiper-wrapper">
@@ -527,83 +529,63 @@
                     <div class="faq-btn">
                         <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
                     </div>
+                    <div class="faq-title">
                     <h1 data-i18n="faqs_title">FAQs</h1>
-                    <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the
-                        questions that matter most to you.</p>
+                    <p data-i18n="faqs_description">No question left unanswered. Find clear, concise explanations to the questions that matter most to you.</p>
+                    </div>
                     <div class="section-8-wrapper wow fadeInUp">
                         <div class="accordion">
                             <div class="accordion-item">
                                 <button id="accordion-button-1" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_install_title">How do I install the
-                                        OverTv device?</span>
+                                    <span class="accordion-title" data-i18n="affiliate_faq1">How can Over be free?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_install_description">
-                                        Installing the OverTv device is simple and quick. Plug in the device, connect it
-                                        to your Wi-Fi, and
-                                        follow the on-screen instructions. The entire process takes less than 5 minutes.
-                                    </p>
+                                    <p data-i18n="affiliate_faq_title">
+                                    Our referral program is open to everyone who wants to be part of our community and help transform local businesses. Whether you are a manager, a friend of business owners, or someone passionate about helping entrepreneurs, your referral is valuable and rewarded.                                    </p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button id="accordion-button-2" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_free_title">Why is OverTv free for
-                                        businesses?</span>
+                                    <span class="accordion-title" data-i18n="affiliate_faq2">How does Over's referral program work?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_free_description">
-                                        OverTv provides high-quality content for free by incorporating advertisements
-                                        into the programming.
-                                        This model allows us to offer a no-cost service while still delivering engaging
-                                        entertainment to
-                                        your customers.
+                                    <p data-i18n="affiliate_faq_title2">
+                                    For each establishment you refer that activates their Over TV device, you will earn 5% of all revenue generated from ads displayed on their device for 6 months from the device's activation.
                                     </p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button id="accordion-button-3" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_streaming_device_title">Can I use my
-                                        own streaming device with OverTv?</span>
+                                    <span class="accordion-title" data-i18n="affiliate_faq3">How can I register as an affiliate?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_streaming_device_description">
-                                        No, we provide a custom streaming device to ensure the best performance and
-                                        support. Our device is
-                                        optimized for OverTv content, using less bandwidth and offering seamless
-                                        integration with our
-                                        services.
+                                    <p data-i18n="affiliate_faq_title3">
+                                    If you are already a business: Access the "Refer a Friend" section in your dashboard, copy your unique referral code, and share it with other business owners who could benefit from Over TV.
+                                    If you are not yet a business: Create an account on Over TV and, during registration, select the "Affiliate" option. This will allow you to participate in the referral program without needing to own a business.
                                     </p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button id="accordion-button-4" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_promote_events_title">How can I promote
-                                        my events and special offers with OverTv?</span>
+                                    <span class="accordion-title" data-i18n="faq_install_title4">How often are my earnings updated?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_promote_events_description">
-                                        OverTv Ads allows you to create and schedule custom ads that are displayed
-                                        during commercial breaks.
-                                        This ensures your promotions reach customers effectively and at the right time.
-                                    </p>
+                                    <p data-i18n="faq_install_title3">
+                                    We calculate commissions in real-time, updating your balance regularly, but there may be a delay of up to 24 hours due to processing. Check your dashboard daily to keep track of updates.                                    </p>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <button id="accordion-button-5" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_content_type_title">What type of
-                                        content does OverTv offer?</span>
+                                    <span class="accordion-title" data-i18n="faq_install_title42">When is the balance available for withdrawal?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_content_type_description">
-                                        OverTv curates a diverse range of content, including viral clips, scenic drone
-                                        footage, and
-                                        interactive trivia. We ensure there's something for everyone, keeping your
-                                        audience entertained.
+                                    <p data-i18n="faq_install_description4">
+                                    You can request a withdrawal once your balance reaches R$30.00 and after the 30-day release period. After your bank account is approved, you will receive it via bank transfer.
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +593,9 @@
                     </div>
                 </div>
             </div>
-            <div id="footer-container"></div>
+            <?php
+            include 'common/footer.php';
+            ?>
         </div>
 
 
@@ -620,20 +604,6 @@
         <script src="assets/js/wow.js"></script>
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/swiper.min.js"></script>
-        <script>
-            fetch('common/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading header:', error));
-            fetch('common/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        </script>
         <script>
 
 

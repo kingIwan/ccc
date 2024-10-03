@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - Digital Signage</title>
+  <title>OverTV - Accounts</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -20,7 +19,9 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+  include '../common/header.php';
+  ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="hero-helpcenter">
@@ -36,7 +37,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p><b data-i18n="home">Home</b> <span data-i18n="home_digital"> > Digital Signage</span></p>
+                <p ><b data-i18n="home">Home</b> <span data-i18n="home_accounts"> > Accounts</span></p>
                 <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form>
@@ -47,20 +48,20 @@
       <div class="general-section">
         <div class="general-question">
             <h2>
-               <span><img src="../assets/svg/digital-signage.svg" alt=""></span> <span data-i18n="digital_signage_title">Digital Signage</span>
+               <span><img src="/../assets/svg/setting-icon.svg" alt=""></span> <span data-i18n="accounts_title">Accounts</span>
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="how_digital_signage_works_question">How does digital signage work?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="access_dashboard_question">How to access my dashboard?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="best_practices_digital_signage_question">What are the best practices for making this digital signage?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="login_not_working_question">My login isn't working. What should I do?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="image_video_specifications_question">What are the image/video specifications for digital signage?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="terms_of_service_question">What are Over TV's terms of service?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="ads_not_loading_question">Why aren't my ads loading?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="return_device_question">I no longer want to use the Over device, how do I return it?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
             </ul>
         </div>
@@ -77,6 +78,7 @@
       <div id="footer-container"></div>
     </div>
 </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../assets/js/script.js"></script>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - Content</title>
+  <title>OverTV - Settings</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -20,7 +20,9 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <body>
   <!-- ======= Header ======= -->
-  <div id="header-container"></div>
+  <?php
+  include '../common/header.php';
+  ?>
   <!-- End Header -->
   <div class="wrapper">
     <div class="hero-helpcenter">
@@ -36,8 +38,8 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p><b data-i18n="home_breadcrumb">Home</b> <span data-i18n="home_content"> > Content</span></p>
-                <form>
+              <p ><b data-i18n="home">Home</b> <span data-i18n="breadcrump_settings"> > Settings</span></p>
+              <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form>
             </div>
@@ -47,20 +49,23 @@
       <div class="general-section">
         <div class="general-question">
             <h2>
-               <span><img src="../assets/svg/content.svg" alt=""></span> <span data-i18n="content_title">Content</span>
+               <span><img src="../assets/svg/setting-icon.svg" alt=""></span> <span data-i18n="settings_title">Settings</span>
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="order_device_question">How do I order an Over TV device?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="install_device_question">How do I install my Over TV device?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="lost_remote_question">I lost my remote control, what should I do?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
                 <li>
-                    <span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="connect_multiple_tvs_question">How to connect Over TV Player to multiple TVs?</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                    <span data-i18n="contact_support_question">How can I contact customer support?</span> <i class="fa-solid fa-arrow-right"></i>
                 </li>
             </ul>
         </div>
@@ -77,8 +82,6 @@
       <div id="footer-container"></div>
     </div>
 </div>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../assets/js/script.js"></script>
