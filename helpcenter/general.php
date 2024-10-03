@@ -54,7 +54,7 @@
               </h2>
               <ul>
                   <li>
-                      <a href="/overtv/faq/how-does-overtv-work-and-how-can-I-start-watching.php"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span></a>
+                      <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.php"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span></a>
                       <i class="fa-solid fa-arrow-right"></i>
                   </li>
                   <li>

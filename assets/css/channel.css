@@ -7,14 +7,14 @@ body {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 	height: 2000px;
-	background-image: url('/overtv/assets/image/home-page-bg.png'); 
+	background-image: url('assets/image/home-page-bg.png'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center top;
   }
   .hero-channel {
     height: 500px;
-    background-image: url('/assets/image/channel-hero-bg.png'); 
+    background-image: url('assets/image/channel-hero-bg.png'); 
     background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center top;
