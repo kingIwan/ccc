@@ -41,7 +41,7 @@ body {
 .hero-text {
     line-height: 47px;
     position: relative;
-    width: 40%;
+    width: 43%;
 }
 .hero-video img:nth-child(1) {
     position: absolute;
@@ -79,9 +79,6 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: var(--white);
-}
-.hero-text{ 
-    width: 40%;
 }
 .ad-section-6 {
     display: flex;
@@ -145,7 +142,7 @@ body {
 }
 .Campaign-section p, 
 .ads-title-under p {
-    color: var(--white);
+    color: var(--grey-text);
     font-size: 14px;
     max-width: 68%;
 }

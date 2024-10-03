@@ -16,7 +16,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <link rel="stylesheet" href="assets/css/swipercss.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
 </head>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
