@@ -44,7 +44,7 @@
           <img src="../assets/svg/x-icon.svg" width="20px"></img>
           <img src="../assets/svg/instagram-icon.svg" width="22px"></img>
           <img src="../assets/svg/linkedin.svg" width="20px"></img>
-          <img src="../assets/svg/youtube-icon.svg" width="28px"></img>
+          <img src="../assets/svg/youtube-icon.svg" width="28px" style="filter: brightness(0.5)"></img>
       </div>
       <p data-i18n="copyright">2024 Over TV © All Rights Reserved.</p>
   </div>

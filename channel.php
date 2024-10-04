@@ -52,7 +52,7 @@
         <div class="video-section">
           <div class="wow fadeInUp" data-wow-delay="0.1s">
             <button
-              class="btn-trns mb-1"
+              class="btn-outline mb-1"
               data-i18n="video_something_for_everyone"
             >
               Something for Everyone
@@ -84,7 +84,7 @@
             </div>
             <div class="content-inner wow fadeInUp" data-wow-delay="0.1s">
               <div class="content-card">
-                <h1 data-i18n="video_content">Content</h1>
+                <h2 data-i18n="video_content">Content</h2>
                 <video width="100%" loop autoplay muted>
                   <source src="assets/image/cover-bg.mp4" type="video/mp4" />
                 </video>
@@ -243,81 +243,220 @@
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
+              <img src="assets/image/underratted.png" width="100%" />
               <div class="card-text-tv">
-                <h4 data-i18n="moretv_title">
-                  Europe
+                <h4 data-i18n="moretv_title_USA">
+                  USA
                 </h4>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
+              <img src="assets/image/messiworldcup.png" width="100%" />
               <div class="card-text-tv">
                 <h4 data-i18n="moretv_title">
-                  Europe
+                Latin America
                 </h4>
               </div>
             </div>
             <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
+              <img src="assets/image/makeorbreak.png" width="100%" />
               <div class="card-text-tv">
                 <h4 data-i18n="moretv_title">
-                  Europe
-                </h4>
-              </div>
-            </div>
-            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
-              <div class="card-text-tv">
-                <h4 data-i18n="moretv_title">
-                  Europe
-                </h4>
-              </div>
-            </div>
-            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
-              <div class="card-text-tv">
-                <h4 data-i18n="moretv_title">
-                  Europe
-                </h4>
-              </div>
-            </div>
-            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
-              <div class="card-text-tv">
-                <h4 data-i18n="moretv_title">
-                  Europe
-                </h4>
-              </div>
-            </div>
-            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
-              <img src="assets/image/dynasty-image.png" width="100%" />
-              <div class="card-text-tv">
-                <h4 data-i18n="moretv_title">
-                  Europe
+                Italy
                 </h4>
               </div>
             </div>
           </div>
         </div>
-        <div class="mb-button">
+        <div class="moretv-section group-2">
+          <h3
+            class="wow fadeInUp"
+            data-wow-delay="0.1s"
+            data-i18n="moretv_section_title2"
+          >
+          Entertainment
+          </h3>
+          <div class="moretv-content">
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="moretv_title_Creators">
+                Creators
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/underratted.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_funny_pets_life">
+                  Funny Pet's Life
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/messiworldcup.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_epic_fails">
+                Epic Fails
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/makeorbreak.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_trivia_quest">
+                Trivia Quest
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moretv-section group-2">
+          <h3
+            class="wow fadeInUp"
+            data-wow-delay="0.1s"
+            data-i18n="creators_food_and_culture"
+          >
+          Food and Culture
+          </h3>
+          <div class="moretv-content">
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_chefs_house">
+                Chef 's House
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/underratted.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_candy_store">
+                Candy Store
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/messiworldcup.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_fashion_channel">
+                Fashion Channel
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/makeorbreak.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_tattoo_tv">
+                Tattoo TV
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moretv-section group-2">
+          <h3
+            class="wow fadeInUp"
+            data-wow-delay="0.1s"
+            data-i18n="creators_sports"
+          >
+          Sports
+          </h3>
+          <div class="moretv-content">
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_sports_mix">
+                Sports Mix
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/underratted.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_adrenaline">
+                Adrenaline
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/messiworldcup.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_over_speed">
+                Over Speed
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/makeorbreak.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_surf_sessions">
+                Surf Sessions
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moretv-section group-2">
+          <h3
+            class="wow fadeInUp"
+            data-wow-delay="0.1s"
+            data-i18n="creators_calm"
+          >
+          Calm
+          </h3>
+          <div class="moretv-content">
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/dynasty-image.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_satisfying">
+                Satisfying
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/underratted.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_diy">
+                DIY
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/messiworldcup.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_stress_reduction">
+                Stress Reduction
+                </h4>
+              </div>
+            </div>
+            <div class="moretv-card wow fadeInUp" data-wow-delay="0.1s">
+              <img src="assets/image/makeorbreak.png" width="100%" />
+              <div class="card-text-tv">
+                <h4 data-i18n="creators_relaxing_rain">
+                Relaxing Rain
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div >
           <button style="width: 100%;" data-i18n="subscription_get_device">Get </button>
         </div>
-        <div class="section-subscription wow fadeInUp" data-wow-delay="0.1s">
+      </div>
+      <div class="footer-subscription">
+        <div class="section-subscription">
           <div class="d-flex header-title">
-            <h4 data-i18n="subscription_improve_experience">
-              Melhore a experiência do seu local com entretenimento de última
-              geração.
-            </h4>
-            <button data-i18n="subscription_get_device">
-              Get Your Free OverTV Device Now!
-            </button>
+              <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>
+              <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
           </div>
         </div>
-        <?php
-        include 'common/footer.php';
-        ?>
       </div>
+      <div class="container">
+          <?php
+            include 'common/footer.php';
+          ?>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

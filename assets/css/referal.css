@@ -183,6 +183,8 @@ body {
 }
 .title .affiliate-button {
     margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .affiliate-container .section-4-title {
     margin-top: 12rem;
@@ -235,10 +237,24 @@ body {
     margin-top: 12% !important;
 }
 .title-break {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
-.reward-text h2 {
+.title-break b {
+    font-size: 56.58px;
+    font-weight: 800;
+    line-height: 56.58px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.title-break span {
+    font-size: 56.58px !important;
+    font-weight: 800;
+    line-height: 56.58px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.reward-text b {
     font-size: 85.84px;
     font-weight: 500;
     line-height: 84.12px;
@@ -249,10 +265,12 @@ body {
     width: 34%;
 }
 .reward-text p {
-    font-size: 18.54px;
+    font-family: Inter;
+    font-size: 18.87px;
     font-weight: 400;
-    line-height: 32.19px;
+    line-height: 26.94px;
     color: var(--white);
+    opacity: 66%;
     padding: 20px 0px 25px 0px;
 }
 .affiliate-rewards .affiliate-button {

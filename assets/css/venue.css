@@ -15,6 +15,7 @@ body {
   
 :root {
 	--white: #ffffff;
+    --dark-grey: #9b9b9b;
     --venu-card: #1A1A1A;
 }
 .overtv-advertise {
@@ -48,8 +49,8 @@ body {
     width: 60%;
 }
 .venue-video img:nth-child(1) {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 .venue-text button {
     padding:  10px 15px 10px 15px;
@@ -67,12 +68,15 @@ body {
     align-items: center ;
 }
 .venue-text h1 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 46.09px;
+    font-weight: 600;
+    line-height: 56.79px;
+    letter-spacing: -0.02em;
+    text-align: left;
     color: var(--white);
 }
 .venue-text{ 
-    width: 50%;
+    width: 55%;
 }
 .card-ipad-container, .ipad-card {
     display: none;
@@ -286,23 +290,25 @@ body {
     text-align: start;
 }
 .venue-section-2 p {
-    padding-top: 20px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 39px;
-
+    line-height: 32px;
+    text-align: center;
+    color: var(--dark-grey);
 }
 .venue-card p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     padding-top: 0px;
+    text-align: start;
     color: #7A7A7A;
 }
 .flex-card-tex p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    text-align: start;
     color: #7A7A7A;
 
 }

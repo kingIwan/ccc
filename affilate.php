@@ -26,7 +26,8 @@
     <div class="wrapper">
         <div class="container affiliate-container">
             <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="title-break"><b data-i18n="turn_referrals">Turn Referrals</b> <span data-i18n="into_revenue">into Revenue</span></h1>
+                <h1 class="title-break">
+                    <b data-i18n="turn_referrals">Turn Referrals</b> <span data-i18n="into_revenue">into Revenue</span></h1>
                 <div class="title-under">
                     <p data-i18n="business_network_description">Turn your business network into a source of income. As
                         our distribution partner, you’ll profit
@@ -42,7 +43,7 @@
             </div>
             <div class="section-4" id="section-4">
                 <div class="section-4-title wow fadeInUp">
-                    <button class="scale" data-i18n="Benefits">Benefits</button>
+                    <button class="btn-outline mb-1" data-i18n="Benefits">Benefits</button>
                     <h1 data-i18n="start_earning_title">Start Earning Today as a Distribution Partner</h1>
                     <p data-i18n="earning_resources_description">Everything you need to succeed with resources and
                         expert materials to connect with new venues, ensuring steady and growing earnings.</p>
@@ -570,11 +571,11 @@
                             </div>
                             <div class="accordion-item">
                                 <button id="accordion-button-4" aria-expanded="false">
-                                    <span class="accordion-title" data-i18n="faq_install_title4">How often are my earnings updated?</span>
+                                    <span class="accordion-title" data-i18n="faq_install_title3">How often are my earnings updated?</span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="accordion-content">
-                                    <p data-i18n="faq_install_title3">
+                                    <p data-i18n="faq_install_description3">
                                     We calculate commissions in real-time, updating your balance regularly, but there may be a delay of up to 24 hours due to processing. Check your dashboard daily to keep track of updates.                                    </p>
                                 </div>
                             </div>

@@ -183,16 +183,22 @@
         </div>
     </div>
       <!-- End Section 7 -->
-       <div class="section-subscription hide wow fadeInUp">
-        <div class="d-flex header-title">
-          <h4 data-i18n="login_sub">Enhance your venue’s experience with cutting-edge entertainment.</h4>
-          <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
-        </div>
-       </div>
-       <?php
-      include 'common/footer.php';
-      ?>
+      
     </div>
+    <div class="footer-subscription">
+        <div class="section-subscription">
+          <div class="d-flex header-title">
+              <h4 data-i18n="login_sub">Enhance your venue’s experience with cutting-edge entertainment.</h4>
+              <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
+          </div>
+        </div>
+      </div>
+       <!-- footer -->
+        <div class="container">
+          <?php
+            include 'common/footer.php';
+          ?>
+        </div>
   </div>
 
 
@@ -202,20 +208,6 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script>
-    fetch('common/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading header:', error));
-    fetch('common/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
   <script>
 
 

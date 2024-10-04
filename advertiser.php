@@ -28,7 +28,7 @@
         <div class="hero-text wow fadeInUp" data-wow-delay="0.1s">
           <span data-i18n="hero_monopolize_attention">Monopolize Attention.</span>
           <h1 data-i18n="hero_advertise_where_competitors">Advertise Where Your Competitors Can’t Compete</h1>
-          <div class="d-flex align-center gap-1 mt-1">
+          <div class="d-flex align-center gap-1 mt-2">
               <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
               <p data-i18n="hero_future_arrived">See why the future already arrived</p>
           </div>
@@ -53,36 +53,58 @@
             <button class="site-btn" data-i18n="hero_advertise_with_over">Advertise with Over</button>
         </div>
         <div class="d-flex insights-section w-100 hide">
-            <div class="w-50">
-                <div class="active-campaign campaign-manage">
-                <div class="d-flex align-center gap-1">
-                    <img src="assets/svg/Campaign-notification.svg" width="25px" class="active-svg">
-                    <p data-i18n="ads_campaign_management">Campaign management</p>
+          <div class="accordion-box">
+            <div class="ads-accordion">
+              <div class="ads-accordion-item active">
+                <div class="ads-accordion-header">
+                <img src="assets/svg/Campaign-notification.svg" width="33px" class="active-svg">
+                <p data-i18n="ads_campaign_management">Campaign management</p>
                 </div>
-                <div class="campain-text">
-                <b data-i18n="ads_campaign_title">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</b>
+                <div class="ads-accordion-content">
+                  <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
                 </div>
-                </div>
-                <div class="d-flex align-center gap-1 p-15x">
-                    <img src="assets/svg/Campaign-notification.svg" width="25px">
+              </div>
+              <div class="ads-accordion-item">
+                <div class="ads-accordion-header">
+                <img class="active-svg" src="assets/svg/Campaign-notification.svg" width="33px">
                     <p data-i18n="ads_efficient_setup">Efficient setup</p>
                 </div>
-                <div class=" d-flex align-center gap-1 p-15x">
-                    <img src="assets/svg/target-icon.svg" width="25px">
-                    <p data-i18n="ads_total_targeting">Total Targeting</p>
+                <div class="ads-accordion-content">
+                  <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
                 </div>
-                <div class=" d-flex align-center gap-1 p-15x">
-                    <img src="assets/svg/budget-icon.svg" width="25px">
-                    <p data-i18n="ads_for_all_budgets">For all budgets</p>
+              </div>
+              <div class="ads-accordion-item">
+                <div class="ads-accordion-header">
+                <img src="assets/svg/target-icon.svg" width="33px" class="active-svg">
+                <p data-i18n="ads_total_targeting">Total Targeting</p>
                 </div>
-                <div class="d-flex align-center gap-1 p-15x">
-                    <img src="assets/svg/calendar-icon.svg" width="25px">
-                    <p data-i18n="ads_programmatic_buying">Programmatic Buying</p>
+                <div class="ads-accordion-content">
+                  <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
                 </div>
+              </div>
+              <div class="ads-accordion-item">
+                <div class="ads-accordion-header">
+                <img src="assets/svg/budget-icon.svg" width="33px" class="active-svg">
+                <p data-i18n="ads_for_all_budgets">For all budgets</p>
+                </div>
+                <div class="ads-accordion-content">
+                  <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                </div>
+              </div>
+              <div class="ads-accordion-item">
+                <div class="ads-accordion-header">
+                <img src="assets/svg/calendar-icon.svg" width="33px" class="active-svg">
+                <p data-i18n="ads_programmatic_buying">Programmatic Buying</p>
+                </div>
+                <div class="ads-accordion-content">
+                  <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                </div>
+              </div>
             </div>
-            <div class=" image-insight-container">
-                <img class="image-insight" src="assets/image/insight-image.png">
-            </div>
+          </div>
+          <div class=" image-insight-container">
+              <img class="image-insight" src="assets/image/insight-image.png">
+          </div>
         </div>
         <div class="hide-for-desktop">
             <div class="work-section">
@@ -285,22 +307,46 @@
       </div>
     </div>
       </div>
-      <div class="section-subscription">
-        <div class="d-flex header-title">
-            <h4 data-i18n="subscription_advertiser">Place your brand in the spotlight by being the first to advertise in future</h4>
-            <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
+    </div>
+    <div class="footer-subscription">
+        <div class="section-subscription">
+          <div class="d-flex header-title">
+              <h4 data-i18n="subscription_advertiser">Place your brand in the spotlight by being the first to advertise in future</h4>
+              <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
+          </div>
         </div>
       </div>
-      <?php
-        include 'common/footer.php';
-        ?>
-    </div>
+    <div class="container">
+        <?php
+      include 'common/footer.php';
+      ?>
+        </div>
+  </div>
+  </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/swiper.min.js"></script>
+  <script>
+    // Select all accordion items
+    const accordionItems = document.querySelectorAll('.ads-accordion-item');
+
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.ads-accordion-header');
+      
+      header.addEventListener('click', () => {
+        // Close all other accordion items
+        accordionItems.forEach(i => {
+          if (i !== item) i.classList.remove('active');
+        });
+
+        // Toggle active class on the clicked item
+        item.classList.toggle('active');
+      });
+    });
+  </script>
   <script>
     var swiper = new Swiper(".text-slider", {
       slidesPerView: 4,

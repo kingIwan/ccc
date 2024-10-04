@@ -32,15 +32,13 @@
       </div>
       <div class="section-1">
         <div class="section-1-title wow fadeInUp" data-wow-delay="0.3s">
-          <img src="assets/image/section-1-logo1.png" width="15%"></img>
           <img class="overtv-overlays" src="assets/image/section-1-logo1.png" width="15%"></img>
-          <!-- <img class="hero-bg" src="assets/image/hero-bg.png" alt=""> -->
           <video width="" height="" loop autoplay muted>
             <source src="assets/image/cover-bg.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="section-1-title my-2 mt-md-4">
-          <button class="btn-trns mb-1" data-i18n="about_us_button">About us</button>
+        <div class="section-2-title my-2 mt-md-4">
+          <button class="btn-outline mb-1" data-i18n="about_us_button">About us</button>
           <h1 class="wow fadeInUp" data-i18n="make_every_screen_work">Make Every Screen Work for You</h1>
           <p class="wow fadeInUp" data-i18n="channels_cater">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
         </div>
@@ -200,7 +198,7 @@
 
       </div>
       <div class="section-3">
-        <button class="scale wow fadeInUp" data-i18n="our_channels_button">Our Channels</button>
+        <button class="btn-outline wow fadeInUp mb-1" data-i18n="our_channels_button">Our Channels</button>
         <div class="section-3-title">
             <h1 class="wow fadeInUp" data-i18n="discover_channel_title">Discover Our Diverse Channel Lineup</h1>
             <p class="wow fadeInUp" data-i18n="discover_channel_description">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
@@ -256,7 +254,9 @@
       </div>
       <div class="section-6">
         <div class="section-6-left">
-          <button class="scale wow fadeInUp" data-i18n="our_channels_button">Our channels</button>
+          <div>
+          <button class="btn-outline wow fadeInUp" data-i18n="more_benefits">More Benefits</button>
+          </div>
           <h1 class="wow fadeInUp" data-i18n="tv_reimagined_title">TV reimagined for business</h1>
           <p class="wow fadeInUp" data-i18n="business_description_1">Over® offers a comprehensive suite of short-form, audio-optional channels designed for various business settings.</p>
           <p class="wow fadeInUp" data-i18n="business_description_2">Our specialized Over Player provides access to an extensive library of entertainment, ranging from the latest news and sports updates to engaging viral videos and interactive trivia.</p>
@@ -1007,7 +1007,9 @@
         </div>
       </div>
       <div class="section-7">
-        <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
+        <div class="div">
+        <button class="btn-outline wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
+        </div>
         <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
             <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
@@ -1041,7 +1043,7 @@
       <div class="flip-on-mobile">
         <div class="section-8">
           <div class="faq-btn">
-            <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
+            <button class="btn-outline wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
         </div>
         <div class="faq-title">
           <h1 data-i18n="faqs_title">FAQs</h1>
@@ -1084,7 +1086,7 @@
               </div>
               <div class="accordion-item">
                   <button id="accordion-button-4" aria-expanded="false">
-                      <span class="accordion-title" data-i18n="faq_promote_events_title">Simple! By keeping Over TV active for at least 40 hours per month, you start receiving a percentage of the revenue from ads displayed in your establishment.</span>
+                      <span class="accordion-title" data-i18n="faq_promote_events_title">Can I stream Over at my home?</span>
                       <span class="icon" aria-hidden="true"></span>
                   </button>
                   <div class="accordion-content">
@@ -1109,17 +1111,21 @@
       </div>
     </div>
       </div>
-      <div class="section-subscription">
-        <div class="d-flex header-title">
-            <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>
-            <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
+    </div>
+      <div class="footer-subscription">
+        <div class="section-subscription">
+          <div class="d-flex header-title">
+              <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>
+              <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
+          </div>
         </div>
       </div>
-      <!-- footer -->
-      <?php
-      include 'common/footer.php';
-      ?>
-    </div>
+       <!-- footer -->
+        <div class="container">
+          <?php
+            include 'common/footer.php';
+          ?>
+        </div>
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
