@@ -133,13 +133,13 @@ button{
     background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
     border: none;
     padding: 13px 18px;
-    font-size: 11.14px;
+    font-size: 12.8px;
     color: #ffffff;
     display: flex;
     cursor: pointer;
 	white-space: nowrap;
 	align-items: center;
-	font-weight: 500;
+	font-weight: 700;
 }
 .overtv-overlays {
 	position: absolute;
@@ -490,18 +490,20 @@ margin-bottom: 30px;
 	  padding-right: 7%; */
   }
   .wrapper .container .title h1{
-	  font-size: 73px;
-	  font-weight: 700;
-	  line-height: 87.37px;
-	  text-align: center;
-	  color: #ffffff;
-	  margin: 0;
+		font-size: 73.64px;
+		font-weight: 800;
+		line-height: 73.64px;
+		letter-spacing: -0.03em;
+		text-align: center;
+		color: #ffffff;
+		margin: 0;
 	  
   }
   .wrapper .container .title span{
-	  font-size: 73px;
-	  font-weight: 700;
-	  line-height: 70.37px;
+	font-size: 73.64px;
+	font-weight: 800;
+	line-height: 73.64px;
+	letter-spacing: -0.03em;
 	  text-align: center;
 	  background: linear-gradient(0deg, #146EF5	  0%, #60EFFF 70.76%);
 	  background-clip: text;
