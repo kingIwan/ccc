@@ -335,6 +335,7 @@ h1, p {
     }
     .mb-button {
         display: flex;
+        justify-content: center;
     }
     .mobile-service-section {
         margin-top: 20px;
@@ -417,7 +418,7 @@ h1, p {
         height: 85px;
     }
     .moretv-card { 
-        max-width: 250px;
+        max-width: 180px;
     }
     .text-center {
         display: flex;
@@ -448,6 +449,7 @@ h1, p {
     .video-content h1{
         font-size: 31.23px;
         font-weight: 600;
+        line-height: 34px;
     }
     .sevice-text h1 {
         font-size: 12px;

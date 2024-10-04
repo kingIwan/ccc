@@ -392,9 +392,9 @@ margin-bottom: 30px;
 	justify-content: flex-end;
   }
   .mb-button {
-	width: 112px;
+	/* width: 112px;
 	height: 20px;
-	font-size: 8px;
+	font-size: 8px; */
   }
   .hamburger-menu {
 	height: 2.5rem;
@@ -439,7 +439,7 @@ margin-bottom: 30px;
   #check {
 	position: absolute;
 	top: 50%;
-	right: 1.5rem;
+	/* right: 1.5rem; */
 	transform: translateY(-50%);
 	width: 2.5rem;
 	height: 2.5rem;
@@ -2204,6 +2204,8 @@ display: none;
   
 	.nav-links > ul {
 	  flex-direction: column;
+	  padding-left: 5%;
+	padding-top: 3%;
 	}
   
 	.nav-link {
@@ -2970,6 +2972,15 @@ display: none;
 	.section-10-header{
 		padding-bottom: 20px;
 	}
+	.btn-outline {
+		padding: 3px 10px 3px 10px;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 11px;
+		letter-spacing: -0.08802831918001175px;
+		text-align: center;
+
+	}
   }
   @media (max-width: 768px){
 	.section-1-title img:nth-child(2) {
@@ -2980,6 +2991,14 @@ display: none;
 	}
 	.overtv-overlays {
 		top: 112px;
+	}
+	.contact-button {
+		padding: 7px 8px 7px 8px;
+		font-size: 8.71px;
+		font-weight: 700;
+		line-height: 4.36px;
+		letter-spacing: -0.03em;
+		border-radius: 16px;
 	}
 	.overtv-overlays img {
 		width: 71px;
@@ -2995,12 +3014,27 @@ display: none;
 	.section-subscription {
 		display: none;
 	}
+	.helpcenter-footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center !important;
+		gap: 15px
+	}
 	.section-8 h1 {
 		font-size: 20px;
 		font-weight: 600;
 		line-height: 23.35px;
 		letter-spacing: -0.02em;
 		text-align: center;
+	}
+	.btn-outline {
+		padding: 3px 10px 3px 10px;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 11px;
+		letter-spacing: -0.08802831918001175px;
+		text-align: center;
+
 	}
 	.section-8 p {
 		font-size: 12px;
@@ -3272,6 +3306,31 @@ display: none;
 		margin: 0 auto;
 		overflow: hidden;
 		border-radius: 15px;
+	}
+	.contact-button {
+		padding: 14px 17px 14px 17px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 8px;
+		letter-spacing: -0.03em;
+		text-align: center;
+		border-radius: 12px;
+	}
+	.header-title h4 {
+		font-size: 13.36px;
+		font-weight: 400;
+		line-height: 17.36px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+	.header-title button {
+		padding: 7px 16px 7px 16px;
+		border-radius: 10px;
+		font-size: 10.02px;
+		font-weight: 700;
+		line-height: 10.02px;
+		text-align: center;
+
 	}
 	.logo-container {
 		margin-top: 8px;

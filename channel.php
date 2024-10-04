@@ -440,8 +440,8 @@
             </div>
           </div>
         </div>
-        <div >
-          <button style="width: 100%;" data-i18n="subscription_get_device">Get </button>
+        <div class="mb-button">
+          <button style="width: 75%;" data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
         </div>
       </div>
       <div class="footer-subscription">
