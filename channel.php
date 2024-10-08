@@ -34,6 +34,9 @@
     <!-- End Header -->
     <div class="wrapper">
       <div class="hero-channel">
+          <video class="bg-video" width="" height="" loop autoplay muted>
+            <source src="assets/image/channel-bg.mp4" type="video/mp4">
+          </video>
         <div class="container">
           <div class="hero-content wow fadeInUp" data-wow-delay="0.1s">
             <img src="assets/svg/white-logo.svg" alt="Logo" />
@@ -440,9 +443,9 @@
             </div>
           </div>
         </div>
-        <div class="mb-button">
+      </div>
+      <div class="mb-button">
           <button style="width: 75%;" data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
-        </div>
       </div>
       <div class="footer-subscription">
         <div class="section-subscription">

@@ -6,12 +6,13 @@ body {
 	color: #666666;
 	font-family: "Poppins", sans-serif;
 	margin: 0;
-	height: 3000px;
-	background-image: url('/assets/image/home-page-bg.png'); 
+	height: 100vh;
+	background-image: url('/assets/image/index-bg.png'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
-	background-position: center top;
-  }
+	background-position: center -230px; 
+}
+
   
 :root {
 	--white: #ffffff;
@@ -50,6 +51,17 @@ body {
 }
 .pb-1 {
 	padding-bottom: 1rem !important;
+}
+.index-wrapper {
+	overflow-x: clip;
+}
+.hero-bg {
+	position: absolute;
+	bottom: 0;
+	z-index: -12;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .mt-29 {
 	margin-top: 29rem;
@@ -132,7 +144,7 @@ button{
     opacity: 0px;
     background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
     border: none;
-    padding: 13px 18px;
+    padding: 11.68px 14.01px;
     font-size: 12.8px;
     color: #ffffff;
     display: flex;
@@ -167,19 +179,21 @@ button{
 	opacity: 0px;
 	background-color: #131313 !important;
 	background: #131313 !important;
-	outline: 1px solid rgba(255, 255, 255, 1);
+	outline: 0.87px solid rgba(255, 255, 255, 1);
 	width: 90px;
 	gap: 7.96px;
 	border-radius: 6.36px 0px 0px 0px;
 	opacity: 0px;
-	border-radius: 10px;
+	border-radius: 9.6px;
     border: none;
-	padding: 13px 27px 13px 27px;
+	padding: 11.68px 27px 11.68px 27px;
 	color: #ffffff;
 	font-size: 11.14px;
 	cursor: pointer;
 	font-weight: 500;
+	margin-left: -14px;
 }
+
   header {
 	/* position: sticky; */
 	top: 0px;
@@ -392,9 +406,17 @@ margin-bottom: 30px;
 	justify-content: flex-end;
   }
   .mb-button {
-	/* width: 112px;
-	height: 20px;
-	font-size: 8px; */
+    display: none;
+	}
+  .mb-button  button {
+	background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
+	padding: 7px 15px;
+	font-size: 13.4px;
+	font-weight: 600;
+	line-height: 18.68px;
+	color: var(--white);
+	text-align: center;
+	border-radius: 9.62px;
   }
   .hamburger-menu {
 	height: 2.5rem;
@@ -1984,7 +2006,6 @@ margin-bottom: 30px;
 	 transition: all 0.25s ease-out;
 	 color: #fff;
    }
-   
    .faq-drawer::after {
 	 border-style: solid;
 	 border-width: 1px 1px 0 0;
@@ -3007,6 +3028,10 @@ display: none;
 		height: 71px;
 
 	}
+	body { 
+		background-image: url('/assets/image/iphone-index-bg.png'); 
+		background-position: center -1px;
+	}
 	.wrapper .container .title p {
 		font-size: 14px;
 		font-weight: 400;
@@ -3022,6 +3047,12 @@ display: none;
 		justify-content: center !important;
 		gap: 15px
 	}
+	.hero-bg img {
+		width: 100%;
+	}
+	.hero-bg {
+		width: 100%;
+	}
 	.section-8 h1 {
 		font-size: 20px;
 		font-weight: 600;
@@ -3029,6 +3060,10 @@ display: none;
 		letter-spacing: -0.02em;
 		text-align: center;
 	}
+	.mb-button {
+        display: flex;
+        justify-content: center;
+    }
 	.btn-outline {
 		padding: 3px 10px 3px 10px;
 		font-size: 8px;
@@ -3353,11 +3388,20 @@ display: none;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.8) 71%, #000000 100%);
 		pointer-events: none;
 	}
+	.hero-bg {
+		width: 100%;
+	}
+	.hero-bg img {
+		width: 100%;
+	}
 	.custom-revenue-image-container {
 		position: relative;
 		height: 100%;
 	}
-	
+	body { 
+		background-image: url('/assets/image/iPad-index-bg.png'); 
+		background-position: center -1px;
+	}
 	.custom-revenue-gradient-image {
 		width: 100%;
 		height: 100%;

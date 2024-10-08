@@ -21,7 +21,7 @@
     include 'common/header.php';
     ?>
   <!-- Body -->
-  <div class="wrapper">
+  <div class="wrapper index-wrapper">
     <div class="container">
       <div class="title wow fadeInUp" data-wow-delay="0.1s">
         <h1 data-i18n="monetize_your_screens">Monetize Your Screens,</h1>
@@ -31,7 +31,10 @@
         </div>
       </div>
       <div class="section-1">
-        <div class="section-1-title wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-1-title wow fadeInUp" data-wow-delay="0.1s">
+          <div class="hero-bg">
+            <img src="assets/image/Rectangle.png"></img>
+          </div>
           <img class="overtv-overlays" src="assets/image/section-1-logo1.png" width="15%"></img>
           <video width="" height="" loop autoplay muted>
             <source src="assets/image/cover-bg.mp4" type="video/mp4">
@@ -1113,6 +1116,9 @@
       </div>
     </div>
       <div class="footer-subscription">
+      <div class="mb-button">
+          <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
+      </div>
         <div class="section-subscription">
           <div class="d-flex header-title">
               <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>

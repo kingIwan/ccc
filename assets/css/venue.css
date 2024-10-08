@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body {
-	background: #131313;
-	color: #666666;
-	font-family: "Poppins", sans-serif;
-	margin: 0;
-	height: 110px !important;
-	background-image: url('/assets/image/home-page-bg.png'); 
-	background-size: cover; 
-	background-repeat: no-repeat;
-	background-position: center top;
-  }
-  
+body.venue-body {
+    background: #131313;
+    color: #666666;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-image: url('/assets/image/index-bg.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -230px;
+}
 :root {
 	--white: #ffffff;
     --dark-grey: #9b9b9b;
@@ -51,6 +50,7 @@ body {
 .venue-video img:nth-child(1) {
     height: 100%;
     width: 100%;
+    margin-left: 20%;
 }
 .venue-text button {
     padding:  10px 15px 10px 15px;
@@ -115,9 +115,6 @@ body {
     width: 210px;
     height: 200px;
 }
-.venue-section-2 {
-    
-}
 .ads-title-under{
     display: flex;
     align-items: center;
@@ -148,9 +145,11 @@ body {
     width: 465px;
 }
 .hero-list li{
-    line-height: 24px;
+    font-size: 20.52px;
+    font-weight: 400;
+    line-height: 31.92px;
     display: flex;
-    width: 80%;
+    width: 100%;
     color: var(--white);
 }
 .listing {
@@ -325,6 +324,30 @@ body {
     align-items: end;
     margin-top: 20px;
 }
+@media only screen and (min-width: 1420px) and (max-width: 1920px) {
+    .venue-video img:nth-child(1) {
+        top: 200px;
+        right: 0;
+        position: absolute;
+        width: 834.48px;
+        height: 621.73px;
+    }
+    .venue-section-2 {
+        margin-top: 15rem;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1420px) {
+    .venue-video img:nth-child(1) {
+        top: 200px;
+        right: 0;
+        position: absolute;
+        width: 645px;
+        height: 621.73px;
+    }
+    .venue-section-2 {
+        margin-top: 13rem;
+    }
+}
 @media (max-width: 810px){
     .wrapper .container .ads-title span{
 		font-size: 28px;
@@ -361,6 +384,7 @@ body {
     }
     .venue-video img:nth-child(1) {
         width: 100%;
+        margin-left: 0px;
         height: 100%;
     }
     .work-title img {
@@ -472,8 +496,9 @@ body {
         display: flex;
         align-items: center;
     }
-    .venue-video img:nth-child(1) { 
+    .venue-video img:nth-child(1) {
         width: 100%;
+        margin-left: 0px;
         height: 100%;
     }
     .hero-video video {
@@ -678,6 +703,7 @@ body {
     .venue-video img:nth-child(1) {
         margin-top: 2rem;
         border-radius: 12.02px;
+        margin-left: 0px;
     }
     .hero-video video { 
         width: 78%;

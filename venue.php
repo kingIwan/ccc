@@ -7,8 +7,8 @@
   <link href="assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
-  <link href="assets/css/advertisers.css" rel="stylesheet">
   <link href="assets/css/venue.css" rel="stylesheet">
+  <link href="assets/css/advertisers.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/swiper.min.css" />
 </head>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-<body>
+<body class="venue-body">
   <!-- ======= Header ======= -->
   <?php
     include 'common/header.php';
@@ -26,7 +26,7 @@
   <div class="wrapper">
     <div class="container hero-section">
       <div class="venue-container">
-        <div class="venue-text wow fadeInUp" data-wow-delay="0.1s">
+        <div class="venue-text">
           <h1 data-i18n="welcome_message">You’re One Step Ahead of the Competition!</h1>
           <ul class="hero-list">
               <div class="listing">
@@ -52,7 +52,7 @@
               <button data-i18n="go_to_dashboard">Go to the Dashboard</button>
           </div>
       </div>
-        <div class="venue-video venue-hero-img wow fadeInUp" data-wow-delay="0.3s">
+        <div class="venue-video venue-hero-img">
           <img src="assets/image/venue-background.png"></img>
         </div>
       </div>
@@ -186,6 +186,9 @@
       
     </div>
     <div class="footer-subscription">
+    <div class="mb-button">
+          <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
+      </div>
         <div class="section-subscription">
           <div class="d-flex header-title">
               <h4 data-i18n="login_sub">Enhance your venue’s experience with cutting-edge entertainment.</h4>
