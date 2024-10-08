@@ -310,6 +310,10 @@ h1, p {
         font-weight: 400;
         line-height: 18px;
     }
+    body {
+        background-image: url('/assets/image/ipad-bg.png') !important;
+        background-position: center 450px !important; 
+    }
     .text-center h1 {
         font-size: 21.42px;
         font-weight: 600;

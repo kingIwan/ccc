@@ -7,7 +7,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 	height: 3000px;
-	background-image: url('assets/image/home-page-bg.png'); 
+	background-image: url('assets/image/home-page-bg.png') !important; 
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -174,6 +174,14 @@ body {
     border: 8px solid #020202;
     object-fit: cover;
     background-color: black;
+}
+.affiliate-button a {
+    font-size: 14.78px;
+    font-weight: 400;
+    line-height: 14.78px;
+    text-align: center;
+    opacity: 0.9;
+
 }
 .affiliate-video img:nth-child(1) {
     position: absolute;
@@ -398,11 +406,41 @@ body {
         bottom: -5px;
         left: 29px;
     }
+    .title-break b {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+    .affiliate-container .title-break span {
+        font-size: 30px !important;
+        font-weight: 800 !important;
+        line-height: 30px !important;
+        letter-spacing: -0.03em !important;
+        text-align: center !important;
+    }
+    
     .affiliate-container .section-4-title {
         margin-top: 5rem;
     }
+    .reward-text b {
+        font-size: 24.9px;
+        font-weight: 600;
+        line-height: 29.88px;
+        letter-spacing: -0.03em;
+        text-align: left;
+    }
 }
-
+@media (max-width: 810px) {
+   .affiliate-container .title-break span {
+        font-size: 30px !important;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+}
 @media (min-width: 769px) and (max-width: 1080px) {
     .section-4-card-group {
         display: grid;
@@ -424,7 +462,14 @@ body {
         padding: 20px;
     }
     .reward-text h2 {
+        max-width: 500px;
+    }
+    .reward-text b {
         font-size: 48px;
+        font-weight: 600;
+        line-height: 57.6px;
+        letter-spacing: -0.03em;
+        text-align: left;
     }
     .affiliate-rewards .affiliate-button {
         width: auto;

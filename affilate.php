@@ -47,7 +47,7 @@
                     <h1 data-i18n="start_earning_title">Start Earning Today as a Distribution Partner</h1>
                     <p data-i18n="earning_resources_description">Everything you need to succeed with resources and
                         expert materials to connect with new venues, ensuring steady and growing earnings.</p>
-                    <button class="affiliate-button" data-i18n="get_started_button"><strong>Get started</strong></button>
+                    <button class="affiliate-button" data-i18n="invite_friend"><strong>Invite a friend</strong></button>
                 </div>
                 <div class="section-4-card-group">
                     <div class="section-4-card wow fadeInUp">
@@ -148,7 +148,7 @@
                     </h2>
                     <p data-i18n="revenue_share_description">Earn a guaranteed 5% on every ad displayed at any venue you
                         connect. The more screens, the more ads, the more you earn</p>
-                    <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong> </button>
+                    <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong><a data-i18n="its_free"></a> </button>
                 </div>
                 <div class="rewards-img wow fadeInUp" data-wow-delay="0.1s">
                     <img src="assets/image/reward-section.png" alt="">

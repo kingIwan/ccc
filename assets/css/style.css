@@ -1068,6 +1068,7 @@ margin-bottom: 30px;
 		flex-direction: column;
 		color: #ffffff;
 		justify-self: center;
+		justify-content: center;
 		align-items: center;
 	}
 	.section-4-card-icon{
