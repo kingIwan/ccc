@@ -138,23 +138,30 @@
           <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
             <h3 data-i18n="popular_articles_title">Popular Articles</h3>
             <ul>
-              <li data-i18n="article_1">
-                How to Use the Carousel to Add an Image Slideshow to Your
-                Startup Template
+              <li>
+                <a href="" data-i18n="article_1">How to Use the Carousel to Add an Image Slideshow to Your
+                Startup Template</a>
               </li>
-              <li data-i18n="article_2">
+              <li>
+                <a href="" data-i18n="article_2">
                 How to Customize WooCommerce Email Templates Using a Postcards
-                Email Template
+                Email Template </a>
               </li>
-              <li data-i18n="article_3">
+              <li>
+              <a href=""  data-i18n="article_3">
                 How to Upload Your Startup Website to GitHub Pages
+              </a>
               </li>
-              <li data-i18n="article_4">
+              <li>
+              <a href=""  data-i18n="article_4">
                 How to Add a Page Scroll Progress Bar at the Top of Your Startup
                 Webpage
+              </a>
               </li>
-              <li data-i18n="article_5">
+              <li >
+              <a href=""  data-i18n="article_5">
                 How to Send a Postcards Email Template with Gmail
+              </a>
               </li>
             </ul>
             <h3 class="support-text" data-i18n="need_support_title">
