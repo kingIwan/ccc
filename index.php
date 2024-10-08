@@ -135,7 +135,7 @@
                 <h1 data-i18n="earn_money_title">Earn Money Every Time an Ad Plays</h1>
                 <p  data-i18n="earn_money_description" class="block-py-1">Imagine if every time an ad played on your TV, you earned money. With Over Device,
                   that’s exactly what happens. </p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
+                <p class="block-py-1"><img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
                     Stream: </strong> <a data-i18n="passive_income_description"> Earn a percentage of the revenue from every ad displayed—effortless revenue, no
                       extra work.</a></p>
               </span>
@@ -143,7 +143,7 @@
                 <h1 data-i18n="earn_money_title">Earn Money Every Time an Ad Plays</h1>
                 <p class="block-py-1" data-i18n="earn_money_description">Imagine if every time an ad played on your TV, you earned money. With Over Device,
                   that’s exactly what happens.</p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
+                <p class="block-py-1"><img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
                     Stream:</strong> <a data-i18n="passive_income_description">Earn a percentage of the revenue from every ad displayed—effortless revenue, no
                   extra work.</a></p>
               </span>
@@ -155,8 +155,7 @@
                 <h1 data-i18n="match_vibe_title">Match the Vibe with Curated Channels</h1>
                 <p class="block-py-1" data-i18n="match_vibe_description">Over ensures your venue’s screens serve as an extension of your brand, creating a perfect environment that customers love.</p>
                 <p class="block-py-1">
-                    <img class="check-icon" src="assets/svg/tick-icon.svg">
-                    <strong data-i18n="curated_channels_title">60+ Curated Channels:</strong>
+                    <img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">60+ Curated Channels:</strong>
                     <a data-i18n="curated_channels_description"> Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to bars.</a>
                 </p>
             </span>
@@ -164,7 +163,7 @@
                 <h1 data-i18n="match_vibe_title">Match the Vibe with Curated Channels</h1>
                 <p class="block-py-1" data-i18n="match_vibe_description">Over ensures your venue’s screens serve as an extension of your brand, creating a
                   perfect environment that customers love.</p>
-                <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">Passive Income
+                <p class="block-py-1"><img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">Passive Income
                     Stream:</strong><a data-i18n="curated_channels_description">Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to
                   bars.</a></p>
               </span>
@@ -181,7 +180,7 @@
               <h2 data-i18n="earn_money_title">Earn Money Every Time an Ad Plays</h2>
               <p data-i18n="earn_money_description">Imagine if every time an ad played on your TV, you earned money. With Over Device, that’s exactly what
                 happens.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
+              <p class="block-py-1"><img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="passive_income_title">Passive Income
                   Stream:</strong> <a data-i18n="passive_income_description">Earn a percentage of the revenue from every ad displayed—effortless revenue, no extra
                 work.</a></p>
             </div>
@@ -192,7 +191,7 @@
               <h2 data-i18n="match_vibe_title">Match the Vibe with Curated Channels</h2>
               <p data-i18n="match_vibe_description">Over ensures your venue’s screens serve as an extension of your brand, creating a perfect environment
                 that customers love.</p>
-              <p class="block-py-1"><img class="check-icon" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">60+ Curated
+              <p class="block-py-1"><img class="check-icon" style="width:11.48px" src="assets/svg/tick-icon.svg"><strong data-i18n="curated_channels_title">60+ Curated
                   Channels:</strong> <a data-i18n="curated_channels_description">Over offers 60+ channels tailored to match your venue's unique vibe, from cafés to
                 bars.</a></p>
             </div>
