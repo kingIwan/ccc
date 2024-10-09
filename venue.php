@@ -311,7 +311,7 @@
       }
     }
   </script>
-  <script>
+  <!-- <script>
     fetch('common/header.html')
     .then(response => response.text())
     .then(data => {
@@ -324,8 +324,8 @@
             document.getElementById('footer-container').innerHTML = data;
         })
         .catch(error => console.error('Error loading footer:', error));
-  </script>
-  <script>
+  </script> -->
+  <!-- <script>
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
       var captcha = document.getElementById('recaptcha');
@@ -350,7 +350,7 @@
         alert('reCAPTCHA marked');
       }
     });
-  </script>
+  </script> -->
   <!-- Start of overtv Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>
 <!-- End of overtv Zendesk Widget script -->

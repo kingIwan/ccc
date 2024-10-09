@@ -550,7 +550,7 @@
         }
       }
     </script>
-    <script>
+    <!-- <script>
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
@@ -577,7 +577,7 @@
             alert("reCAPTCHA marked");
           }
         });
-    </script>
+    </script> -->
     <!-- Start of overtv Zendesk Widget script -->
     <script
       id="ze-snippet"
