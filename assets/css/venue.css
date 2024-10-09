@@ -324,19 +324,8 @@ body.venue-body {
     align-items: end;
     margin-top: 20px;
 }
-@media only screen and (min-width: 1420px) and (max-width: 1920px) {
-    .venue-video img:nth-child(1) {
-        top: 200px;
-        right: 0;
-        position: absolute;
-        width: 834.48px;
-        height: 621.73px;
-    }
-    .venue-section-2 {
-        margin-top: 15rem;
-    }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1420px) {
+/* For screens between 1000px and 1319px in width */
+@media only screen and (min-width: 1000px) and (max-width: 1319px) {
     .venue-video img:nth-child(1) {
         top: 200px;
         right: 0;
@@ -348,6 +337,55 @@ body.venue-body {
         margin-top: 13rem;
     }
 }
+
+/* For screens between 1320px and 1439px in width */
+@media (min-width: 1320px) and (max-width: 1439px) {
+    .venue-video img:nth-child(1) {
+        top: 200px;
+        left: 500px;
+        position: absolute;
+        width: 852px;
+        height: 514px;
+    }
+    .venue-section-2 {
+        margin-top: 8rem;
+    }
+    .venue-body {
+        overflow-x: hidden;
+    }
+}
+
+/* For screens between 1440px and 1919px in width */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .venue-video img:nth-child(1) {
+        top: 200px;
+        right: 0;
+        position: absolute;
+        width: 600px;
+        height: 560px;
+    }
+    .venue-section-2 {
+        margin-top: 10rem;
+    }
+    .venue-body {
+        overflow-x: hidden;
+    }
+}
+
+/* For screens 1920px wide or greater */
+@media (min-width: 1920px) and (max-height: 1420px) {
+    .venue-video img:nth-child(1) {
+        top: 200px;
+        right: 0;
+        position: absolute;
+        width: 834.48px;
+        height: 621.73px;
+    }
+    .venue-section-2 {
+        margin-top: 15rem;
+    }
+}
+
 @media (max-width: 810px){
     .wrapper .container .ads-title span{
 		font-size: 28px;
