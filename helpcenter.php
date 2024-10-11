@@ -113,11 +113,11 @@
                 >
               </div>
               <div class="item">
-                <a href="helpcenter/digital-signage.php"
+                <a href="helpcenter/monetize.php"
                   ><span
                     ><img src="assets/svg/digital-signage.svg" alt="" /></span
-                  ><span data-i18n="digital_signage_topic"
-                    >Digital Signage</span
+                  ><span 
+                    >Monetize</span
                   ></a
                 >
               </div>

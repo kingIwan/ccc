@@ -38,13 +38,16 @@ body {
 .ads-accordion-item {
     /* background: linear-gradient(360deg, #2B7FFC 0%, #60EFFF 135.95%); */
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 15px 10px 15px 10px;
 }
 .active {
-    background: linear-gradient(360deg, #2B7FFC 0%, #60EFFF 135.95%);
+    background: #232323;
 }
-
+.custon-icon {
+    font-size: 20px;
+    color: var(--white);
+}
 .ads-accordion-header {
     /* background-color: #f1f1f1; */
     padding: 0 15px;
@@ -76,13 +79,12 @@ body {
     max-height: 200px; 
 }
 .ads-accordion-header p {
-    color: #898989;
+    color: var(--white);
     font-size: 26px;
     font-weight: 600;
     line-height: 39.64px;
     text-align: left;
 }
-
 .hero-video video{
     max-width: 726px;
     height: 450px !important;

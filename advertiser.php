@@ -54,7 +54,7 @@
                      <div class="ads-accordion">
                         <div class="ads-accordion-item active">
                            <div class="ads-accordion-header">
-                              <img src="assets/svg/Campaign-notification.svg" width="33px" class="active-svg">
+                           <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
                               <p data-i18n="ads_campaign_management">Campaign management</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -63,7 +63,7 @@
                         </div>
                         <div class="ads-accordion-item">
                            <div class="ads-accordion-header">
-                              <img class="active-svg" src="assets/svg/Campaign-notification.svg" width="33px">
+                           <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
                               <p data-i18n="ads_efficient_setup">Efficient setup</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -72,7 +72,7 @@
                         </div>
                         <div class="ads-accordion-item">
                            <div class="ads-accordion-header">
-                              <img src="assets/svg/target-icon.svg" width="33px" class="active-svg">
+                           <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
                               <p data-i18n="ads_total_targeting">Total Targeting</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -81,7 +81,7 @@
                         </div>
                         <div class="ads-accordion-item">
                            <div class="ads-accordion-header">
-                              <img src="assets/svg/budget-icon.svg" width="33px" class="active-svg">
+                              <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
                               <p data-i18n="ads_for_all_budgets">For all budgets</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -90,7 +90,7 @@
                         </div>
                         <div class="ads-accordion-item">
                            <div class="ads-accordion-header">
-                              <img src="assets/svg/calendar-icon.svg" width="33px" class="active-svg">
+                           <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
                               <p data-i18n="ads_programmatic_buying">Programmatic Buying</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -331,19 +331,34 @@
       <script>
          // Select all accordion items
          const accordionItems = document.querySelectorAll('.ads-accordion-item');
-         
+
          accordionItems.forEach(item => {
-           const header = item.querySelector('.ads-accordion-header');
-           
-           header.addEventListener('click', () => {
-             // Close all other accordion items
-             accordionItems.forEach(i => {
-               if (i !== item) i.classList.remove('active');
-             });
-         
-             // Toggle active class on the clicked item
-             item.classList.toggle('active');
-           });
+            const header = item.querySelector('.ads-accordion-header');
+            const icon = header.querySelector('.custon-icon');
+
+            header.addEventListener('click', () => {
+                  // Close all other accordion items
+                  accordionItems.forEach(i => {
+                     const otherIcon = i.querySelector('.custon-icon');
+                     if (i !== item) {
+                        i.classList.remove('active');
+                        otherIcon.classList.remove('fa-minus'); // Remove minus icon
+                        otherIcon.classList.add('fa-plus'); // Add plus icon
+                     }
+                  });
+
+                  // Toggle active class on the clicked item
+                  item.classList.toggle('active');
+
+                  // Change the icon based on active state
+                  if (item.classList.contains('active')) {
+                     icon.classList.remove('fa-plus');
+                     icon.classList.add('fa-minus');
+                  } else {
+                     icon.classList.remove('fa-minus');
+                     icon.classList.add('fa-plus');
+                  }
+            });
          });
       </script>
       <script>
