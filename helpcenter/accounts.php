@@ -72,7 +72,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p ><b data-i18n="home">Home</b> <span data-i18n="home_accounts"> > Accounts</span></p>
+                <p ><a href="/helpcenter.php"><b data-i18n="home">Home</b></a> <span data-i18n="home_accounts"> > Accounts</span></p>
                 <!-- <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form> -->
@@ -87,16 +87,16 @@
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="access_dashboard_question">How to access my dashboard?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <a href="/faq/how-to-access-my-dashboard.php"><span data-i18n="access_dashboard_question">How to access my dashboard?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="login_not_working_question">My login isn't working. What should I do?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <a href="/faq/my-login-is-not-working-what-should-I-do.php"><span data-i18n="login_not_working_question">My login isn't working. What should I do?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="terms_of_service_question">What are Over TV's terms of service?</span> <i class="fa-solid fa-arrow-right"></i>
+                   <a href="/faq/what-are-the-Over-TV-terms-of-service.php"><span data-i18n="terms_of_service_question">What are Over TV's terms of service?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="return_device_question">I no longer want to use the Over device, how do I return it?</span> <i class="fa-solid fa-arrow-right"></i>
+                   <a href="/faq/i-no-longer-want-to-use-the-Over-device-how-do-I-return-it.php"> <span data-i18n="return_device_question">I no longer want to use the Over device, how do I return it?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
             </ul>
         </div>

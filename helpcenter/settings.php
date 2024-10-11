@@ -73,7 +73,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-              <p ><b data-i18n="home">Home</b> <span data-i18n="breadcrump_settings"> > Settings</span></p>
+              <p ><a href="/helpcenter.php"><b data-i18n="home">Home</b></a> <span data-i18n="breadcrump_settings"> > Settings</span></p>
               <!-- <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form> -->
@@ -88,19 +88,19 @@
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="order_device_question">How do I order an Over TV device?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/how-do-I-order-an-Over-TV-device.php"> <span data-i18n="order_device_question">How do I order an Over TV device?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="install_device_question">How do I install my Over TV device?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/how-do-I-install-my-Over-TV-device.php"> <span data-i18n="install_device_question">How do I install my Over TV device?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="lost_remote_question">I lost my remote control, what should I do?</span> <i class="fa-solid fa-arrow-right"></i>
+                   <a href="/faq/i-lost-my-remote-control-what-should-I-do.php"><span data-i18n="lost_remote_question">I lost my remote control, what should I do?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="connect_multiple_tvs_question">How to connect Over TV Player to multiple TVs?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/how-to-connect-the-Over-TV-Player-to-multiple-TVs.php"> <span data-i18n="connect_multiple_tvs_question">How to connect Over TV Player to multiple TVs?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="contact_support_question">How can I contact customer support?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/how-can-I-contact-customer-support.php"> <span data-i18n="contact_support_question">How can I contact customer support?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
             </ul>
         </div>

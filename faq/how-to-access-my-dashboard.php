@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - General</title>
+  <title>OverTV - How can Over TV help my business?</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -57,61 +57,61 @@
      <p>Go to Over TV</p>
       <div>
     </div>
-  </header>
+</header>
 <body>
-  <!-- <div class="wrapper">
-    <div class="hero-helpcenter">
-      <div class="container">
-          <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
+  <div class="wrapper">
+    <!-- <div class="hero-helpcenter">
+        <div class="container">
+            <div class="helpcenter-content wow fadeInUp" data-wow-delay="0.1s">
               <h2 data-i18n="help_center_title">How can we help?</h2>
               <form>
                 <input type="text" name="search" placeholder="Pesquisa">
               </form>
-          </div>
-      </div>
-  </div> -->
-  <div class="breadcrump">
-      <div class="container">
-          <div class="breadcrump-content">
-            <p><a href="/helpcenter.php"><a href="/helpcenter.php"><b data-i18n="home">Home</b></a></a><span data-i18n="home_general"> > General</span></p>
-              <!-- <form>
-                    <input type="text" name="search" placeholder="Search the knowledge base...">
-                </form> -->
             </div>
         </div>
-    </div>
-    <div class="container">
-      <div class="general-section">
-          <div class="general-question">
-              <h2>
-                  <!-- <span><img src="../assets/svg/general-icon.svg" alt=""></span> -->
-                  <span data-i18n="general_title">General</span>
-              </h2>
-              <ul>
-                  <li>
-                      <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.php"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                  <a href="/faq/how-can-over-tv-help-my-business.php"><span data-i18n="how_can_overtv_help_business">How can Over TV help my business?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                      <a href="/faq/how-much-does-the-Over-TV-player-cost.php"><span data-i18n="over_tv_player_cost">How much does the Over TV player cost?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                     <a href="/faq/what-types-of-businesses-are-most-suitable-for-Over-TV.php"><span data-i18n="best_businesses_for_overtv">What types of businesses are best suited for Over TV?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                     <a href="/faq/how-can-I-start-making-money-with-the-Over-TV-Player.php"><span data-i18n="como_ganhar_dinheiro">How can I start making money with the Over TV Player?
-                      </span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-              </ul>
+    </div> -->
+    <div class="breadcrump">
+      <div class="container">
+          <div class="breadcrump-content">
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/accounts.php">Accounts </b> </a> </b> <span data-i18n="breadcrump_title"> > How does Over TV work and how can I start watching?</span></p>
+              <!-- <form>
+                  <input type="text" name="search" placeholder="Search the knowledge base...">
+              </form> -->
           </div>
-          <div class="need-support">
+      </div>
+  </div>
+    <div class="container">
+        <div class="help-content">
+          <div class="general-question">
+            <h2>
+            How to access my dashboard?
+            </h2>
+            <p>
+            After registering, you will receive an email to verify your account and activate your access to the Online Dashboard. In the Dashboard, you will be able to monitor your daily billing, update environment information, add digital signage, favorite channels, and much more!
+            </p>
+            <p>
+            To access the Dashboard, simply visit over.tv/login and enter your registered email and password.
+            </p>
+            <p>
+            If you have forgotten your email or password, there is no need to worry. Please contact us at suporte@over.tv providing your full name, your establishment's name, and address, so we can help you retrieve your information.
+            </p>
+            <div class="content-remarks">
+               <h3 data-i18n="article_helpful_question">Was this article helpful?</h3>
+               <div class="remarks-button">
+                 <button class="okey-button"><img src="../assets/svg/bold-tick-icon.svg" alt=""></button>
+                 <button class="fail-button"><img src="../assets/svg/cross.svg" alt=""></button>
+               </div>
+            </div>
+          </div>
+          <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
+              <h3 data-i18n="popular_articles_title">Releated Articles</h3>
+              <ul>
+                  <li data-i18n="carousel_article">How to Use the Carousel to Add an Image Slideshow to Your Startup Template</li>
+                  <li data-i18n="woocommerce_email_article">How to Customize WooCommerce Email Templates Using a Postcards Email Template</li>
+                  <li data-i18n="upload_github_article">How to Upload Your Startup Website to GitHub Pages</li>
+                  <li data-i18n="scroll_progress_bar_article">How to Add a Page Scroll Progress Bar at the Top of Your Startup Webpage</li>
+                  <li data-i18n="gmail_postcards_article">How to Send a Postcards Email Template with Gmail</li>
+              </ul>
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
               <ul>
                   <li data-i18n="support_description">
@@ -120,8 +120,8 @@
               </ul>
               <button data-i18n="contact_support_button">Contact Support</button>
           </div>
-      </div>
-      <div class="helpcenter-footer">
+        </div>
+        <div class="helpcenter-footer">
           <div class="footer-text">
             <p>Over.TV© Copyright  <span>Over.TV Help Center</span> </p>
           </div>
@@ -129,8 +129,9 @@
             <p>Go to Over.TV</p>
           </div>
         </div>
-  </div>
-  </div>
+    </div>
+</div>
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -138,6 +139,7 @@
   <script src="../assets/js/wow.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/swiper.min.js"></script>
+
   <script>
 
 

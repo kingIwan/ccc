@@ -73,7 +73,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p><b data-i18n="home">Home</b> <span data-i18n="home_digital"> > Digital Signage</span></p>
+                <p><a href="/helpcenter.php"><b data-i18n="home">Home</b></a> <span data-i18n="home_digital"> > Digital Signage</span></p>
                 <!-- <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form> -->

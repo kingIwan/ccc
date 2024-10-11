@@ -73,7 +73,7 @@
     <div class="breadcrump">
       <div class="container">
           <div class="breadcrump-content">
-              <p><b data-i18n="home_general">Home > General </b> <span data-i18n="breadcrump_title"> > How does Over TV work and how can I start watching?</span></p>
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/general.php">General </b> </a><span data-i18n="breadcrump_title"> > How does Over TV work and how can I start watching?</span></p>
               <!-- <form>
                   <input type="text" name="search" placeholder="Search the knowledge base...">
               </form> -->

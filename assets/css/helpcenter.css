@@ -59,7 +59,7 @@ input[type=text] {
     width: 516px;
     box-sizing: border-box;
     border: 0px solid #ccc;
-    border-radius: 4px;
+    border-radius: 25px;
     font-size: 16px;
     background-color: white;
     background-image: url('assets/svg/search-icon.svg');
@@ -68,6 +68,63 @@ input[type=text] {
     padding: 10px 20px 12px 40px;
     margin-top: 2rem;
 }
+.breadcrump-content a {
+    color: #5C5C5C !important;
+}
+.custom-list ol {
+    counter-reset: step-counter;
+  }
+  
+  .custom-list ol > li {
+    list-style: none; /* Remove default numbering */
+    counter-increment: step-counter;
+    margin-bottom: 15px;
+  }
+  
+  .custom-list ol > li::before {
+    content: counter(step-counter) ". "; /* Add custom numbering */
+    font-weight: bold;
+  }
+  
+  .custom-list ul {
+    list-style-type: disc; /* Bullet points for sub-list */
+    margin-left: 20px; /* Indentation for sub-list */
+  }
+  
+  .custom-list ul > li {
+    margin-bottom: 0px;
+  }
+  .custom-list p {
+    font-weight: 400 !important;
+  }
+.custom-list li {
+    display: block !important;
+    padding: 0px !important;
+    border-top: 0px !important;
+}  
+.custom-list p {
+    padding: 0px !important;
+    margin-left: 16px;
+}
+.custom-list ul li {
+    list-style: none; 
+    position: relative;
+    padding-left: 20px;
+  }
+  
+.custom-list ul li::before {
+    content: '•'; 
+    position: absolute;
+    left: 0;
+    font-size: 1.2em; 
+    color: #ffffff;
+}
+.custom-dot::before {
+    content: '• ';
+    color: #ffffff;  
+    font-size: 1.2em;
+  }
+   
 .help-topic .item span {
     font-size: 16px;
     font-weight: 700;

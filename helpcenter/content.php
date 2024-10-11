@@ -73,7 +73,7 @@
     <div class="breadcrump">
         <div class="container">
             <div class="breadcrump-content">
-                <p><b data-i18n="home_breadcrumb">Home</b> <span data-i18n="home_content"> > Content</span></p>
+                <p><b data-i18n="home_breadcrumb"><a href="/helpcenter.php">Home</a></b> <span data-i18n="home_content"> > Content</span></p>
                 <!-- <form>
                     <input type="text" name="search" placeholder="Search the knowledge base...">
                 </form> -->
@@ -88,16 +88,19 @@
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <a href="/faq/Is-the-content-family-friendly.php"><span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
+                  <a href="/faq/how-often-is-the-content-updated.php"><span >How often is the content updated?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
+                   <a href="/faq/can-we-play-music-while-streaming-Over-TV.php"> <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <a href="/faq/what-if-there-is-some-content-I-dont-like.php"><span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+                <li>
+                    <a href="/faq/i-saw-a-video-on-Over-TV-without-my-permission-How-did-this-happen.php"><span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
             </ul>
         </div>
