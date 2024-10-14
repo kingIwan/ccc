@@ -88,13 +88,13 @@
             </h2>
             <ul>
                 <li>
-                    <span data-i18n="family_friendly_content_question">Is the content family-friendly?</span> <i class="fa-solid fa-arrow-right"></i>
+                    <a href="/faq/how-does-Over-charge-for-ads.php"><span>How does Over charge for ads</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="music_streaming_question">Can we play music while streaming Over TV?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/difference-between-ad-budget-and-amount-spent.php"><span>Difference between ad budget and amount spent</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
-                    <span data-i18n="unwanted_content_question">What if there is content I don't like?</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="/faq/daily-and-total-budgets-in-ads.php"><span >Daily and total budgets in ads</span> <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
                 <li>
                     <span data-i18n="unauthorized_video_question">I saw a video on Over TV without my permission. How did this happen?</span> <i class="fa-solid fa-arrow-right"></i>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - How can Over TV help my business?</title>
+  <title>OverTV - How to connect the Over TV Player to multiple TVs?</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -73,7 +73,7 @@
     <div class="breadcrump">
       <div class="container">
           <div class="breadcrump-content">
-              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/accounts.php">Accounts </b> </a> </b> <span data-i18n="breadcrump_title"> > How does Over TV work and how can I start watching?</span></p>
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/accounts.php">Accounts </b> </a> </b> <span > > How to connect the Over TV Player to multiple TVs?</span></p>
               <!-- <form>
                   <input type="text" name="search" placeholder="Search the knowledge base...">
               </form> -->
@@ -84,7 +84,7 @@
         <div class="help-content">
           <div class="general-question">
             <h2>
-            How to access my dashboard?
+            How to connect the Over TV Player to multiple TVs?
             </h2>
             <p>
             After registering, you will receive an email to verify your account and activate your access to the Online Dashboard. In the Dashboard, you will be able to monitor your daily billing, update environment information, add digital signage, favorite channels, and much more!

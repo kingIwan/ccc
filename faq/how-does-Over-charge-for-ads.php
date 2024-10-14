@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - How do I install my Over TV device?</title>
+  <title>OverTV - How can Over TV help my business?</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -73,7 +73,7 @@
     <div class="breadcrump">
       <div class="container">
           <div class="breadcrump-content">
-              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/settings.php">Settings </b> </a> </b> <span> > How do I install my Over TV device?</span></p>
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/advertising.php">Advertising </b> </a> </b> <span>> How does Over charge for ads?</span></p>
               <!-- <form>
                   <input type="text" name="search" placeholder="Search the knowledge base...">
               </form> -->
@@ -84,71 +84,10 @@
         <div class="help-content">
           <div class="general-question">
             <h2>
-            How do I install my Over TV device?
+            How does Over charge for ads?
             </h2>
-            <div class="custom-list">
-              <ol>
-                <li>Unpacking the Device:
-                  <ul>
-                    <li><p>Start by removing the Over TV, the HDMI cable, the remote control, and the power cable from the packaging. These items are usually organized from left to right.</p> </li>
-                  </ul>
-                </li>
-                <li>Connecting the Cables:
-                  <ul>
-                    <li><p>Connect the power cable to the back of your Over.</p></li>
-                    <li><p>Connect the Over's HDMI cable to your TV.</p></li>
-                    <li><p>Make sure your TV is on and set to the correct HDMI input to which the Over is connected.</p></li>
-                  </ul>
-                </li>
-                <li>Turning on the Device:
-                  <ul>
-                    <li>
-                      <p>
-                      Use the provided remote control to turn on your Over TV. You will know it's on if the light on the front is blue; a red light indicates it's connected but turned off.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                      Once turned on, the Over's home screen should appear on your TV.
-                      </p>
-                    </li>
-                  </ul>
-                </li>
-                <li>Setting up the Internet Connection:
-                  <ul>
-                    <li>
-                      <p>
-                      To access content, connect your Over to the internet via Wi-Fi or an Ethernet cable.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                      If using Wi-Fi, select your network and enter the password using the remote control.                      </p>
-                    </li>
-                  </ul>
-                </li>
-                <li>Activating your Loop Player:
-                  <ul>
-                    <li>
-                      <p>
-                      If necessary, open the Loop app on the home screen and enter the 6-digit activation code.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                      Access over.tv/activate on any device and enter the email associated with your account to receive the 6-digit code. If your device was pre-activated, this step can be skipped.                      </p>
-                    </li>
-                  </ul>
-                </li>
-                <li>Need Help?:
-                  <ul>
-                    <li><p>For any assistance, contact support at suporte@over.tv.</p></li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
             <p>
-            These steps should help you set up and start using your Over TV easily. Enjoy your viewing experience!
+                When advertising on Over, you set budgets, cost per ad, and daily or monthly payment limits that determine how much you spend and when ads will be charged
             </p>
             <div class="content-remarks">
                <h3 data-i18n="article_helpful_question">Was this article helpful?</h3>
