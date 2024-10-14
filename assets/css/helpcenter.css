@@ -202,9 +202,6 @@ input[type=text] {
 .help-topic .item span {
    margin-right: 20px;
 }
-.help-topic .item:nth-child(4) span {
-    padding-left: 10px; 
-}
 .popular-articles button {
     text-transform: uppercase;
     background: #186BFF;
