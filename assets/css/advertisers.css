@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	background-image: url('/assets/image/advertiser-bg.png') !important; 
-	background-size: cover; 
+	background-size: auto !important; 
 	background-repeat: no-repeat;
 	background-position: center 0px !important; 
 }
