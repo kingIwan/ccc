@@ -56,7 +56,17 @@
                      <div class="ads-accordion">
                         <div class="ads-accordion-item active">
                            <div class="ads-accordion-header">
+                           <i class="fa custon-icon fa-minus" aria-hidden="true"></i>
+                           <p data-i18n="ads_efficient_setup">Efficient setup</p>
+                           </div>
+                           <div class="ads-accordion-content">
+                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                           </div>
+                        </div>
+                        <div class="ads-accordion-item">
+                           <div class="ads-accordion-header">
                            <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
+                             
                               <p data-i18n="ads_campaign_management">Campaign management</p>
                            </div>
                            <div class="ads-accordion-content">
@@ -66,16 +76,7 @@
                         <div class="ads-accordion-item">
                            <div class="ads-accordion-header">
                            <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
-                              <p data-i18n="ads_efficient_setup">Efficient setup</p>
-                           </div>
-                           <div class="ads-accordion-content">
-                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
-                           </div>
-                        </div>
-                        <div class="ads-accordion-item">
-                           <div class="ads-accordion-header">
-                           <i class="fa fa-plus custon-icon" aria-hidden="true"></i>
-                              <p data-i18n="ads_total_targeting">Total Targeting</p>
+                              <p >Flexible Reach</p>
                            </div>
                            <div class="ads-accordion-content">
                               <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
@@ -180,8 +181,7 @@
                   </div>
                   <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
                      <div class="center-div">
-                        <img src="assets/image/trader-logo.svg" alt="">
-                        <h2><b data-i18n="advertiser_passive_income">+$3,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
+                        <h2><b data-i18n="annual_passive_income">+$1,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
                         <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through ads displayed on your screens.</p>
                         <h2 ><b data-i18n="boost_average_order_value">+20%</b> <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
                         <p data-i18n="boost_average_order_value_description">Keep guests entertained longer, encouraging them to spend more with every visit.</p>
@@ -277,7 +277,7 @@
                </div>
             </div>
          </div>
-         <div class="container">
+         <div class="container footer-container">
             <?php
                include 'common/footer.php';
                ?>

@@ -444,10 +444,10 @@
                </div>
             </div>
          </div>
-         <div class="mb-button">
-            <button style="width: 75%;" data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
-         </div>
          <div class="footer-subscription">
+            <div class="mb-button">
+               <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
+            </div>
             <div class="section-subscription">
                <div class="d-flex header-title">
                   <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>

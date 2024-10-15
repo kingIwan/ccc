@@ -734,7 +734,7 @@ body {
 
     }
     .wrapper { 
-        padding: 30px;
+        /* padding: 30px; */
     }
     .image-insight-container { 
         left: 5%;
@@ -750,7 +750,6 @@ body {
         font-weight: 600;
         line-height: 35.97px;
         text-align: left;
-        padding-left: 20%;
 
     }
     .ad-section-6-ads-right h1, .ad-section-6-ads-right p {

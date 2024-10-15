@@ -264,7 +264,7 @@
             <div class="section-6">
                <div class="section-6-left">
                   <div>
-                     <button class="btn-outline wow fadeInUp" data-i18n="our_channels_button">Our Channels</button>
+                     <button class="btn-outline wow fadeInUp" data-i18n="more_benefits">More Benefits</button>
                   </div>
                   <h1 class="wow fadeInUp" data-i18n="tv_reimagined_title">TV reimagined for business</h1>
                   <p class="wow fadeInUp" data-i18n="business_description_1">Over® offers a comprehensive suite of short-form, audio-optional channels designed for various business settings.</p>
@@ -1100,7 +1100,7 @@
             </div>
          </div>
          <!-- footer -->
-         <div class="container">
+         <div class="container footer-container">
             <?php
                include 'common/footer.php';
                ?>

@@ -196,7 +196,7 @@
             </div>
          </div>
          <!-- footer -->
-         <div class="container">
+         <div class="container footer-container">
             <?php
                include 'common/footer.php';
                ?>
