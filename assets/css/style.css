@@ -3087,7 +3087,7 @@ display: none;
 	}
 	body { 
 		background-image: url('/assets/image/iphone-index-bg.png'); 
-		background-position: center -1px;
+		background-position: center -17px;
 	}
 	.wrapper .container .title p {
 		font-size: 14px;
@@ -3258,7 +3258,7 @@ display: none;
   
 	.accordion-item {
 		background: #007AFE;
-		padding: 10px 20px 10px 10px;
+		padding: 14px 20px 14px 10px;
 		border-radius: 8px;
 	}
 	.accordion button .icon {
@@ -3390,6 +3390,12 @@ display: none;
 		padding-right: 0;
 	}
 
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+	.section-10-content {
+		display: flex;
+		flex-direction: row;
+	}
   }
   @media (min-width: 769px) and (max-width: 1080px) {
 	.hideforiPad {
