@@ -199,7 +199,7 @@ button{
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
-
+	background-color: #161616;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #444444;
   }
