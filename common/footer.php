@@ -15,7 +15,7 @@
           <p><a href="/channel.php" data-i18n="channels">Channels</a></p>
           <p><a href="#section-4" onclick="event.preventDefault(); scrollToTarget('section-4');" data-i18n="about_us">About us</a></p>
       </div>
-      <div class="d-inline">
+      <div class="d-inline mobile-margin">
           <h5 data-i18n="resources">Resources</h5>
           <p><a href="/helpcenter.php" data-i18n="help_center">Help Center</a></p>
           <p data-i18n="blog">Blog</p>
@@ -23,13 +23,13 @@
           <p data-i18n="careers">Careers</p>
           <p><a href="/affilate.php" data-i18n="distribution_partner">Distribution Partner</a></p>
       </div>
-      <div class="d-inline">
+      <div class="d-inline mobile-margin">
           <h5 data-i18n="legal">Legal</h5>
           <p><a href="/privacy-policy.php" data-i18n="terms_conditions">Terms & Conditions</a></p>
           <p><a href="/privacy-policy.php" data-i18n="privacy_policy">Privacy Policy</a></p>
           <p data-i18n="support">Support</p>
       </div>
-      <div class="d-inline">
+      <div class="d-inline mobile-margin">
           <h5 data-i18n="subscribe">Subscribe</h5>
           <div class="d-flex" style="gap:5px">
               <input type="email" placeholder="Your email" class="email-input" data-i18n="your_email_placeholder">

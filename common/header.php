@@ -31,52 +31,59 @@
       </a>
       </div>
       <div class="nav-btn">
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link" style="--i: .6s">
-              <a href="/index.php" data-i18n="venues">Venues</a>
-            </li>
-            <li class="nav-link" style="--i: .85s">
-              <a href="/advertiser.php" data-i18n="advertisers">Advertisers</a>
-            </li>
-            <li class="nav-link" style="--i: 1.35s">
-              <a href="/channel.php" data-i18n="channels">Channels</a>
-            </li>
-            <li class="nav-link" style="--i: 1.1s">
-              <a href="#" ><span data-i18n="resources">Resources</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                  viewBox="0 0 20 20">
-                  <path fill="currentColor" d="m15 8l-4.03 6L7 8z" />
-                </svg></a>
-              <div class="dropdown">
-                <ul>
-                  <li class="dropdown-link">
-                    <a href="#" data-i18n="about_us">About Us</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="http://blog.over.tv" data-i18n="blog">Blog</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#" data-i18n="case_studies">Case Studies</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="log-sign" style="--i: 1.8s">
-          <a href="#contact" class="btn transparent" onclick="event.preventDefault(); scrollToTarget('contact');">
-            <button class="contact-button" ><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
-                  fill="white" />
-              </svg>
-            </button>
-          </a>
-          <a href="/venue.php" class="btn solid"><button class="login-button" data-i18n="login">Login</button></a>
-        </div>
+      <div class="nav-links">
+        <ul>
+          <li class="nav-link close-btn" style="--i: .6s">
+            <a onclick="document.getElementById('check').checked = false;">Close</a>
+          </li>
+          <li class="nav-link" style="--i: .6s">
+            <a href="/index.php" data-i18n="venues">Venues</a>
+          </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="/advertiser.php" data-i18n="advertisers">Advertisers</a>
+          </li>
+          <li class="nav-link" style="--i: 1.35s">
+            <a href="/channel.php" data-i18n="channels">Channels</a>
+          </li>
+          <li class="nav-link" style="--i: 1.1s">
+            <a href="#" ><span data-i18n="resources">Resources</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                viewBox="0 0 20 20">
+                <path fill="currentColor" d="m15 8l-4.03 6L7 8z" />
+              </svg></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                  <a href="#" data-i18n="about_us">About Us</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="http://blog.over.tv" data-i18n="blog">Blog</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#" data-i18n="case_studies">Case Studies</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
+      <div class="log-sign" style="--i: 1.8s">
+        <a href="/venue.php" class="btn solid">
+          <button class="login-button" data-i18n="login">Login</button>
+        </a>
+        <a href="#contact" class="btn transparent" onclick="event.preventDefault(); scrollToTarget('contact');">
+          <button class="contact-button" ><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
+                fill="white" />
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+
       <div class="hamburger-menu-container mb-head">
-      <button class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
+      <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
             fill="white" />

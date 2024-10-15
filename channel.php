@@ -61,7 +61,7 @@
                   Something for Everyone
                   </button>
                </div>
-               <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+               <div class="text-center center-text wow fadeInUp" data-wow-delay="0.1s">
                   <h1 data-i18n="video_why_choose_over">
                      Why Choose Over for Your Business?
                   </h1>

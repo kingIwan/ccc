@@ -74,7 +74,7 @@
                            <img src="assets/image/completely-free.png" alt="More Entertainment" class="custom-gradient-image">
                            <div class="custom-card-text">
                               <div class="custom-card-title" data-i18n="completely_free_title">Completely Free</div>
-                              <div class="custom-card-content" data-i18n="more_entertainment_content">
+                              <div class="custom-card-content">
                                  No contracts, no commitment. Setup in less than 5 minutes and let ads cover all the costs.
                               </div>
                            </div>

@@ -285,10 +285,10 @@ h1, p {
         margin-bottom: 15px;
     }
     .hero-channel {
-        height: 380px;
+        height: 255px;
     }
     .hero-content {
-        min-height: 380px;
+        min-height: 255px;
     }
     .hero-content h1 {
         font-size: 25.95px;
@@ -297,7 +297,7 @@ h1, p {
     }
     .bg-video {
         top: 106px;
-        height: 380px
+        height: 265px
     }
     .hero-content span {
         font-family: Poppins;
@@ -318,12 +318,19 @@ h1, p {
         font-size: 21.42px;
         font-weight: 600;
         line-height: 25.71px;
-
+        max-width: 250px;
     }
     .text-center p {
         font-size: 12px;
         font-weight: 400;
         line-height: 18.49px;
+        max-width: 300px;
+    }
+    .center-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .blue-wd-5 {
         width: 21px;
