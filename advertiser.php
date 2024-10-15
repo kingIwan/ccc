@@ -26,7 +26,7 @@
                <div class="hero-text wow fadeInUp" data-wow-delay="0.1s">
                   <span data-i18n="hero_monopolize_attention">Monopolize Attention.</span>
                   <h1 data-i18n="hero_advertise_where_competitors">Advertise Where Your Competitors Can’t Compete</h1>
-                  <div class="d-flex align-center gap-1 mt-2">
+                  <div class="d-flex align-center gap-1-5 mt-2">
                      <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
                      <p data-i18n="hero_future_arrived">See why the future already arrived</p>
                   </div>
@@ -46,10 +46,12 @@
                   <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work">Step Into The Future of Advertising Today</h1>
                   <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work2">Step Into The Future</h1>
                   <p class="wow hide-for-mobile fadeInUp" data-i18n="ads_transform_your_venue">Enjoy full management capabilities, from budgeting to real-time updates, with no minimum spend required.</p>
-                  <p class="wow hide-for-desktop fadeInUp" data-i18n="ads_channels_cater_to_taste">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
                   <button class="site-btn" data-i18n="hero_advertise_with_over">Advertise with Over</button>
                </div>
-               <div class="d-flex insights-section w-100 hide">
+               <div class="insights-section w-100">
+                  <div class="mobile-ad-image">
+                     <img src="assets/image/insight-image.png">
+                  </div>
                   <div class="accordion-box">
                      <div class="ads-accordion">
                         <div class="ads-accordion-item active">
@@ -104,46 +106,6 @@
                   </div>
                </div>
                <div class="hide-for-desktop">
-                  <div class="work-section">
-                     <div class="mt-2">
-                        <img class="" src="assets/image/work-section-1.png" width="100%">
-                     </div>
-                     <div class="d-flex work-title mt-2">
-                        <img src="assets/svg/pointer-icon.svg" width="10%">
-                        <h2 data-i18n="ads_efficient_setup">Efficient setup</h2>
-                     </div>
-                     <p data-i18n="ads_create_ad_campaigns">Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
-                  </div>
-                  <div class="work-section">
-                     <div class="mt-2">
-                        <img class="" src="assets/image/work-section-1.png" width="100%">
-                     </div>
-                     <div class="d-flex work-title mt-2">
-                        <img src="assets/svg/pointer-icon.svg" width="10%">
-                        <h2 data-i18n="Campaign_management">Campaign management</h2>
-                     </div>
-                     <p data-i18n="Campaign_management_text">Test, adjust, and optimize campaigns, and discover tools to help manage campaigns more efficiently.</p>
-                  </div>
-                  <div class="work-section">
-                     <div class="mt-2">
-                        <img class="" src="assets/image/work-section-1.png" width="100%">
-                     </div>
-                     <div class="d-flex work-title mt-2">
-                        <img src="assets/svg/pointer-icon.svg" width="10%">
-                        <h2 data-i18n="Flexible_Reach">Flexible Reach</h2>
-                     </div>
-                     <p data-i18n="Flexible_Reach_text">Connect with customers on your terms, targeting by country, state, city, block or even individual businesses.</p>
-                  </div>
-                  <div class="work-section">
-                     <div class="mt-2">
-                        <img class="" src="assets/image/work-section-1.png" width="100%">
-                     </div>
-                     <div class="d-flex work-title mt-2">
-                        <img src="assets/svg/pointer-icon.svg" width="10%">
-                        <h2 data-i18n="ads_for_all_budgets">For all budgets</h2>
-                     </div>
-                     <p data-i18n="ads_for_all_budgets_text">Decide for yourself what price you want to advertise at, whether it's a mini campaign or a mega rollout.</p>
-                  </div>
                   <div class="control-section mt-3">
                      <div class="schedule-section">
                         <div class="p-15x">

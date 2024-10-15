@@ -92,6 +92,9 @@ body {
     object-fit: cover;
     background-color: black;
 }
+.mobile-ad-image {
+    display: none;
+}
 .hero-text {
     position: relative;
     width: 43%;
@@ -177,7 +180,9 @@ body {
     color: #ffffff;
     margin: 0; 
 }
-
+.insights-section {
+    display: flex;
+}
 .overtv-finance {
     position: absolute;
     right: 67%;
@@ -419,9 +424,6 @@ body {
         width: 230px;
         height: 220px;
 	}
-	.image-insight {
-		margin-left: 0px;
-	}
     .ads-title-under {
         flex-direction: column;
     }
@@ -504,16 +506,47 @@ body {
         line-height: 6.73px;
         text-align: center;
     }
+    .mobile-ad-image {
+        display: flex;
+    }
+    .insights-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14%;
+    }
+    .schedule-section h2 , .Targeting-section h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        max-width: 250px;
+    }
+    .Performance-section h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    .section-8 p {
+        max-width: 330px;
+    }
+    .schedule-section p , .Targeting-section p , .Performance-section p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+
+    }
     .hero-video img:nth-child(1) { 
         width: 72px;
         height: 72px;
         bottom: -13px;
         left: 3%;
     }
+    .image-insight ,.Campaign-section {
+        display: none !important;
+    }
     .hero-video video {
         width: 90%;
         left: 10%;
-        height: 214px !important;
+        height: 250px !important;
         position: relative;
     }
     .hero-container {
@@ -542,6 +575,21 @@ body {
         color: var(--white);
         padding-left: 22px;
         padding-top: 5px;
+    }
+    .mobile-ad-image img {
+        width: 100%;
+    }
+    .active .ads-accordion-header p {
+        font-size: 14.28px;
+        font-weight: 600;
+        line-height: 21.77px;
+    }
+    .ads-accordion-content p {
+        font-size: 8.79px;
+        font-weight: 400;
+        line-height: 13.18px;
+        padding-left: 28px;
+
     }
 	.Campaign-section h1 {
 		font-size: 25px;
@@ -621,15 +669,46 @@ body {
     .work-title img {
         width: 6%;
     }
-    .insights-section {
-        display: none !important;
-    }
     .hero-video {
         width: 100%;
         width: 100%;
         display: flex;
         padding-top: 25px;
         justify-content: end;
+    }
+    .ads-accordion {
+        max-width: 406px;
+    }
+    .active .ads-accordion-header p {
+        font-size: 17.12px;
+        font-weight: 600;
+        line-height: 26.1px;
+    }
+    .ads-accordion-content p {
+        font-size: 10.54px;
+        font-weight: 400;
+        line-height: 15.8px;
+        padding-left: 28px;
+    }
+    .ads-accordion-header p {
+        font-size: 17.12px;
+        font-weight: 600;
+        line-height: 26.1px;
+    }
+    .ad-section-6 {
+        margin-top: 14%;
+    }
+    .insights-section {
+        margin-top: 40px;
+    }
+    .accordion-box {
+        margin-top: -20px;
+    }
+    .active .ads-accordion-content {
+        padding: 10px 15px 15px 15px;
+    }
+    .image-insight {
+        height: 408px;
     }
     .hero-text span { 
         font-size: 47.45px;
@@ -666,7 +745,11 @@ body {
         font-weight: 600;
         line-height: 35.97px;
         text-align: left;
+        padding-left: 20%;
 
+    }
+    .ad-section-6-ads-right h1, .ad-section-6-ads-right p {
+        padding-left: 20%;
     }
     .ad-section-6-ads-left p, .ad-section-6-ads-right p {
         font-size: 14px;
