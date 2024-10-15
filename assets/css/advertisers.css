@@ -526,7 +526,7 @@ body {
         line-height: 32px;
     }
     .section-8 p {
-        max-width: 330px;
+        max-width: 330px !important;
     }
     .schedule-section p , .Targeting-section p , .Performance-section p {
         font-size: 12px;
@@ -539,6 +539,11 @@ body {
         height: 72px;
         bottom: -13px;
         left: 3%;
+    }
+    .ads-accordion-header p {
+        font-size: 14.28px;
+        font-weight: 600;
+        line-height: 21.77px;
     }
     .image-insight ,.Campaign-section {
         display: none !important;

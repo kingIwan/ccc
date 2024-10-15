@@ -1603,7 +1603,7 @@ margin-bottom: 30px;
 		color: #EFEFEB;
 		font-size: 22px;
 		font-weight: 500;
-		line-height: 44.4px;;
+		line-height: 14px;
 		border: none;
 		background: none;
 		outline: none;
@@ -3235,7 +3235,7 @@ display: none;
   
 	.accordion-item {
 		background: #007AFE;
-		padding: 0px 20px 0px 10px;
+		padding: 10px 20px 10px 10px;
 		border-radius: 8px;
 	}
 	.accordion button .icon {
@@ -3244,11 +3244,11 @@ display: none;
 	}
 	.accordion button .icon::before {
 		width: 10px;
-		top: 4px
+		top: -8px
 	}
 	.accordion button .icon::after {
 		height: 10px;
-		top: 0px;
+		top: -12px;
 		left: 4px
 	}
 	.accordion button {
