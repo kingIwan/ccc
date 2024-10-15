@@ -1601,14 +1601,15 @@ margin-bottom: 30px;
 		width: 100%;
 		padding: 8px 0;
 		color: #EFEFEB;
-		font-size: 22px;
-		font-weight: 500;
-		line-height: 14px;
 		border: none;
 		background: none;
 		outline: none;
 	  }
-	  
+	  .accordion-item span {
+		font-size: 1.3rem;
+		font-weight: 600;
+		line-height: 44.13px;
+	  } 
 	  .accordion button:hover,
 	  .accordion button:focus {
 		cursor: pointer;
@@ -1619,14 +1620,10 @@ margin-bottom: 30px;
 		cursor: pointer;
 	  }
 	  
-	  .accordion button .accordion-title {
-		padding: 1em 1.5em 1em 0;
-	  }
-	  
 	  .accordion button .icon {
 		display: inline-block;
 		position: absolute;
-		top: 18px;
+		top: 14px;
 		right: 0;
 		width: 40px;
 		height: 40px;
@@ -1684,9 +1681,9 @@ margin-bottom: 30px;
 		will-change: opacity, max-height;
 	  }
 	  .accordion .accordion-content p {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 300;
-		line-height: 25.6px;
+		line-height: 30px;
 		padding: 0px 0px 30px 0px;
 		max-width: 100%;
 		color: #EFEFEB;
@@ -3061,6 +3058,11 @@ display: none;
 		border-radius: 16px;
 
 	}
+	.accordion-item span {
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 11.07px;
+	  } 
 	#check:checked ~ .nav-btn .solid {
 		width: 100%;
         display: flex;
@@ -3093,6 +3095,19 @@ display: none;
 		line-height: 22px;
 		text-align: center;
 	}
+	.section-4-card p {
+		font-size: 12.28px;
+		font-weight: 400;
+		line-height: 17.84px;
+		text-align: center;
+
+	}
+	.affiliate-button {
+		width: 60% !important;
+	}
+	.section-4-card {
+		border-radius: 8px;
+	}
 	.section-subscription {
 		display: none;
 	}
@@ -3115,6 +3130,14 @@ display: none;
 	}
 	.section-4-slider {
 		margin-top: 10px;
+	}
+	.accordion .accordion-content p {
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 15px;
+		text-align: left;
+		color: #EFEFEB;
+		padding-bottom: 17px;
 	}
 	.section-8 h1 {
 		font-size: 20px;
@@ -3242,6 +3265,7 @@ display: none;
 		width: 10px;
 		height: 10px;
 	}
+	
 	.accordion button .icon::before {
 		width: 10px;
 		top: -8px
@@ -3316,13 +3340,6 @@ display: none;
 		font-size: 16px;
 		line-height: 25px;
 	}
-	.section-4-card h1 {
-        font-size: 14px;
-    }
-	.section-4-card p{
-		font-size: 10px;
-		line-height: 14px;
-	}
 	.section-4-card-group .section-4-card {
         padding: 25px 15px;
     }
@@ -3354,13 +3371,6 @@ display: none;
         font-weight: 500;
 		line-height: 40px;
 		padding: 10px 0;
-	}
-	.accordion .accordion-content p {
-		font-size: 12px;
-		margin-top: 0px;
-	  }
-	.accordion button .accordion-title{
-		font-size: 12px;
 	}
 	/* .accordion {
 		border-top: 0.5px solid #e1e0e085;
@@ -3505,6 +3515,13 @@ display: none;
 		line-height: 37.81px;
 
 	}
+	.accordion-item span {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 31px;
+		text-align: left;
+
+	  } 
 	.section-3-card-content img:nth-child(3) {
 		width: 139px;
 		height: 85px;
@@ -3516,6 +3533,13 @@ display: none;
 	.section-3-card-content img:nth-child(1) {
 		width: 139px;
 		height: 85px;
+	}
+	.accordion .accordion-content p {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25px;
+		color: #EFEFEB;
+		margin-top: 0px;
 	}
 	.section-3-card {
 		height: 124px;
