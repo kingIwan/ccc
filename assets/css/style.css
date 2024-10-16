@@ -2,17 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-	background: #131313;
-	color: #666666;
-	font-family: "Poppins", sans-serif;
 	margin: 0;
-	height: 100vh;
-	background-image: url('/assets/image/index-bg.png'); 
-	background-size: auto; 
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	background: #131313;
+	background-image: url('/assets/image/index-bg.png');
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
 	background-position: center -250px; 
-}
-
+  }
+  @media (max-width: 2250px) {
+	body {
+	  background-size: cover; 
+	  background-position: center 5%; 
+	}
+  }
+  
+  @media (max-width: 1920px) {
+	body {
+	  background-size: cover;
+	  background-position: center 4%; 
+	}
+  }
+  
+  @media (max-width: 1280px) {
+	body {
+	  background-size: cover;
+	  background-position: center 0%; 
+	}
+  }
+  
   
 :root {
 	--white: #ffffff;
@@ -156,7 +177,7 @@ button{
 .overtv-overlays {
 	position: absolute;
     top: 310px;
-    right: -1%;
+    right: 6%;
     z-index: 9;
 }
 .btn-trns {
@@ -538,7 +559,7 @@ margin-bottom: 30px;
 	  margin-top: 20px;
   }
   .wrapper .container .title p{
-	  max-width: 85%;
+	  max-width: 95%;
 	  margin: 0;
 	  color: var(--dark-grey);
 	  font-size: 18px;
@@ -564,9 +585,9 @@ margin-bottom: 30px;
 		right: 0;
 		left: 0;
 		margin: 0 auto;
-		width: calc(100% - 40px) !important;
+		width: 928.15px !important;
 		max-width: 100% !important;
-		height: 574px !important;
+		height: 573px !important;
 		/* display: none !important; */
 		border: 8px solid #020202;
 		object-fit: cover;
@@ -3437,6 +3458,7 @@ display: none;
 	}
 	.overtv-overlays {
 		top: 260px;
+		right: 0% !important;
 	}
 	.wrapper .container .title span {
 		font-size: 46px;
@@ -3755,7 +3777,7 @@ display: none;
 		width: 100%;
 	}
 	.hero-bg img {
-		width: 100%;
+		width: 156%;
 	}
 	.custom-revenue-image-container {
 		position: relative;
@@ -3796,6 +3818,7 @@ display: none;
 	}
 	.section-1-title video {
 		height: 446px !important;
+		width: 772px !important;
 	}
 	.section-6-right-card h2 {
 		font-size: 15.04px;
