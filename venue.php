@@ -90,9 +90,9 @@
          </div>
          <div class="container">
             <div class="venue-section-2">
-               <button class="btn-trns mb-1 wow fadeInUp" data-i18n="see_waiting">See what’s waiting for you</button>
-               <h1 class="wow fadeInUp" data-i18n="experience_future">Experience the Future of Entertainment</h1>
-               <p class="wow fadeInUp" data-i18n="entertainment_description">
+               <button class="btn-outline venue-margin wow fadeInUp" data-i18n="see_waiting">See what’s waiting for you</button>
+               <h1 class="wow fadeInUp venue-h2" data-i18n="experience_future">Experience the Future of Entertainment</h1>
+               <p class="wow mobile-text fadeInUp" data-i18n="entertainment_description">
                   Over 50 channels covering the best content in sports, entertainment, plus viral videos and engaging trivia, enhancing the ambiance and guest experience at your venue.
                </p>
                <div class="card-container">
@@ -108,7 +108,7 @@
                         <img src="assets/image/venue-card-2.png" alt="">
                      </div>
                      <h2 data-i18n="digital_signage">Revenue for Each Ad</h2>
-                     <p data-i18n="advertise_products">Start earning with every ad that lights up your screen.</p>
+                     <p> Advertise your products within every channel.</p>
                   </div>
                   <div class="venue-card wow fadeInUp">
                      <div class="venue-card-img">
@@ -154,15 +154,15 @@
                      <div class="venue-card-img">
                         <img src="assets/image/venue-card-3.png" alt="" height="172px">
                      </div>
-                     <h2 data-i18n="expand_and_earn_ipad">Expand and Earn</h2>
-                     <p data-i18n="boost_revenue_ipad">Each new location boosts your revenue.</p>
+                     <h2 data-i18n="revenue_each_ad_ipad">Tailored Content</h2>
+                     <p data-i18n="earning_with_ads_ipad">+50 channels fully focused on your business.</p>
                   </div>
                   <div class="venue-card wow fadeInUp">
                      <div class="venue-card-img">
                         <img src="assets/image/venue-card-2.png" alt="">
                      </div>
                      <h2 data-i18n="digital_signage_ipad">Revenue for Each Ad</h2>
-                     <p data-i18n="advertise_products_ipad">Start earning with every ad that lights up your screen.</p>
+                     <p>Advertise your products within every channel.</p>
                   </div>
                </div>
                <div class="ipad-card">
@@ -170,15 +170,26 @@
                      <div class="venue-card-img">
                         <img src="assets/image/flex-card-2.png" alt="" height="172px">
                      </div>
-                     <h2 data-i18n="profit_referrals_ipad">Profit from Referrals</h2>
-                     <p data-i18n="affiliate_rewards_ipad">Join our affiliate program and earn rewards for referrals.</p>
+                     <h2 data-i18n="expand_and_earn_ipad">Expand and Earn</h2>
+                     <p data-i18n="boost_revenue_ipad">Each new location boosts your revenue.</p>
                   </div>
                   <div class="venue-card wow fadeInUp">
                      <div class="venue-card-img">
                         <img src="assets/image/venue-card-1.png" alt="">
                      </div>
-                     <h2 data-i18n="revenue_each_ad_ipad">Tailored Content</h2>
-                     <p data-i18n="earning_with_ads_ipad">+50 channels fully focused on your business.</p>
+                     <h2>Customer Loyalty</h2>
+                     <p>Every video interaction builds customer loyalty</p>
+                  </div>
+               </div>
+               <div class="w-100">
+                  <div class="flex-card" style="margin-top: 2rem !important;">
+                     <div class="flex-card-tex">
+                        <h2 style="color: #fff !important;">Profit from Referrals</h2>
+                        <p class="profit-card-p" >By joining our affiliate program, you gain the opportunity to earn rewards by simply referring others to our platform.</p>
+                     </div>
+                     <div class="flex-card-img-card">
+                        <img src="assets/image/venu-flex-card.png" alt="">
+                     </div>
                   </div>
                </div>
             </div>

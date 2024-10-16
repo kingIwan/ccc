@@ -10,6 +10,7 @@ body {
 	height: 100vh;
 	background-image: url('/assets/image/advertiser-bg.png') !important; 
 	background-size: auto !important; 
+    overflow-x: hidden;
 	background-repeat: no-repeat;
 	background-position: center 0px !important; 
 }
@@ -480,7 +481,8 @@ body {
     }
     body { 
         background-image: url('/assets/image/advertiser-iPhone-bg.png') !important; 
-        background-position: center 0px !important; 
+        background-position: center 60px !important; 
+        overflow-x: hidden;
     }
     .sm-block {
         display: block !important;

@@ -67,9 +67,6 @@
         </ul>
       </div>
       <div class="log-sign" style="--i: 1.8s">
-        <a href="/venue.php" class="btn solid">
-          <button class="login-button" data-i18n="login">Login</button>
-        </a>
         <a href="#contact" class="btn transparent" onclick="event.preventDefault(); scrollToTarget('contact');">
           <button class="contact-button" ><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -77,6 +74,9 @@
                 fill="white" />
             </svg>
           </button>
+        </a>
+        <a href="/venue.php" class="btn solid">
+          <button class="login-button" data-i18n="login">Login</button>
         </a>
       </div>
     </div>

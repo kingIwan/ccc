@@ -2894,7 +2894,7 @@ display: none;
         align-items: center;
 	}
 	.section-6-left h1 {
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 24px;
 		padding: 15px 0px;
 	}
@@ -2910,8 +2910,11 @@ display: none;
 
 	}
 	.section-6-left p {
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		text-align: center;
+		max-width: 352px;
 	}
 	.section-3-title p {
 		margin: 0;
@@ -3299,6 +3302,14 @@ display: none;
 	}
 	.section-7 .section-7-card:nth-child(2) h2 {
 		font-size: 18px;
+		line-height: 1px;
+	}
+	.section-7 .section-7-card:nth-child(2) p {
+		line-height: 20px;
+		margin-top: -10px;
+	}
+	.center-div strong {
+		font-weight: 600;
 	}
 	.logo-container {
 		margin-top: 8px;
