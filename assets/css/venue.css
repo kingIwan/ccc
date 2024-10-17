@@ -380,7 +380,9 @@ body.venue-body {
         overflow-x: hidden;
     }
 }
-
+/* .flex-card {
+    display: none;
+} */
 /* For screens 1920px wide or greater */
 @media (min-width: 1920px) and (max-height: 1420px) {
     .venue-video img:nth-child(1) {

@@ -27,14 +27,12 @@
           <p><a href="/helpcenter.php" data-i18n="help_center">Help Center</a></p>
           <p data-i18n="blog">Blog</p>
           <p data-i18n="press">Press</p>
-          <p data-i18n="careers">Careers</p>
           <p><a href="/affilate.php" data-i18n="distribution_partner">Distribution Partner</a></p>
       </div>
       <div class="d-inline mobile-margin">
           <h5 data-i18n="legal">Legal</h5>
           <p><a href="/privacy-policy.php" data-i18n="terms_conditions">Terms & Conditions</a></p>
           <p><a href="/privacy-policy.php" data-i18n="privacy_policy">Privacy Policy</a></p>
-          <p data-i18n="support">Support</p>
       </div>
       <div class="d-inline mobile-margin">
           <h5 data-i18n="subscribe">Subscribe</h5>

@@ -6,35 +6,12 @@ body {
 	padding: 0;
 	font-family: "Poppins", sans-serif;
 	background: #131313;
-	background-image: url('/assets/image/index-bg.png');
-	background-size: cover;
+	background-image: url('/assets/image/home-page-bg.png');
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-position: center center;
-	height: 100vh;
-	background-position: center -250px; 
+	height: 100%;
+	background-position: center 0px; 
   }
-  @media (max-width: 2250px) {
-	body {
-	  background-size: cover; 
-	  background-position: center 5%; 
-	}
-  }
-  
-  @media (max-width: 1920px) {
-	body {
-	  background-size: cover;
-	  background-position: center 4%; 
-	}
-  }
-  
-  @media (max-width: 1280px) {
-	body {
-	  background-size: cover;
-	  background-position: center 0%; 
-	}
-  }
-  
-  
 :root {
 	--white: #ffffff;
     --link-color: #0886FB;
@@ -2198,9 +2175,6 @@ display: none;
 }
 
 @media (max-width: 1440px) {
-	body{
-		padding: 0;
-	}
 	.section-5 .section-5-card-wrapper:nth-child(4) .section-5-card .card-title{
 		font-size: 60px;
 	}
@@ -2217,9 +2191,6 @@ display: none;
 
 
 @media (max-width: 1080px) {
-	body{
-		padding: 0;
-	}
 	.section-2-card-left{
 		width: 50%;
 	}
@@ -2336,7 +2307,7 @@ display: none;
   
 	.dropdown-link > a {
 	  background-color: transparent;
-	  color: var(--clr-light);
+	  color: var(--white);
 	  padding: 1.2rem 2rem;
 	  line-height: 1;
 	}
@@ -3206,7 +3177,7 @@ display: none;
 	}
 	body { 
 		background-image: url('/assets/image/iphone-index-bg.png'); 
-		background-position: center 15px;
+		background-position: center 10px;
 		overflow-x: hidden;
 	}
 	.wrapper .container .title p {
@@ -4506,7 +4477,7 @@ display: none;
 	}
 	body { 
 		background-image: url('/assets/image/iPad-index-bg.png'); 
-		background-position: center 24px;
+		background-position: center -28px;
 	}
 	.custom-revenue-gradient-image {
 		width: 100%;

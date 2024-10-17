@@ -26,7 +26,7 @@
       src="https://challenges.cloudflare.com/turnstile/v0/api.js"
       defer
       ></script>
-   <body>
+   <body class="channel">
       <!-- ======= Header ======= -->
       <?php
          include 'common/header.php';
