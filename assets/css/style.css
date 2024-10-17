@@ -615,7 +615,7 @@ margin-bottom: 30px;
 	.card-title {
 		color: #fff;
 		font-size: 21px;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 26px;
 		text-align: left;
 		margin-bottom: 10px;
@@ -780,7 +780,7 @@ margin-bottom: 30px;
 	}
 	.section-2-card-right span p{
 		font-size: 13px;
-		font-weight: 400;
+		font-weight: 200;
 		line-height: 20px;
 		text-align: left;
 		padding: 15px 0 25px 0;
@@ -863,7 +863,7 @@ margin-bottom: 30px;
 	}
 	.section-2-2-card-left span p{
 		font-size: 13px;
-		font-weight: 400;
+		font-weight: 200;
 		line-height: 20px;
 		text-align: left;
 		padding: 15px 0 25px 0;
@@ -1372,7 +1372,7 @@ margin-bottom: 30px;
 	}
 	.section-6-left p{
 		font-size: 18px;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 22px;
 		max-width: 420px;
 		padding: 13px 0;
@@ -1502,10 +1502,13 @@ margin-bottom: 30px;
 		letter-spacing: -0.31px;
 	}
 	.section-7 .section-7-card:nth-child(2) p{
-		font-size: 12px;
+		font-size: 10px;
 		margin-top: -16px;
 		font-weight: 400;
 		line-height: 26.55px;
+	}
+	.center-div strong {
+		font-weight: 500;
 	}
 	.section-7 .section-7-card:nth-child(2) h3{
 		font-size: 24.99px;
@@ -1562,7 +1565,7 @@ margin-bottom: 30px;
 		max-width: 547px;
 		margin-top: 15px;
 		font-size: 19.96px;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 26.61px;
 		text-align: center;
 		color: var(--dark-grey);
@@ -1627,7 +1630,7 @@ margin-bottom: 30px;
 	  }
 	  .accordion-item span {
 		font-size: 1.3rem;
-		font-weight: 600;
+		font-weight: 400;
 		line-height: 44.13px;
 	  } 
 	  .accordion button:hover,
@@ -1897,7 +1900,7 @@ margin-bottom: 30px;
 	}
 	.header-title h4 { 
 		font-size: 18px;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 21.01px;
 	}
 	.footer-subscription {
@@ -1968,6 +1971,7 @@ margin-bottom: 30px;
 	}
 	.section-10-content{
 		display: flex;
+		justify-content: space-between;
 		padding: 45px 0 0 0;
 	}
 	.section-10-content .d-inline{
@@ -4590,7 +4594,7 @@ display: none;
 	}
 	.section-7 .section-7-card:nth-child(2) p {
 		font-size: 8.63px;
-		font-weight: 400;
+		font-weight: 200;
 		line-height: 16.29px;
 	}
 	.section-7 .section-7-card:nth-child(1) , .section-7 .section-7-card:nth-child(2),

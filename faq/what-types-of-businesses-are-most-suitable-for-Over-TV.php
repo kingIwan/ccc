@@ -51,10 +51,10 @@
       </a>
       </div>
       <div class="nav-btn helpcenter">
-      <p>Go to Over TV</p>
+      <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       </div>
       <div class="hamburger-menu-container mb-head">
-     <p>Go to Over TV</p>
+     <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       <div>
     </div>
 </header>
@@ -103,11 +103,10 @@
           <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
               <h3 data-i18n="popular_articles_title">Releated Articles</h3>
               <ul>
-                  <li data-i18n="carousel_article">How to Use the Carousel to Add an Image Slideshow to Your Startup Template</li>
-                  <li data-i18n="woocommerce_email_article">How to Customize WooCommerce Email Templates Using a Postcards Email Template</li>
-                  <li data-i18n="upload_github_article">How to Upload Your Startup Website to GitHub Pages</li>
-                  <li data-i18n="scroll_progress_bar_article">How to Add a Page Scroll Progress Bar at the Top of Your Startup Webpage</li>
-                  <li data-i18n="gmail_postcards_article">How to Send a Postcards Email Template with Gmail</li>
+                  <li><a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.php">How does Over TV work and how can I start watching?</a></li>
+                  <li><a href="/faq/how-much-does-the-Over-TV-player-cost.php">How much does the Over TV player cost?</a></li>
+                  <li><a href="/faq/how-much-does-the-Over-TV-player-cost.php">How much does the Over TV player cost?</a></li>
+                  <li><a href="/faq/how-can-I-start-making-money-with-the-Over-TV-Player.php">How can I start making money with the Over TV Player?</a></li>
               </ul>
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
               <ul>
@@ -123,7 +122,7 @@
             <p>Over.TV© Copyright  <span>Over.TV Help Center</span> </p>
           </div>
           <div class="copyright">
-            <p>Go to Over.TV</p>
+            <p><p><a href="/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p></p>
           </div>
         </div>
     </div>

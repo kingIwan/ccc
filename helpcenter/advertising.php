@@ -51,10 +51,10 @@
       </a>
       </div>
       <div class="nav-btn helpcenter">
-      <p>Go to Over TV</p>
+      <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       </div>
       <div class="hamburger-menu-container mb-head">
-     <p>Go to Over TV</p>
+     <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       <div>
     </div>
 </header>
@@ -122,6 +122,14 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </li>
+                <li>
+                <a href="/faq/how-to-create-an-advertiser-account.php">
+                    <span>
+                    How to Create an Advertiser Account
+                    </span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
             </ul>
         </div>
         <div class="need-support">
@@ -139,7 +147,7 @@
             <p>Over.TV© Copyright  <span>Over.TV Help Center</span> </p>
           </div>
           <div class="copyright">
-            <p>Go to Over.TV</p>
+            <p><p><a href="/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p></p>
           </div>
         </div>
     </div>

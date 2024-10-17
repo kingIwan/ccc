@@ -66,7 +66,7 @@
 
 .ads-accordion-content p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 25.04px;
     text-align: left;
     color: #ffffff;
@@ -212,12 +212,12 @@
 }
 .Campaign-section p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 31.68px;
     text-align: left;
-    color: var(--white);    
-    opacity: 60%;
+    color: #FFFFFF99; 
     max-width: 83%;
+    margin-top: 10px;
 }
 .ads-title-under p {
     color: var(--grey-text);
@@ -255,7 +255,7 @@
 } */
 .active .ads-accordion-header p {
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 39.64px;
     text-align: left;
     color: #ffffff;
@@ -310,7 +310,7 @@
 }
 .ad-section-6-ads-left p, .ad-section-6-ads-right p {
     font-size: 15.11px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 23.5px;
     color: #d0d0d0;
     padding-top: 10px;
@@ -335,7 +335,7 @@
 }
 .realtime-6-ads-left p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
     max-width: 330px;
     color: #d0d0d0;

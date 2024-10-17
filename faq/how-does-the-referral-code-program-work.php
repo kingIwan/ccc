@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - Settings</title>
+  <title>OverTV - How does the Referral Code program work?</title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -71,50 +71,55 @@
         </div>
     </div> -->
     <div class="breadcrump">
-        <div class="container">
-            <div class="breadcrump-content">
-              <p ><a href="/helpcenter.php"><b data-i18n="home">Home</b></a> <span data-i18n="breadcrump_settings"> > Settings</span></p>
+      <div class="container">
+          <div class="breadcrump-content">
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/advertising.php">Advertising </b> </a> </b> <span> > How does the Referral Code program work?
+              </span></p>
               <!-- <form>
-                    <input type="text" name="search" placeholder="Search the knowledge base...">
-                </form> -->
-            </div>
-        </div>
-    </div>
-    <div class="container">
-      <div class="general-section">
-        <div class="general-question">
-            <h2>
-               <span><img src="../assets/svg/setting-icon.svg" alt=""></span> <span data-i18n="settings_title">Settings</span>
-            </h2>
-            <ul>
-                <li>
-                <a href="/faq/how-do-I-order-an-Over-TV-device.php"> <span data-i18n="order_device_question">How do I order an Over TV device?</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </li>
-                <li>
-                <a href="/faq/how-do-I-install-my-Over-TV-device.php"> <span data-i18n="install_device_question">How do I install my Over TV device?</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </li>
-                <li>
-                   <a href="/faq/i-lost-my-remote-control-what-should-I-do.php"><span data-i18n="lost_remote_question">I lost my remote control, what should I do?</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </li>
-                <li>
-                <a href="/faq/how-to-connect-the-Over-TV-Player-to-multiple-TVs.php"> <span data-i18n="connect_multiple_tvs_question">How to connect Over TV Player to multiple TVs?</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </li>
-                <li>
-                <a href="/faq/how-can-I-contact-customer-support.php"> <span data-i18n="contact_support_question">How can I contact customer support?</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="need-support">
-            <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
-            <ul>
-                <li data-i18n="support_description">
-                    Can't find the answer you're looking for? Don't worry we're here to help!
-                </li>
-            </ul>
-            <button data-i18n="contact_support_button">Contact Support</button>
-        </div>
+                  <input type="text" name="search" placeholder="Search the knowledge base...">
+              </form> -->
+          </div>
       </div>
-      <div class="helpcenter-footer">
+  </div>
+    <div class="container">
+        <div class="help-content">
+          <div class="general-question">
+            <h2>
+            How does the Referral Code program work?
+            </h2>
+           <p>
+           In the Referral Code program, you earn 5% of the advertising value on each device you recommend and is approved, for a period of 6 months.
+           </p>
+           <p>
+           The more devices registered with your Referral Code are active, the more you earn.
+           </p>
+            <div class="content-remarks">
+               <h3 data-i18n="article_helpful_question">Was this article helpful?</h3>
+               <div class="remarks-button">
+                 <button class="okey-button"><img src="../assets/svg/bold-tick-icon.svg" alt=""></button>
+                 <button class="fail-button"><img src="../assets/svg/cross.svg" alt=""></button>
+               </div>
+            </div>
+          </div>
+          <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
+              <h3 data-i18n="popular_articles_title">Releated Articles</h3>
+              <ul>
+                  <li data-i18n="carousel_article">How to Use the Carousel to Add an Image Slideshow to Your Startup Template</li>
+                  <li data-i18n="woocommerce_email_article">How to Customize WooCommerce Email Templates Using a Postcards Email Template</li>
+                  <li data-i18n="upload_github_article">How to Upload Your Startup Website to GitHub Pages</li>
+                  <li data-i18n="scroll_progress_bar_article">How to Add a Page Scroll Progress Bar at the Top of Your Startup Webpage</li>
+                  <li data-i18n="gmail_postcards_article">How to Send a Postcards Email Template with Gmail</li>
+              </ul>
+              <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
+              <ul>
+                  <li data-i18n="support_description">
+                      Can't find the answer you're looking for? Don't worry we're here to help!
+                  </li>
+              </ul>
+              <button data-i18n="contact_support_button">Contact Support</button>
+          </div>
+        </div>
+        <div class="helpcenter-footer">
           <div class="footer-text">
             <p>Over.TV© Copyright  <span>Over.TV Help Center</span> </p>
           </div>
@@ -125,25 +130,14 @@
     </div>
 </div>
 
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../assets/js/script.js"></script>
   <script src="../assets/js/wow.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/swiper.min.js"></script>
-  <script>
-    fetch('../common/header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading header:', error));
-    fetch('../common/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading footer:', error));
-  </script>
+
   <script>
 
 

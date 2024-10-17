@@ -125,7 +125,7 @@ body.channel {
 }
 .card-text-tv h4 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.88);
     line-height: 16.34px;
     text-align: left;
@@ -213,7 +213,7 @@ h1, p {
     color: var(--white);
     opacity: 60%;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 28.37px;
     padding-top: 10px;
 }
@@ -231,7 +231,7 @@ h1, p {
 }
 .video-section p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 31.44px;
     color: var(--grey-text);
     padding-top: 10px;
@@ -264,7 +264,7 @@ h1, p {
 }
 .video-content p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 24.78px;
     color: var(--white);
     max-width: 86%;

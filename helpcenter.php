@@ -60,10 +60,10 @@
       </a>
       </div>
       <div class="nav-btn helpcenter">
-      <p>Go to Over TV</p>
+      <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       </div>
       <div class="hamburger-menu-container mb-head">
-     <p>Go to Over TV</p>
+     <p><a href="https://admin.over.tv/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>
       <div>
     </div>
   </header>
@@ -139,28 +139,22 @@
             <h3 data-i18n="popular_articles_title">Popular Articles</h3>
             <ul>
               <li>
-                <a href="" data-i18n="article_1">How to Use the Carousel to Add an Image Slideshow to Your
-                Startup Template</a>
+                <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.php">How does Over TV work and how can I start watching?
+                </a>
               </li>
               <li>
-                <a href="" data-i18n="article_2">
-                How to Customize WooCommerce Email Templates Using a Postcards
-                Email Template </a>
+                <a href="/faq/how-do-I-order-an-Over-TV-device.php">How do I order an Over TV device?</a>
               </li>
               <li>
-              <a href=""  data-i18n="article_3">
-                How to Upload Your Startup Website to GitHub Pages
+              <a href="/faq/do-i-have-a-minimum-of-active-hours-to-start-earning.php">Do I have a minimum of active hours to start earning?
               </a>
               </li>
               <li>
-              <a href=""  data-i18n="article_4">
-                How to Add a Page Scroll Progress Bar at the Top of Your Startup
-                Webpage
+              <a href="/faq/how-to-create-an-advertiser-account.php">How to Create an Advertiser Account
               </a>
               </li>
               <li >
-              <a href=""  data-i18n="article_5">
-                How to Send a Postcards Email Template with Gmail
+              <a href="/faq/how-does-the-referral-code-program-work.php">How does the Referral Code program work?
               </a>
               </li>
             </ul>
@@ -181,7 +175,7 @@
             <p>Over.TV© Copyright  <span>Over.TV Help Center</span> </p>
           </div>
           <div class="copyright">
-            <p>Go to Over.TV</p>
+            <p><p><a href="/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p></p>
           </div>
         </div>
       </div>

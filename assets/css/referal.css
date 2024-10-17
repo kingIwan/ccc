@@ -177,12 +177,13 @@ body {
 }
 .affiliate-button a {
     font-size: 14.78px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 14.78px;
     text-align: center;
     opacity: 0.9;
 
 }
+
 .affiliate-video img:nth-child(1) {
     position: absolute;
     bottom: -28px;
@@ -201,10 +202,12 @@ body {
     font-size: 38.98px;
     font-weight: 600;
     line-height: 46.77px;
+    max-width: 600px;
 }
 .section-4-title p { 
     font-size: 18px;
-    font-weight: 400;
+    max-width: 700px;
+    font-weight: 300;
     line-height: 19.87px;
     color: var(--grey-text);
 }
@@ -226,6 +229,11 @@ body {
 }
 .affiliate-text {
     min-height: 70px;
+}
+.affiliate-text p {
+    min-height: 70px;
+    font-weight: 300 !important;
+    margin-top: 0px !important;
 }
 .support-grow p {
     font-size: 20px;
@@ -277,9 +285,8 @@ body {
     width: 34%;
 }
 .reward-text p {
-    font-family: Inter;
     font-size: 18.87px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26.94px;
     color: var(--white);
     opacity: 66%;
