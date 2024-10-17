@@ -130,6 +130,14 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </li>
+                <li>
+                <a href="/faq/adding-balance-and-running-the-campaign.php">
+                    <span>
+                    Adding Balance and Running the Campaign
+                    </span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
             </ul>
         </div>
         <div class="need-support">

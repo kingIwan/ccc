@@ -88,7 +88,7 @@
             How to Create an Advertiser Account?
             </h2>
             <p>
-            1. Access the Site: <p><a href="/" target="_blank"><p><a href="/"><p><a href="/">Go to Over TV</a></p></a></p></a></p>/advertise.
+            1. Access the Site: <a href="/advertiser.php">over.tv/advertise.</a>
             </p>
             <p>
             2. Click on "Register": Find the registration button at the top of the page and click on it
@@ -141,11 +141,14 @@
           <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
               <h3 data-i18n="popular_articles_title">Releated Articles</h3>
               <ul>
-                  <li data-i18n="carousel_article">How to Use the Carousel to Add an Image Slideshow to Your Startup Template</li>
-                  <li data-i18n="woocommerce_email_article">How to Customize WooCommerce Email Templates Using a Postcards Email Template</li>
-                  <li data-i18n="upload_github_article">How to Upload Your Startup Website to GitHub Pages</li>
-                  <li data-i18n="scroll_progress_bar_article">How to Add a Page Scroll Progress Bar at the Top of Your Startup Webpage</li>
-                  <li data-i18n="gmail_postcards_article">How to Send a Postcards Email Template with Gmail</li>
+                  <li><a href="/faq/how-does-over-charge-for-ads.php">How does Over charge for ads?</a></li>
+                  <li><a href="/faq/difference-between-ad-budget-and-amount-spent.php">Difference between ad budget and amount spent</a></li>
+                  <li><a href="/faq/daily-and-total-budgets-in-ads.php">Daily and total budgets in ads?</a></li>
+                  <li><a href="/faq/how-ads-are-charged.php">How are ads charged?</a></li>
+                  <li><a href="/faq/how-to-view-ad-charges.php">How to view ad charges?</a></li>
+                  <li><a href="/faq/how-to-use-referral-code-after-requesting-over-tv-device.php">How to use a referral code after requesting an Over TV device?</a></li>
+                  <li><a href="/faq/what-happens-if-i-refer-a-venue-and-it-is-not-approved.php">What happens if I refer a venue and it is not approved?</a></li>
+                  <li><a href="/faq/if-venue-i-referred-requests-additional-device-do-i-earn.php">If the venue I referred requests an additional device, do I earn as well?</a></li>
               </ul>
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
               <ul>

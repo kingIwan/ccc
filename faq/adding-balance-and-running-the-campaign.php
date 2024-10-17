@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>OverTV - I no longer want to use the Over device, how do I return it?</title>
+  <title>OverTV - Adding Balance and Running the Campaign
+  </title>
   <link href="../assets/image/icon-logo1.png" rel="icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -73,7 +74,8 @@
     <div class="breadcrump">
       <div class="container">
           <div class="breadcrump-content">
-              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/accounts.php">Accounts </b> </a> </b> <span > > I no longer want to use the Over device, how do I return it?</span></p>
+              <p><b data-i18n="home_general"><a href="/helpcenter.php">Home ></a> <a href="/helpcenter/advertising.php">Advertising </b> </a> </b> <span> > Adding Balance and Running the Campaign
+              </span></p>
               <!-- <form>
                   <input type="text" name="search" placeholder="Search the knowledge base...">
               </form> -->
@@ -84,16 +86,21 @@
         <div class="help-content">
           <div class="general-question">
             <h2>
-            I no longer want to use the Over device, how do I return it?
+            Adding Balance and Running the Campaign
             </h2>
             <p>
-            If you decide that you no longer wish to use the Over device in your environment, no problem.
+            • <b>Add Balance:</b> Insert funds into your advertiser account to finance your campaign.
             </p>
             <p>
-            Simply contact us at suporte@over.tv and we will send you all the necessary instructions for returning the device.
+            • <b>Start Campaign:</b> After adding balance, you can run your campaign.
+            </p>
+            <p><b>Approval Process:</b></p>
+            <p>
+            • <b>Campaign Analysis:</b> Once created and funded, your campaign will enter an analysis process.
             </p>
             <p>
-            We are here to help make this process as simple and smooth as possible for you.
+            • <b>Approval Time:</b> The campaign will be reviewed and approved within two business days.
+
             </p>
             <div class="content-remarks">
                <h3 data-i18n="article_helpful_question">Was this article helpful?</h3>
@@ -106,9 +113,14 @@
           <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
               <h3 data-i18n="popular_articles_title">Releated Articles</h3>
               <ul>
-                  <li><a href="/faq/how-to-access-my-dashboard.php">How to access my dashboard?</a></li>
-                  <li><a href="/faq/my-login-is-not-working-what-should-I-do.php">My login isn't working. What should I do?</a></li>
-                  <li><a href="/faq/what-are-the-Over-TV-terms-of-service.php">What are Over TV's terms of service?</a></li>
+                  <li><a href="/faq/how-does-over-charge-for-ads.php">How does Over charge for ads?</a></li>
+                  <li><a href="/faq/difference-between-ad-budget-and-amount-spent.php">Difference between ad budget and amount spent</a></li>
+                  <li><a href="/faq/daily-and-total-budgets-in-ads.php">Daily and total budgets in ads?</a></li>
+                  <li><a href="/faq/how-ads-are-charged.php">How are ads charged?</a></li>
+                  <li><a href="/faq/how-to-view-ad-charges.php">How to view ad charges?</a></li>
+                  <li><a href="/faq/how-to-use-referral-code-after-requesting-over-tv-device.php">How to use a referral code after requesting an Over TV device?</a></li>
+                  <li><a href="/faq/what-happens-if-i-refer-a-venue-and-it-is-not-approved.php">What happens if I refer a venue and it is not approved?</a></li>
+                  <li><a href="/faq/if-venue-i-referred-requests-additional-device-do-i-earn.php">If the venue I referred requests an additional device, do I earn as well?</a></li>
               </ul>
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
               <ul>

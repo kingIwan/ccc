@@ -120,11 +120,10 @@
           <div class="popular-articles wow fadeInUp" data-wow-delay="0.1s">
               <h3 data-i18n="popular_articles_title">Releated Articles</h3>
               <ul>
-                  <li data-i18n="carousel_article">How to Use the Carousel to Add an Image Slideshow to Your Startup Template</li>
-                  <li data-i18n="woocommerce_email_article">How to Customize WooCommerce Email Templates Using a Postcards Email Template</li>
-                  <li data-i18n="upload_github_article">How to Upload Your Startup Website to GitHub Pages</li>
-                  <li data-i18n="scroll_progress_bar_article">How to Add a Page Scroll Progress Bar at the Top of Your Startup Webpage</li>
-                  <li data-i18n="gmail_postcards_article">How to Send a Postcards Email Template with Gmail</li>
+                  <li><a href="/faq/how-do-I-order-an-Over-TV-device.php">How do I order an Over TV device?</a></li>
+                  <li><a href="/faq/how-do-I-install-my-Over-TV-device.php">How do I install my Over TV device?</a></li>
+                  <li><a href="/faq/i-lost-my-remote-control-what-should-I-do.php">I lost my remote control, what should I do?</a></li>
+                  <li><a href="/faq/how-can-I-contact-customer-support.php">How can I contact customer support?</a></li>
               </ul>
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
               <ul>
