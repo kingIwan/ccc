@@ -271,7 +271,7 @@
                   <h1 class="wow fadeInUp" data-i18n="tv_reimagined_title">TV reimagined for business</h1>
                   <p class="wow fadeInUp" data-i18n="business_description_1">Over® offers a comprehensive suite of short-form, audio-optional channels designed for various business settings.</p>
                   <p class="wow fadeInUp" data-i18n="business_description_2">Our specialized Over Player provides access to an extensive library of entertainment, ranging from the latest news and sports updates to engaging viral videos and interactive trivia.</p>
-                  <p class="wow fadeInUp" data-i18n="business_description_3">With over 50 channels, Over® ensures your business has a constant stream of captivating content.</p>
+                  <p class="wow fadeInUp hide-mobile" data-i18n="business_description_3">With over 50 channels, Over® ensures your business has a constant stream of captivating content.</p>
                </div>
                <div class="section-6-right">
                   <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.1s">
