@@ -1,4 +1,11 @@
+
 <div class="section-10" id="contact">
+    <div class="footer-bod-div">
+    <div class="footer-border">
+    
+    </div>
+    </div>
+
   <div class="section-10-header">
       <div class="section-10-header-title">
           <div class="d-flex">
