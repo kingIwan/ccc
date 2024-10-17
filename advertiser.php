@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="assets/css/swiper.min.css" />
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-   <body>
+   <body class="advertise-page"> 
       <?php
          include 'common/header.php';
          ?>

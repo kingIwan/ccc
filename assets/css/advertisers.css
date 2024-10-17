@@ -59,7 +59,7 @@ body {
 
 .ads-accordion {
     /* position: absolute; */
-    max-width: 700px;
+    max-width: 600px;
     margin: 20px auto;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .ads-accordion-content p {
-    font-size: 16.69px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25.04px;
     text-align: left;
@@ -125,9 +125,9 @@ body {
 }
 .hero-text {
     position: relative;
-    width: 43%;
+    width: 50%;
 }
-.hero-video img:nth-child(1) {
+.hero-video img {
     position: absolute;
     bottom: -60px;
     z-index: 9;
@@ -136,7 +136,7 @@ body {
     height: 170px;
 }
 .hero-text span {
-    font-size: 46.74px;
+    font-size: 44px;
     font-weight: 700;
     display: block;
     min-width: 500px;
@@ -170,7 +170,7 @@ body {
     align-items: center ;
 }
 .hero-text h1 {
-    font-size: 46.74px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 46.74px;
     text-align: left;
@@ -246,7 +246,7 @@ body {
     text-align: left;
     color: var(--white);    
     opacity: 60%;
-    max-width: 69%;
+    max-width: 83%;
 }
 .ads-title-under p {
     color: var(--grey-text);
@@ -258,7 +258,7 @@ body {
 }
 .image-insight {
     position: absolute;
-    right: 0;
+    right: -10%;
     height: 640px;
 }
 .image-insight-container {
@@ -343,7 +343,7 @@ body {
     line-height: 23.5px;
     color: #d0d0d0;
     padding-top: 10px;
-    max-width: 445px;
+    max-width: 389px;
 }
 .campaign-margin {
     margin-top: 2rem;
@@ -352,7 +352,7 @@ body {
     display: none;
 }
 .realtime-6-ads-left {
-    width: 35%;
+    width: 42%;
     color: #fff;
 }
 .realtime-6-ads-left h1 {
@@ -412,7 +412,7 @@ body {
         top: 250px;
 		right: 4%;
     }
-    .hero-video img:nth-child(1) {
+    .hero-video img {
         bottom: -60px;
         left: 60px;
         width: 180px;
@@ -528,6 +528,7 @@ body {
         line-height: 27.23px;
         letter-spacing: -0.03em;
         text-align: left;
+        max-width: 70%;
     }
     .hero-text button {
         font-size: 7.18px;
@@ -563,7 +564,7 @@ body {
         line-height: 18px;
 
     }
-    .hero-video img:nth-child(1) { 
+    .hero-video img { 
         width: 72px;
         height: 72px;
         bottom: -13px;
@@ -678,7 +679,199 @@ body {
         height: 100px;
     }
 }
-@media (min-width: 769px) and (max-width: 1080px) {
+@media (min-width: 760px) and (max-width: 1080px) { 
+    .advertise-page .container {
+        width: 780px !important;
+    }
+     
+    .Campaign-section {
+        display: flex !important;
+    }
+    .mobile-ad-image {
+        display: none;
+    }
+    .ad-section-6 ,.hide-mb {
+        display: flex;
+    }
+    .image-insight {
+        display:  flex !important;
+    }
+    .ads-accordion {
+        margin: 0px;
+    }
+    .Campaign-section {
+        align-items: start;
+    }
+    .Campaign-section .btn-trns {
+        display: none !important;
+    }
+    .Campaign-section p {
+        text-align: start;
+    }
+    .hide-for-mobile {
+        display: flex;
+    }
+    .hero-text {
+        width: 100%;
+        left: 0px;
+    }
+    .hide-for-desktop {
+        display: flex;
+        flex-direction: column;
+    }
+    .work-section {
+        padding-top: 10px;
+    }
+    .work-title h2 {
+        color: var(--white);
+    }
+    .work-section p {
+        color: var(--white);
+        padding-left: 42px;
+    }
+    .control-section {
+        display: none;
+    }
+    .work-title img {
+        width: 6%;
+    }
+    .hero-video {
+        min-height: 400px;
+        width: 100%;
+        display: flex;
+        padding-top: 25px;
+        justify-content: end;
+    }
+    .ads-accordion {
+        max-width: 406px;
+    }
+    .active .ads-accordion-header p {
+        font-size: 17.12px;
+        font-weight: 600;
+        line-height: 26.1px;
+    }
+    .ads-accordion-content p {
+        font-size: 10.54px;
+        font-weight: 400;
+        line-height: 15.8px;
+        padding-left: 28px;
+    }
+    .ads-accordion-header p {
+        font-size: 17.12px;
+        font-weight: 600;
+        line-height: 26.1px;
+    }
+    .ad-section-6 {
+        margin-top: 14%;
+    }
+    .insights-section {
+        margin-top: 40px;
+        flex-direction: row;
+    }
+    .accordion-box {
+        margin-top: -20px;
+    }
+    .active .ads-accordion-content {
+        padding: 10px 15px 15px 15px;
+    }
+    .image-insight {
+        height: 408px;
+        right: 0;
+    }
+    .hero-text span { 
+        font-size: 47.45px;
+        font-weight: 700;
+        line-height: 56.94px;
+
+
+    }
+    .hero-text h1 { 
+        font-size: 47.45px;
+        font-weight: 700;
+        line-height: 56.94px;
+    }
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27.49px;
+
+    }
+    .wrapper { 
+        /* padding: 30px; */
+    }
+    .image-insight-container { 
+        left: 5%;
+    }
+    .ad-section-6-ads-right img, .realtime-6-ads-right img {
+        width: 100%;
+    }
+    .mac-ads {
+        gap: 25px;
+    }
+    .ad-section-6-ads-left h1, .ad-section-6-ads-right h1 {
+        font-size: 26.04px;
+        font-weight: 600;
+        line-height: 35.97px;
+        text-align: left;
+
+    }
+    .ad-section-6-ads-right h1, .ad-section-6-ads-right p {
+        padding-left: 20%;
+    }
+    .ad-section-6-ads-left p, .ad-section-6-ads-right p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+
+    }
+    .ad-section-6-ads-right img:nth-of-type(1) {
+        display: none;
+    }
+    .ad-section-6-ads-right img:nth-of-type(2) {
+        display: inline;
+    }
+    .ad-section-6-ads-left img {
+        width: 100%;
+    }
+    .hero-video img {
+        width: 129px;
+        bottom: -45px;
+        left: 23%;
+        height: 129px;
+    }
+    .realtime-6-ads-left h1 {
+        font-size: 30.64px;
+        font-weight: 600;
+        line-height: 38.3px;
+
+    }
+    .realtime-6-ads-left p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .realtime-6-ads-right img {
+        height: 100%;
+    }
+    .hero-video video { 
+        width: 616px;
+        height: 381px !important;
+        right: -11%;
+    }
+    .ads-section-2{
+        margin-top: 100px;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+    body { 
+        background-image: url('/assets/image/advertiser-ipad.png') !important; 
+        background-position: center 45px !important; 
+    }
+}
+@media (min-width: 770px) and (max-width: 1080px) {
+
     .hero-text {
         width: 100%;
         left: 0px;
@@ -743,6 +936,10 @@ body {
     }
     .image-insight {
         height: 408px;
+        right: -7%;
+    }
+    .hero-section {
+        width: 733px !important;
     }
     .hero-text span { 
         font-size: 47.45px;
@@ -799,11 +996,15 @@ body {
     .ad-section-6-ads-left img {
         width: 100%;
     }
-    .hero-video img:nth-child(1) {
+    .hero-video img {
         width: 129px;
         bottom: -45px;
-        left: 12%;
+        left: 19%;
         height: 129px;
+    }
+    .Campaign-section p {
+        max-width: 88%;
+        padding-top: 10px;
     }
     .realtime-6-ads-left h1 {
         font-size: 30.64px;
@@ -811,10 +1012,16 @@ body {
         line-height: 38.3px;
 
     }
+    .section-8 {
+        padding: 5%;
+        margin-top: 4% !important;
+        padding-bottom: 0;
+    }
     .realtime-6-ads-left p {
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
+        max-width: 91%;
     }
     .realtime-6-ads-right img {
         height: 100%;
@@ -822,6 +1029,7 @@ body {
     .hero-video video { 
         width: 616px;
         height: 381px !important;
+        position: absolute;
     }
     .ads-section-2{
         margin-top: 100px;

@@ -224,6 +224,9 @@ body {
     letter-spacing: -0.02em;
     color: var(--white);
 }
+.affiliate-text {
+    min-height: 70px;
+}
 .support-grow p {
     font-size: 20px;
     font-weight: 400;
@@ -239,6 +242,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 4%;
     margin-top: 35px;
 }
 .margin-affiliate {
@@ -291,7 +295,7 @@ body {
 .image-square {
     position: absolute;
     left: 45px;
-    bottom: -26px;
+    bottom: -43px;
     width: 695px; 
     height: 545px; 
     background: linear-gradient(360deg, #2B7FFC 26.61%, #60EFFF 266.09%);

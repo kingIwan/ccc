@@ -27,11 +27,14 @@
             <h1 class="title-break">
                <b data-i18n="turn_referrals">Turn Referrals</b> <span data-i18n="into_revenue">into Revenue</span>
             </h1>
-            <div class="title-under">
+            <div class="title-under affiliate-text">
                <p data-i18n="business_network_description">Turn your business network into a source of income. As
                   our distribution partner, you’ll profit
                   every time a new venue joins through your connection
                </p>
+            </div>
+            <div class="invite-button">
+               <button class="affiliate-button">Invite a Friend</button>
             </div>
          </div>
          <div class="affiliate-video">
