@@ -137,6 +137,9 @@ button{
 .affiliate-container {
 	max-width: 1120px !important;
 }
+.venue-body .container {
+	max-width: 1120px !important;
+}
 .container{
 	padding-left: 15px !important;
 	padding-right: 15px !important;
@@ -3732,6 +3735,9 @@ display: none;
 	.section-3-card-content img:nth-child(1) {
 		width: 139px;
 		height: 85px;
+	}
+	.venue-card-img {
+		height: 180px;
 	}
 	.accordion .accordion-content p {
 		font-size: 14px;
