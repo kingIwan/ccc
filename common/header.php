@@ -53,13 +53,7 @@
             <div class="dropdown">
               <ul>
                 <li class="dropdown-link">
-                  <a href="#" data-i18n="about_us">About Us</a>
-                </li>
-                <li class="dropdown-link">
                   <a href="http://blog.over.tv" data-i18n="blog">Blog</a>
-                </li>
-                <li class="dropdown-link">
-                  <a href="#" data-i18n="case_studies">Case Studies</a>
                 </li>
               </ul>
             </div>
@@ -67,7 +61,7 @@
         </ul>
       </div>
       <div class="log-sign" style="--i: 1.8s">
-        <a href="https://admin.over.tv/" class="btn transparent" target="_blank">
+        <a href="/venue.php" class="btn transparent">
           <button class="contact-button"><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -75,7 +69,7 @@
             </svg>
           </button>
         </a>
-        <a href="/venue.php" class="btn solid">
+        <a href="https://admin.over.tv/" target="_blank" class="btn solid">
           <button class="login-button" data-i18n="login">Login</button>
         </a>
       </div>

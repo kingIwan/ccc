@@ -1837,8 +1837,8 @@ margin-bottom: 30px;
 	}
 
 	.subscribe-button {
-		width: 33px;
-		height: 33px;
+		width: 30px;
+		height: 30px;
 		padding: 0px !important;
 		border-radius: 50%;
 		background: var(--white);
@@ -1920,7 +1920,7 @@ margin-bottom: 30px;
 		padding: 10px 52px 10px 52px;
 		border: 0px;
 		font-size: 18.2px;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 26.61px;
 	}
 	.section-10-header{
@@ -3907,7 +3907,7 @@ display: none;
 		padding: 7px 16px 7px 16px;
 		border-radius: 10px;
 		font-size: 12px;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 16.73px;
 	}
 	.section-subscription {
@@ -4437,7 +4437,7 @@ display: none;
 		padding: 7px 16px 7px 16px;
 		border-radius: 10px;
 		font-size: 12px;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 16.73px;
 	}
 	.section-subscription {

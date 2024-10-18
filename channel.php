@@ -45,7 +45,7 @@
                   <p data-i18n="hero_over_60_channels">
                      Elevate the energy at your venue with nonstop entertainment—sports highlights, viral trends, and interactive trivia—curated to keep your guests entertained and immersed in the moment
                   </p>
-                  <button data-i18n="hero_get_your_free_player">
+                  <button data-i18n="hero_get_your_free_player" onclick="redirectToSignup()">
                   Get Your Free Player
                   </button>
                </div>
@@ -451,7 +451,7 @@
             <div class="section-subscription">
                <div class="d-flex header-title">
                   <h4 data-i18n="subscription_improve_experience">Stay Ahead of the Competition with Advanced Entertainment Solutions.</h4>
-                  <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
+                  <button onclick="redirectToSignup()" data-i18n="subscription_get_device">Get Your Free OverTV Device Now!</button>
                </div>
             </div>
          </div>
@@ -548,6 +548,9 @@
            if (targetElement) {
              targetElement.scrollIntoView({ behavior: "smooth" });
            }
+         }
+         function redirectToSignup() {
+            window.open('https://admin.over.tv/cadastro','_blank');
          }
       </script>
       <!-- <script>

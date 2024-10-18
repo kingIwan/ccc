@@ -204,12 +204,13 @@ input[type=text] {
 }
 .popular-articles button {
     text-transform: uppercase;
-    background: #186BFF;
+    background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
     border-radius: 20px;
+    margin-top: 5px;
 }
 .need-support button { 
     text-transform: uppercase;
-    background: #186BFF;
+    background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
     border-radius: 20px;
     margin-top: 20px;
 }

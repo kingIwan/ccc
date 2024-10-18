@@ -27,7 +27,7 @@
                   <span data-i18n="hero_monopolize_attention">Monopolize Attention.</span>
                   <h1 data-i18n="hero_advertise_where_competitors">Advertise Where Your Competitors Can’t Compete</h1>
                   <div class="d-flex align-center gap-1-5 mt-2">
-                     <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
+                     <button data-i18n="hero_advertise_with_over" onclick="redirectToSignup()">Advertise with Over</button>
                      <p data-i18n="hero_future_arrived">See why the future already arrived</p>
                   </div>
                </div>
@@ -46,7 +46,7 @@
                   <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work">Step Into The Future of Advertising Today</h1>
                   <h1 class="wow fadeInUp" data-i18n="ads_make_every_screen_work2">Step Into The Future</h1>
                   <p class="wow hide-for-mobile fadeInUp" data-i18n="ads_transform_your_venue">Enjoy full management capabilities, from budgeting to real-time updates, with no minimum spend required.</p>
-                  <button class="site-btn" data-i18n="hero_advertise_with_over">Advertise with Over</button>
+                  <button class="site-btn" onclick="redirectToSignup()" data-i18n="hero_advertise_with_over">Advertise with Over</button>
                </div>
                <div class="insights-section w-100">
                   <div class="mobile-ad-image">
@@ -70,7 +70,7 @@
                               <p data-i18n="ads_campaign_management">Campaign management</p>
                            </div>
                            <div class="ads-accordion-content">
-                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                              <p>Test, adjust, and optimize campaigns,and discover tools to help manage campaigns more efficiently.</p>
                            </div>
                         </div>
                         <div class="ads-accordion-item">
@@ -79,7 +79,7 @@
                               <p >Flexible Reach</p>
                            </div>
                            <div class="ads-accordion-content">
-                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                              <p>Connect with customers on your terms, targeting by country, state, city, block or even individual businesses.</p>
                            </div>
                         </div>
                         <div class="ads-accordion-item">
@@ -88,7 +88,7 @@
                               <p data-i18n="ads_for_all_budgets">For all budgets</p>
                            </div>
                            <div class="ads-accordion-content">
-                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                              <p>Decide for yourself what price you want to advertise at, whether it's a mini campaign or a mega rollout. </p>
                            </div>
                         </div>
                         <div class="ads-accordion-item">
@@ -97,7 +97,7 @@
                               <p data-i18n="ads_programmatic_buying">Programmatic Buying</p>
                            </div>
                            <div class="ads-accordion-content">
-                              <p>Create ad campaigns based on your business goals, stay in control of your budget and cost per view.</p>
+                              <p>With programmatic buying, you can address your target group situationally and on a daily basis.</p>
                            </div>
                         </div>
                      </div>
@@ -159,7 +159,7 @@
                   <p class="wow fadeInUp py-2" data-i18n="realtime_campaign_tracking">
                      Stay updated with real-time <br> campaign tracking. Adjust spending <br> and strategy on the fly for the <br> best <br> results
                   </p>
-                  <button class="site-btn" data-i18n="realtime_advertise_with_over">Advertise with Over</button>
+                  <button onclick="redirectToSignup()"  class="site-btn" data-i18n="realtime_advertise_with_over">Advertise with Over</button>
                </div>
                <div class="realtime-6-ads-right">
                   <img src="assets/image/realtime-section.png" height="426px" width="100%">
@@ -273,7 +273,7 @@
             <div class="section-subscription">
                <div class="d-flex header-title">
                   <h4 data-i18n="subscription_advertiser">Place your brand in the spotlight by being the first to advertise in future</h4>
-                  <button data-i18n="hero_advertise_with_over">Advertise with Over</button>
+                  <button onclick="redirectToSignup()"  data-i18n="hero_advertise_with_over">Advertise with Over</button>
                </div>
             </div>
          </div>
@@ -409,6 +409,9 @@
            if (targetElement) {
              targetElement.scrollIntoView({ behavior: 'smooth' });
            }
+         }
+         function redirectToSignup() {
+            window.open('https://admin.over.tv/cadastro','_blank');
          }
       </script>
       <!-- <script>
