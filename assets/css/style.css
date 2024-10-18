@@ -1065,7 +1065,7 @@ margin-bottom: 30px;
 		width: 267px;
 		height: 291px;
 		border-radius: 5px;
-		background: #4D93FE;
+		background: linear-gradient(360deg, #00A3FB 0%, #0077FF 100%);
 		display: flex;
 		flex-direction: column;
 		color: #ffffff;

@@ -50,7 +50,7 @@
                <p data-i18n="earning_resources_description">Everything you need to succeed with resources and
                   expert materials to connect with new venues, ensuring steady and growing earnings.
                </p>
-               <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong><a data-i18n="its_free"></a> </button>
+               <button class="affiliate-button">Invite a Friend</button>
             </div>
             <div class="section-4-card-group">
                <div class="section-4-card wow fadeInUp">
