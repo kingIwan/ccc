@@ -472,48 +472,33 @@
             <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
             <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
             <div class="section-7-card-group">
-               <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
-                  <div class="section-7-card-header">
-                     <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement!
-                        Over makes it easy to create a vibrant environment while also bringing in additional
-                        revenue.”
-                     </h3>
+                  <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
+                     <div class="section-7-card-header">
+                        <h3 data-i18n="testimonial_quote">“We never thought our screens could drive such engagement! Over makes it easy to create a vibrant environment while also bringing in additional revenue.”</h3>
+                     </div>
+                     <div class="section-7-card-content">
+                        <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
+                        <h6 data-i18n="read_case_study">Read the case study →</h6>
+                     </div>
                   </div>
-                  <div class="section-7-card-content">
-                     <p data-i18n="testimonial_author">Lucas, Co-Owner, The Urban Café</p>
-                     <h6 data-i18n="read_case_study">Read the case study →</h6>
+                  <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
+                     <div class="center-div">
+                        <h2><b data-i18n="annual_passive_income">+$1,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
+                        <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through ads displayed on your screens.</p>
+                        <h2 ><b data-i18n="boost_average_order_value">+20%</b> <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
+                        <p data-i18n="boost_average_order_value_description">Keep guests entertained longer, encouraging them to spend more with every visit.</p>
+                     </div>
                   </div>
-               </div>
-               <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="center-div">
-                     <h2 data-i18n="annual_passive_income">+$1,200 <span><strong
-                        data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span>
-                     </h2>
-                     <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through
-                        ads displayed on your screens.
-                     </p>
-                     <h2 data-i18n="boost_average_order_value">+20% <span><strong
-                        data-i18n="boost_average_order_value_strong">Boost in Average Order
-                        Value</strong></span>
-                     </h2>
-                     <p data-i18n="boost_average_order_value_description">Keep guests entertained longer,
-                        encouraging them to spend more with every visit.
-                     </p>
+                  <div class="section-7-card wow fadeInUp" data-wow-delay="0.3s">
+                     <div class="section-7-card-header">
+                        <h3 data-i18n="customer_testimonial">“The curated content has kept customers engaged and entertained while increasing our sales. It's like having a personal marketing team on our business.”</h3>
+                     </div>
+                     <div class="section-7-card-content">
+                        <p data-i18n="customer_name">David, Manager, The Corner Bistro</p>
+                        <h6 data-i18n="read_case_study">Read the case study →</h6>
+                     </div>
                   </div>
                </div>
-               <div class="section-7-card wow fadeInUp" data-wow-delay="0.3s">
-                  <div class="section-7-card-header">
-                     <h3 data-i18n="customer_testimonial">“The curated content has kept customers engaged and
-                        entertained while increasing our sales. It's like having a personal marketing team on
-                        our business.”
-                     </h3>
-                  </div>
-                  <div class="section-7-card-content">
-                     <p data-i18n="customer_name">David, Manager, The Corner Bistro</p>
-                     <h6 data-i18n="read_case_study">Read the case study →</h6>
-                  </div>
-               </div>
-            </div>
          </div>
          <div class="flip-on-mobile">
             <div class="section-8">
