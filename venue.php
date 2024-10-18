@@ -49,7 +49,7 @@
                      </div>
                   </ul>
                   <div class="d-flex sm-block gap-1 mt-1">
-                     <button data-i18n="go_to_dashboard">Go to the Dashboard</button>
+                     <button onclick="redirectToDashboard()" data-i18n="go_to_dashboard">Go to the Dashboard</button>
                   </div>
                </div>
                <div class="venue-video venue-hero-img">
@@ -197,7 +197,7 @@
          </div>
          <div class="footer-subscription">
             <div class="mb-button">
-               <button data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
+               <button onclick="redirectToSignup()" data-i18n="subscription_get_device">Get Your Free OverTV Device Now! </button>
             </div>
             <div class="section-subscription">
                <div class="d-flex header-title">
@@ -314,6 +314,12 @@
            if (targetElement) {
              targetElement.scrollIntoView({ behavior: 'smooth' });
            }
+         }
+         function redirectToSignup() {
+            window.open('https://admin.over.tv/cadastro','_blank');
+         }
+         function redirectToDashboard() {
+            window.open('https://admin.over.tv','_blank');
          }
       </script>
       <!-- <script>
