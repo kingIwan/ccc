@@ -1424,6 +1424,7 @@ margin-bottom: 30px;
 	.section-7-card-group{
 		width: 100%;
 		display: flex;
+		padding-top: 15px;
 		justify-content: space-between;
 	}
 	.section-7-card-header{
@@ -1895,7 +1896,7 @@ margin-bottom: 30px;
 			right: -5%;
 		}
 		.ad-section-6 {
-			margin-top: 25%;
+			margin-top: 35%;
 		}
 	}
 	.header-title h4 { 
@@ -3031,6 +3032,7 @@ display: none;
 		overflow: auto;
 		gap: 10px;
 		scroll-snap-type: x mandatory;
+		padding-top: 0px;
 	}
 	.section-7 .section-7-card:nth-child(1) h6 {
 		font-size: 7.14px;

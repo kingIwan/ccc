@@ -76,13 +76,13 @@
     </div>
 
       <div class="hamburger-menu-container mb-head">
-      <button class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
+      <a href="/venue.php" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
       <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
             fill="white" />
         </svg>
-      </button>
+</a>
       <div>
     </div>
   </header>

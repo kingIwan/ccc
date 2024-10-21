@@ -442,7 +442,21 @@
         flex-direction: column;
     }
 }
-
+@media screen and (min-width: 1920px) {
+    body.advertise-page {
+        background-size: 100% 100% !important;
+    }
+}
+@media screen and (min-width: 1420px) {
+    body.advertise-page {
+        background-size: 120% 100% !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body.advertise-page {
+        background-size: 120% 100% !important;
+    }
+}
 @media (max-width: 768px){
 	.section-advertiser-1-title img:nth-child(2) {
 		position: absolute;

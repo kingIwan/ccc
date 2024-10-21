@@ -438,6 +438,16 @@ h1, p {
         margin-top: 40px;
     }
 }
+@media (min-width: 760px) and (max-width: 1080px) {
+    .video-content h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    .content-card video {
+        height: 104px;
+    }
+}
 @media (min-width: 769px) and (max-width: 1080px) {
     .hero-channel {
         height: 380px;
