@@ -103,7 +103,9 @@ body.venue-body {
     color: #ffffff;
     margin: 0; 
 }
-
+.venue-body .section-subscription {
+    margin-top: 3.5%;
+}
 .overtv-finance {
     position: absolute;
     right: 67%;

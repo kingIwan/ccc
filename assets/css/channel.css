@@ -139,6 +139,9 @@ body.channel {
     width: 214px;
     overflow: hidden;
 }
+.channel .section-subscription {
+    margin-top: 25px;
+}
 .moretv-content {
     margin-top: 15px;
     display: flex;
