@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="logo-container">
-        <a href="/index.php">
+        <a href="/index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="116" height="23" viewBox="0 0 116 23" fill="none">
           <path
             d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z"
@@ -37,13 +37,13 @@
             <a onclick="document.getElementById('check').checked = false;">Close</a>
           </li>
           <li class="nav-link" style="--i: .6s">
-            <a href="/index.php" data-i18n="venues">Venues</a>
+            <a href="/index.html" data-i18n="venues">Venues</a>
           </li>
           <li class="nav-link" style="--i: .85s">
-            <a href="/advertiser.php" data-i18n="advertisers">Advertisers</a>
+            <a href="/advertiser.html" data-i18n="advertisers">Advertisers</a>
           </li>
           <li class="nav-link" style="--i: 1.35s">
-            <a href="/channel.php" data-i18n="channels">Channels</a>
+            <a href="/channel.html" data-i18n="channels">Channels</a>
           </li>
           <li class="nav-link" style="--i: 1.1s">
             <a href="#" ><span data-i18n="resources">Resources</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -61,7 +61,7 @@
         </ul>
       </div>
       <div class="log-sign" style="--i: 1.8s">
-        <a href="/venue.php" class="btn transparent">
+        <a href="/venue.html" class="btn transparent">
           <button class="contact-button"><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -76,7 +76,7 @@
     </div>
 
       <div class="hamburger-menu-container mb-head">
-      <a href="/venue.php" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
+      <a href="/venue.html" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
       <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
