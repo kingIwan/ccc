@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
-	background: #131313;
+	background: #161616;
 	background-image: url('/assets/image/ovetv-bg.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -955,7 +955,13 @@ margin-bottom: 30px;
 	.swiper-slide{
 		display: flex;
 		align-items: center;
+		min-width: 202px;
 		height: 100% !important;
+	}
+	.swiper-slide p {
+		opacity: 0.8;
+		font-size: 20px;
+		font-weight: 300;
 	}
 	.section-3-card-title{
 		display: flex;
@@ -2178,7 +2184,7 @@ margin-bottom: 30px;
 	color: white;
 	font-size: 18px;
 	font-weight: 400;
-	/* max-width: 290px; */
+	align-items: center;
 	width: 100%;
 	gap: 10px;
 	display: flex;
@@ -2190,9 +2196,6 @@ margin-bottom: 30px;
 	height: 26px;
 }
 .text-slider2{
-	width: calc(100% - 200px);
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 30px;
 }
 .text-slider2 span{
