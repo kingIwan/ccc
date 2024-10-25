@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: none !important;
 }
 
 .advertiser-container {
@@ -118,7 +119,7 @@ body {
 }
 .advertiser-image {
     position: absolute;
-    top: -150px; 
+    top: -120px; 
     width: 120px;
     z-index: 2;
 }
