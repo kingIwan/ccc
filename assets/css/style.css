@@ -114,8 +114,17 @@ button{
 .affiliate-container {
 	max-width: 1120px !important;
 }
+.br-lang .section-7 .section-7-card:nth-child(3) h3 {
+	line-height: 24.18px;
+}
 .venue-body .container {
 	max-width: 1120px !important;
+}
+.br-lang .section-8 p {
+	max-width: 670px;
+}
+.br-lang .footer-subscription {
+	max-width: 1320px;
 }
 .container{
 	padding-left: 15px !important;
@@ -668,6 +677,9 @@ margin-bottom: 30px;
 		text-align: left;
 		max-width: 80%;
 	}
+	.br-lang .card-text {
+		top: 290px;
+	}
 	.section-2{
 		text-align: center;
 		margin-top: 70px;
@@ -769,6 +781,14 @@ margin-bottom: 30px;
 		left: 100px;
 		top: 30px;
 		color: #fff;
+	}
+	.br-lang .section-2-card-right span h1 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	.br-lang .section-2-2-card-left span h1 {
+		font-size: 32px;
+		line-height: 42px;
 	}
 	.section-2-card-right span h1{
 		font-size: 40px;
@@ -3676,7 +3696,9 @@ display: none;
 		font-size: 35px;
 		font-weight: 400;
 		line-height: 43.63px;
-
+	}
+	.br-lang .card-title {
+		font-size: 19px;
 	}
 	.horizontal-card {
 		display: flex;
