@@ -88,28 +88,37 @@
                   <span data-i18n="general_title">General</span>
               </h2>
               <ul>
-                  <li>
-                      <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.html"><span data-i18n="how_does_overtv_work">How does Over TV work and how can I start watching?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                  <a href="/faq/how-can-over-tv-help-my-business.html"><span data-i18n="how_can_overtv_help_business">How can Over TV help my business?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                      <a href="/faq/how-much-does-the-Over-TV-player-cost.html"><span data-i18n="over_tv_player_cost">How much does the Over TV player cost?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                     <a href="/faq/what-types-of-businesses-are-most-suitable-for-Over-TV.html"><span data-i18n="best_businesses_for_overtv">What types of businesses are best suited for Over TV?</span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-                  <li>
-                     <a href="/faq/how-can-I-start-making-money-with-the-Over-TV-Player.html"><span data-i18n="como_ganhar_dinheiro">How can I start making money with the Over TV Player?
-                      </span>
-                      <i class="fa-solid fa-arrow-right"></i></a>
-                  </li>
-              </ul>
+                <li>
+                    <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.html">
+                        <span data-i18n="general_how_does_overtv_work">How does Over TV work and how can I start watching?</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/faq/how-can-over-tv-help-my-business.html">
+                        <span data-i18n="general_how_can_overtv_help_business">How can Over TV help my business?</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/faq/how-much-does-the-Over-TV-player-cost.html">
+                        <span data-i18n="general_over_tv_player_cost">How much does the Over TV player cost?</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/faq/what-types-of-businesses-are-most-suitable-for-Over-TV.html">
+                        <span data-i18n="general_best_businesses_for_overtv">What types of businesses are best suited for Over TV?</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/faq/how-can-I-start-making-money-with-the-Over-TV-Player.html">
+                        <span data-i18n="general_start_earning_with_overtv">How can I start making money with the Over TV Player?</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
           </div>
           <div class="need-support">
               <h3 class="support-text" data-i18n="need_support_title">Need Support?</h3>
@@ -237,32 +246,6 @@
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  </script>
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      var captcha = document.getElementById('recaptcha');
-      var response = grecaptcha.getResponse();
-
-      if (response.length === 0) {
-        var errorMsg = document.querySelector('.msg-error');
-        if (errorMsg) {
-          errorMsg.textContent = "reCAPTCHA is mandatory";
-        }
-        if (!captcha.classList.contains("error")) {
-          captcha.classList.add("error");
-        }
-      } else {
-        var errorMsg = document.querySelector('.msg-error');
-        if (errorMsg) {
-          errorMsg.textContent = '';
-        }
-        if (captcha.classList.contains("error")) {
-          captcha.classList.remove("error");
-        }
-        alert('reCAPTCHA marked');
-      }
-    });
   </script>
   <!-- Start of overtv Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>

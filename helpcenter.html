@@ -116,7 +116,7 @@
                 <a href="helpcenter/monetize.html"
                   ><span
                     ><img src="assets/svg/digital-signage.svg" alt="" /></span
-                  ><span 
+                  ><span data-i18n="monetize"
                     >Monetize</span
                   ></a
                 >
@@ -139,25 +139,31 @@
             <h3 data-i18n="popular_articles_title">Popular Articles</h3>
             <ul>
               <li>
-                <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.html">How does Over TV work and how can I start watching?
-                </a>
+                  <a href="/faq/how-does-overtv-work-and-how-can-I-start-watching.html">
+                      <span data-i18n="help_how_does_overtv_work">How does Over TV work and how can I start watching?</span>
+                  </a>
               </li>
               <li>
-                <a href="/faq/how-do-I-order-an-Over-TV-device.html">How do I order an Over TV device?</a>
+                  <a href="/faq/how-do-I-order-an-Over-TV-device.html">
+                      <span data-i18n="help_how_to_order_device">How do I order an Over TV device?</span>
+                  </a>
               </li>
               <li>
-              <a href="/faq/do-i-have-a-minimum-of-active-hours-to-start-earning.html">Do I have a minimum of active hours to start earning?
-              </a>
+                  <a href="/faq/do-i-have-a-minimum-of-active-hours-to-start-earning.html">
+                      <span data-i18n="help_minimum_active_hours">Do I have a minimum of active hours to start earning?</span>
+                  </a>
               </li>
               <li>
-              <a href="/faq/how-to-create-an-advertiser-account.html">How to Create an Advertiser Account
-              </a>
+                  <a href="/faq/how-to-create-an-advertiser-account.html">
+                      <span data-i18n="help_create_advertiser_account">How to Create an Advertiser Account</span>
+                  </a>
               </li>
-              <li >
-              <a href="/faq/how-does-the-referral-code-program-work.html">How does the Referral Code program work?
-              </a>
+              <li>
+                  <a href="/faq/how-does-the-referral-code-program-work.html">
+                      <span data-i18n="help_referral_code_program">How does the Referral Code program work?</span>
+                  </a>
               </li>
-            </ul>
+          </ul>
             <h3 class="support-text" data-i18n="need_support_title">
               Need Support?
             </h3>
@@ -268,34 +274,6 @@
           targetElement.scrollIntoView({ behavior: "smooth" });
         }
       }
-    </script>
-    <script>
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          var captcha = document.getElementById("recaptcha");
-          var response = grecaptcha.getResponse();
-
-          if (response.length === 0) {
-            var errorMsg = document.querySelector(".msg-error");
-            if (errorMsg) {
-              errorMsg.textContent = "reCAPTCHA is mandatory";
-            }
-            if (!captcha.classList.contains("error")) {
-              captcha.classList.add("error");
-            }
-          } else {
-            var errorMsg = document.querySelector(".msg-error");
-            if (errorMsg) {
-              errorMsg.textContent = "";
-            }
-            if (captcha.classList.contains("error")) {
-              captcha.classList.remove("error");
-            }
-            alert("reCAPTCHA marked");
-          }
-        });
     </script>
     <!-- Start of overtv Zendesk Widget script -->
     <script
