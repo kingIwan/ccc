@@ -1388,7 +1388,26 @@ margin-bottom: 30px;
 		font-weight: 400;
 		padding: 7px 20px;
 	}
-
+	.success-message {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #F0F9EB;
+		color: #67C23A;
+		padding: 15px;
+		border-radius: 8px;
+		margin: 2rem auto;
+	}
+	
+	.success-message i {
+		font-size: 1.5rem;
+		color: #67C23A;
+		margin-right: 10px;
+	}
+	
+	.success-message span {
+		font-size: 0.875rem;
+	}
 	.section-6-left h1{
 		font-size: 41px;
 		font-weight: 600;
@@ -1452,6 +1471,9 @@ margin-bottom: 30px;
 		display: flex;
 		padding-top: 15px;
 		justify-content: space-between;
+	}
+	.card-none {
+		display: none;
 	}
 	.section-7-card-header{
 		width: 100%;
@@ -1529,10 +1551,10 @@ margin-bottom: 30px;
 		letter-spacing: -0.31px;
 	}
 	.section-7 .section-7-card:nth-child(2) p{
-		font-size: 10px;
+		font-size: 12px;
 		margin-top: -16px;
 		font-weight: 400;
-		line-height: 26.55px;
+		line-height: 22.55px;
 	}
 	.center-div strong {
 		font-weight: 500;
@@ -1766,7 +1788,7 @@ margin-bottom: 30px;
 	  }
 	  .accordion button[aria-expanded='true'] + .accordion-content {
 		opacity: 1;
-		max-height: 10em;
+		max-height: 13em;
 		transition: all 200ms linear;
 		will-change: opacity, max-height;
 	  }
