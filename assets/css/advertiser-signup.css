@@ -1,7 +1,6 @@
-/* Global styles and container setup */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: none !important;
 }
 
@@ -13,6 +12,30 @@ body {
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 5rem;
+}
+.iti__selected-flag {
+    border-right: 1px solid #DBDFE9;
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-left: 60px !important;
+    }
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    -moz-padding-start: calc(1rem - 3px);
+    font-size: 1rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 12px;
+    border: 1px solid #DBDFE9;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    appearance: none;
+}
+.error {
+    color: red;
+    font-size: 0.75rem;
 }
 .footer-container {
     max-width: 1116px;
@@ -89,7 +112,7 @@ body {
 .overview-container {
     position: relative; 
     margin-top: 16.5rem;
-    flex: 1 0 100%; /* Each slide takes up 100% of the width */
+    flex: 1 0 100%; 
     padding: 16px;
     box-sizing: border-box;
 }
@@ -246,22 +269,24 @@ body {
 }
 .terms-checkbox {
     display: flex;
-    align-items: flex-start; 
+    align-items: center;
+    justify-content: start;
     gap: 8px;
     font-size: 14px;
     color: #333;
     font-family: 'Inter', sans-serif;
 }
 .terms-checkbox-margin {
-    margin-top: 3.5rem;
+    margin-top: 1rem;
 }
 .terms-checkbox-margin-2 {
-    margin-top: 1.5rem;
+    margin-top: 0.8rem;
 }
 .terms-checkbox label {
     font-size: 14.39px;
     font-weight: 400;
     line-height: 18.23px;
+    padding-top: 3px;
     text-align: left;
     max-width: 527px;
     font-family: 'Roboto', sans-serif;
@@ -276,42 +301,45 @@ input[type="checkbox"] {
     width: 17.27px;
     height: 17.27px;
     border-radius: 3.84px 0px 0px 0px;
-    border: 0.96px solid #DBDFE9;
-    margin-top: 2px; /* Adjust to better align with text */
+    border: 0.96px solid #dbdbdb;
+    margin-top: 2px; 
     cursor: pointer;
 }
 .right-column {
     display: flex;
     justify-content: end;
 }
-/* Optional: Adjusting the look when checked */
+
 .terms-checkbox input[type="checkbox"]:checked {
-    background-color: #0077FF; /* Change the background when checked */
-    border-color: #0077FF; /* Change border when checked */
+    background-color: #0077FF; 
+    border-color: #0077FF; 
 }
 
-/* Optional: Add a custom checkmark overlay without hiding the default checkbox */
 .terms-checkbox input[type="checkbox"]::after {
     content: '';
     position: absolute;
-    width: 9px; /* Adjust size of the checkmark */
+    width: 9px;
     height: 5px;
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
-    top: 4px; /* Adjust position */
-    left: 4px; /* Adjust position */
-    opacity: 0; /* Initially hidden */
+    top: 4px; 
+    left: 4px; 
+    opacity: 0;
 }
 
 .terms-checkbox input[type="checkbox"]:checked::after {
-    opacity: 1; /* Show the checkmark when checked */
+    opacity: 1; 
 }
 .terms-checkbox a {
     color: #0077FF; 
     text-decoration: none; 
 }
-
+.iti__country {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 .terms-checkbox a:hover {
     text-decoration: underline; 
 }
@@ -342,10 +370,26 @@ input[type="checkbox"] {
 @media (max-width: 768px) {
     .advertiser-container {
         flex-direction: column;
+        margin-top: 0rem;
     }
-
+    .overview-box {
+        max-width: 460px;
+    }
+    .overview-container {
+        margin-top: 10.5rem;
+    }
+    .signup-form {
+        max-width: 100%;
+    }
     .column {
         flex: 1 0 100%;
+    }
+    .left-column h2 {
+        font-size: 32px;
+    }
+    .titles-col p {
+        font-size: 12px;
+        padding-top: 0px;
     }
 }
 
