@@ -255,17 +255,20 @@ body {
     margin-top: 1.5rem;
 }
 .submit-button button {
-    width: 100%;
+    width: 100%; 
     border-radius: 9.96px;
     margin-top: 1.8rem;
-    border: 0px;
+    border: 0;
     background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
     padding: 0.7rem;
-    line-height: 19.19px;
-    text-align: center;
+    height: 50px; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 .terms-checkbox {
     display: flex;
@@ -343,8 +346,31 @@ input[type="checkbox"] {
 .terms-checkbox a:hover {
     text-decoration: underline; 
 }
+.submit-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.loader {
+    border: 3px solid white; 
+    border-top: 2px solid white; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px; 
+}
 
-/* Breakpoints for responsiveness */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.signup-button {
+    position: relative; 
+    padding-right: 30px; 
+}
+
 @media (max-width: 1536px) {
     .advertiser-container {
         padding: 8px;
