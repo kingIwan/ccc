@@ -678,18 +678,16 @@ margin-bottom: 30px;
 		max-width: 80%;
 	}
 	.br-lang .card-text {
-		top: 290px;
+		top: 310px;
 	}
 	.section-2{
 		text-align: center;
 		margin-top: 70px;
-		/* padding-left: 3%;
-		padding-right: 3%; */
+		
 	}
 	.channels-group {
 		display: flex;
 		gap: 50px;
-		/* justify-content: center; */
 		margin-top: 30px;
 		margin-bottom: 50px;
 		overflow: auto;
@@ -783,11 +781,11 @@ margin-bottom: 30px;
 		color: #fff;
 	}
 	.br-lang .section-2-card-right span h1 {
-		font-size: 32px;
+		font-size: 38px;
 		line-height: 42px;
 	}
 	.br-lang .section-2-2-card-left span h1 {
-		font-size: 32px;
+		font-size: 38px;
 		line-height: 42px;
 	}
 	.section-2-card-right span h1{
