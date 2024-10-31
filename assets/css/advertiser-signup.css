@@ -175,8 +175,13 @@ body {
     padding: 2.375rem;
 }
 .signup-form span {
+    font-size: 16px;
     display: flex;
-    gap: 4px;
+    gap: 5px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    text-align: left;
 }
 .signup-form h2 {
     font-size: 32px;

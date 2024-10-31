@@ -375,6 +375,9 @@ input[type="checkbox"] {
 .hq-Address{
     width: 100%;
 }
+.address{
+    width: 100%;
+}
 .submit-button {
     display: flex; 
     justify-content: center; 
@@ -388,6 +391,26 @@ input[type="checkbox"] {
     height: 20px;
     animation: spin 1s linear infinite;
     margin-left: 10px; 
+}
+
+.autocomplete-list {
+    border-radius: 4px; 
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s; 
+}
+
+.autocomplete-item:hover {
+    background-color: #f0f0f0;
 }
 
 @keyframes spin {

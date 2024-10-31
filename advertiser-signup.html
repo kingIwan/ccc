@@ -242,7 +242,7 @@
             <div class="column right-column">
                <div class="signup-form">
                 <h2>Sign Up</h2>
-                <span><p>Already have an Over account?</p> <p>Login Here</p></span>
+                <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>
                 <form onsubmit="submitForm(event)" class="submit-form" id="signupForm">
                     <div class="form-control">
                         <label for="work-email">Work Email</label>
@@ -490,19 +490,65 @@
       <script>
         const phoneInputField = document.querySelector("#phone");
         const phoneInput = window.intlTelInput(phoneInputField, {
-            preferredCountries: ["us", "gb", "fr", "de", "in"], 
+            preferredCountries: ["us", "gb", "br", "de", "in"],
             autoPlaceholder: "polite",
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
-        phoneInputField.addEventListener('input', (event) => {
-            const value = event.target.value;
-            event.target.value = value.replace(/[^0-9+]/g, '');
-        });
-        phoneInputField.addEventListener('countrychange', () => {
+
+        function formatNumberInput() {
             const countryData = phoneInput.getSelectedCountryData();
             const exampleNumber = intlTelInputUtils.getExampleNumber(countryData.iso2, true, intlTelInputUtils.numberFormat.INTERNATIONAL);
+            const digits = phoneInputField.value.replace(/[^0-9]/g, ''); 
+            
+            if (digits.length === 0) {
+                phoneInputField.value = ''; 
+                return;
+            }
+
+            const formattedNumber = formatToExample(exampleNumber, digits);
+            phoneInputField.value = formattedNumber;
+        }
+
+        function formatToExample(example, digits) {
+            let formatted = '';
+            let digitIndex = 0;
+
+            for (let i = 0; i < example.length; i++) {
+                if (digitIndex < digits.length) {
+                    if (/\d/.test(example[i])) { 
+                        formatted += digits[digitIndex++]; 
+                    } else {
+                        formatted += example[i]; 
+                    }
+                } else {
+                    break; 
+                }
+            }
+
+            return formatted;
+        }
+
+        function updatePlaceholderAndMaxLength() {
+            const countryData = phoneInput.getSelectedCountryData();
+            const exampleNumber = intlTelInputUtils.getExampleNumber(
+                countryData.iso2,
+                true,
+                intlTelInputUtils.numberFormat.INTERNATIONAL
+            );
+            phoneInputField.value ='';
             phoneInputField.placeholder = exampleNumber;
+            const maxLength = exampleNumber.length + countryData.dialCode.length + 2;  // extra 2 length from + and space
+            phoneInputField.setAttribute("maxlength", maxLength);
+        }
+
+        phoneInputField.addEventListener('input', (event) => {
+            let value = event.target.value.replace(/[^0-9+\-\s\(\)]/g, '');
+            phoneInputField.value = value;
+            formatNumberInput();
         });
+
+        phoneInputField.addEventListener('countrychange', updatePlaceholderAndMaxLength);
+        updatePlaceholderAndMaxLength();
     </script>
       <script>
         function displayErrorMessage(input, message) {

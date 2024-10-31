@@ -114,7 +114,7 @@
             <div class="venue-col col-left">
                 <div class="venue-signup">
                     <h2>Sign up</h2>
-                    <span><p>Already have an Over account?</p> <p>Login Here</p></span>
+                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>
                 </div>
                 <form onsubmit="submitFormVenue(event)" class="submit-form" id="venueSignupForm">
                     <div class="form-control">
@@ -156,18 +156,21 @@
                             <input type="text" id="website" placeholder="www.website.com" required/>
                         </div>
                     </div>
-                    <div class="form-control form-margin">
-                        <label for="hq-Address">HQ Address*</label>
-                        <div class="input-wrapper">
-                            <input type="text" id="hq-Address" class="hq-Address" placeholder="Enter business HQ address" required/>
-                            <span class="edit-text"><button type="button" onclick="toggleEditAddress()">Edit</button></span>
+                    <div>
+                        <div class="form-control form-margin">
+                            <label for="hq-Address">HQ Address*</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="hq-Address" class="hq-Address" placeholder="Enter business HQ address" required/>
+                                <span class="edit-text"><button type="button" onclick="toggleEditAddress()">Edit</button></span>
+                            </div>
                         </div>
+                        <div id="autocomplete-list" class="autocomplete-list"></div>
                     </div>
                     <div class="edit-address">
                         <div class="form-control form-margin">
-                            <label for="neighbourhood">Apt, Suite, Unit, Etc</label>
+                            <label for="address">Apt, Suite, Unit, Etc</label>
                             <div class="input-wrapper">
-                                <input type="text" name="neighbourhood" id="neighbourhood" placeholder="Unit 100" required/>
+                                <input type="text" name="address" id="address" placeholder="Unit 100" required/>
                             </div>
                         </div>
                         <div class="form-control-flex">
@@ -275,6 +278,10 @@
                             <span>This site is protected by reCAPTCHA and the Google <p>Privacy Policy</p> and <p>Terms of Service</p>  apply.</span>
                         </label>
                     </div>
+                    <input type="hidden" id="latitude" placeholder="Latitude" type="text" />
+                    <input type="hidden" id="longitude" placeholder="Longitude" type="text" />
+                    <input type="hidden" id="neighbourhood" type="text" />
+                    <input type="hidden" id="state" type="text" />
                 </form>
             </div>
             <div class="venue-col col-right">
@@ -431,7 +438,7 @@
                 const countrySelect = document.getElementById('country');
                 countries.forEach(country => {
                     const option = document.createElement('option');
-                    option.value = country.name.common;
+                    option.value = country.cca2;
                     option.textContent = country.name.common; 
                     countrySelect.appendChild(option);
                 });
@@ -564,22 +571,68 @@
             window.location.href = 'https://over.tv/venue-signup';
          }
       </script>
-          <script>
-            const phoneInputField = document.querySelector("#phone");
-            const phoneInput = window.intlTelInput(phoneInputField, {
-                preferredCountries: ["us", "gb", "fr", "de", "in"], 
-                autoPlaceholder: "polite",
-                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-            });
-            phoneInputField.addEventListener('input', (event) => {
-                const value = event.target.value;
-                event.target.value = value.replace(/[^0-9+]/g, '');
-            });
-            phoneInputField.addEventListener('countrychange', () => {
-                const countryData = phoneInput.getSelectedCountryData();
-                const exampleNumber = intlTelInputUtils.getExampleNumber(countryData.iso2, true, intlTelInputUtils.numberFormat.INTERNATIONAL);
-                phoneInputField.placeholder = exampleNumber;
-            });
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["us", "gb", "br", "de", "in"],
+            autoPlaceholder: "polite",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+        function formatNumberInput() {
+            const countryData = phoneInput.getSelectedCountryData();
+            const exampleNumber = intlTelInputUtils.getExampleNumber(countryData.iso2, true, intlTelInputUtils.numberFormat.INTERNATIONAL);
+            const digits = phoneInputField.value.replace(/[^0-9]/g, ''); 
+            
+            if (digits.length === 0) {
+                phoneInputField.value = ''; 
+                return;
+            }
+
+            const formattedNumber = formatToExample(exampleNumber, digits);
+            phoneInputField.value = formattedNumber;
+        }
+
+        function formatToExample(example, digits) {
+            let formatted = '';
+            let digitIndex = 0;
+
+            for (let i = 0; i < example.length; i++) {
+                if (digitIndex < digits.length) {
+                    if (/\d/.test(example[i])) { 
+                        formatted += digits[digitIndex++]; 
+                    } else {
+                        formatted += example[i]; 
+                    }
+                } else {
+                    break; 
+                }
+            }
+
+            return formatted;
+        }
+
+        function updatePlaceholderAndMaxLength() {
+            const countryData = phoneInput.getSelectedCountryData();
+            const exampleNumber = intlTelInputUtils.getExampleNumber(
+                countryData.iso2,
+                true,
+                intlTelInputUtils.numberFormat.INTERNATIONAL
+            );
+            phoneInputField.value ='';
+            phoneInputField.placeholder = exampleNumber;
+            const maxLength = exampleNumber.length + countryData.dialCode.length + 2;  // extra 2 length from + and space
+            phoneInputField.setAttribute("maxlength", maxLength);
+        }
+
+        phoneInputField.addEventListener('input', (event) => {
+            let value = event.target.value.replace(/[^0-9+\-\s\(\)]/g, '');
+            phoneInputField.value = value;
+            formatNumberInput();
+        });
+
+        phoneInputField.addEventListener('countrychange', updatePlaceholderAndMaxLength);
+        updatePlaceholderAndMaxLength();
             $(document).ready(() => {
                 populateCountries();
             });
@@ -638,12 +691,15 @@
                 TypeOfBussiness: document.getElementById('business-type').value,
                 VisitorsPerDay: document.getElementById('visitors-per-day').value,
                 ZipCode: document.getElementById('postal-code').value,
-                Address: document.getElementById('hq-Address').value,
-                State: document.getElementById('state') ? document.getElementById('state').value : 'AP',
+                Address: document.getElementById('address').value,
+                // State: document.getElementById('country') ? document.getElementById('country').value : 'AP',
+                State: 'SP',
                 Neighbourhood: document.getElementById('neighbourhood').value,
                 City: document.getElementById('city').value,
                 Number: document.getElementById('number') ? parseInt(document.getElementById('number').value, 10) || null: null,
                 Complement: document.getElementById('complement') ? document.getElementById('complement').value : null,
+                Latitude: document.getElementById('latitude') ? document.getElementById('latitude').value : null,
+                Longitude: document.getElementById('longitude') ? document.getElementById('longitude').value : null,
                 NameOnCard: document.getElementById('name-on-card').value,
                 CardNumber: document.getElementById('card-number').value,
                 Expiry: document.getElementById('expiration-date').value,
@@ -691,6 +747,57 @@
                 button.disabled = false;
             }, 3000);
         }
+        </script>
+        <script>
+            const apiKey = 'pk.69b19c5c7d5e0aa1e63b915cb55908cf'; 
+
+            const addressInput = document.getElementById('hq-Address');
+            const autocompleteList = document.getElementById('autocomplete-list');
+
+            addressInput.addEventListener('input', () => {
+                const query = addressInput.value;
+
+                if (query.length > 2) {
+                    fetch(`https://us1.locationiq.com/v1/autocomplete.php?key=${apiKey}&q=${encodeURIComponent(query)}&format=json`)
+                        .then(response => response.json())
+                        .then(data => {
+                            autocompleteList.innerHTML = '';
+                            if(data){
+                                data.forEach(location => {
+                                    const item = document.createElement('div');
+                                    item.textContent = location.display_name;
+                                    item.className = 'autocomplete-item';
+                                    item.onclick = () => selectLocation(location);
+                                    autocompleteList.appendChild(item);
+                                });
+                            }   
+                        })
+                        .catch(err => {
+                            console.error(err);
+                        });
+                } else {
+                    autocompleteList.innerHTML = '';
+                }
+            });
+
+            function selectLocation(location) {
+                addressInput.value = location.display_name;
+                autocompleteList.innerHTML = ''; 
+                const addressComponents = location.address;
+                document.getElementById('city').value = addressComponents.city || '';
+                document.getElementById('state').value = addressComponents.state || '';
+                document.getElementById('address').value = addressComponents.name || '';
+                document.getElementById('neighbourhood').value = addressComponents.neighbourhood || '';
+                document.getElementById('country').value = addressComponents.country_code ? addressComponents.country_code.toUpperCase() : '';
+                document.getElementById('postal-code').value = addressComponents.postcode || '';
+                document.getElementById('latitude').value = location.lat;
+                document.getElementById('longitude').value = location.lon;
+            }
+            document.addEventListener('click', (e) => {
+                if (!addressInput.contains(e.target)) {
+                    autocompleteList.innerHTML = '';
+                }
+            });
         </script>
    </body>
 </html>
