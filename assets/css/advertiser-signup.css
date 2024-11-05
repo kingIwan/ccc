@@ -76,6 +76,9 @@ body {
 .overview-content {
     padding: 1.5rem;
 }
+.logo-box {
+    min-height: 94px;
+}
 .overview-box .logo-box {
     text-align: end;
     padding-top: 1rem;
@@ -111,7 +114,7 @@ body {
 /* Positioning for the overlapping image */
 .overview-container {
     position: relative; 
-    margin-top: 16.5rem;
+    margin-top: 10.5rem;
     flex: 1 0 100%; 
     padding: 16px;
     box-sizing: border-box;
@@ -413,7 +416,7 @@ input[type="checkbox"] {
         max-width: 100%;
     }
     .column {
-        flex: 1 0 100%;
+        width: 100%;
     }
     .left-column h2 {
         font-size: 32px;
@@ -431,5 +434,6 @@ input[type="checkbox"] {
 
     .column {
         padding: 8px;
+        width: 100%;
     }
 }

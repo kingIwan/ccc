@@ -48,6 +48,9 @@ body {
 .prices span:nth-child(1) {
    margin-bottom: 0.5rem;
 }
+.prices span:nth-child(2) {
+    margin-bottom: 0.5rem;
+ }
 .prices p:nth-child(1) {
     font-size: 19.19px;
     font-weight: 400;
@@ -135,7 +138,7 @@ body {
     line-height: 26.87px;
     text-align: left;
 }
-.total-prices p:nth-child(2) {
+.total-prices p:nth-child(3) {
     font-size: 34px;
     font-weight: 600;
     line-height: 26.87px;
@@ -143,7 +146,26 @@ body {
     color: #FFFFFF;
     margin-top: 1rem;
 }
-.total-prices p:nth-child(3) {
+.total-prices p:nth-child(2) {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 26.87px;
+    text-align: left;
+    color: #909090;
+    margin-top: 1rem;
+}
+.del {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: #FFFFFF; 
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.total-prices p:nth-child(4) {
     font-size: 15.35px;
     font-weight: 400;
     line-height: 26.87px;

@@ -208,7 +208,7 @@ body {
     font-size: 18px;
     max-width: 700px;
     font-weight: 300;
-    line-height: 19.87px;
+    line-height: 24px;
     color: var(--grey-text);
 }
 
@@ -282,7 +282,7 @@ body {
     padding-top: 40px;
 }
 .reward-text {
-    width: 34%;
+    width: 44%;
 }
 .reward-text p {
     font-size: 18.87px;
@@ -295,7 +295,12 @@ body {
 .affiliate-rewards .affiliate-button {
     width: 100%;
 }
+.affiliate-container .affiliate-button {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .rewards-img {
+    margin-top: 35px;
     position: relative;
     display: inline-block;
 }
@@ -303,7 +308,7 @@ body {
     position: absolute;
     left: 45px;
     bottom: -43px;
-    width: 695px; 
+    width: 605px; 
     height: 545px; 
     background: linear-gradient(360deg, #2B7FFC 26.61%, #60EFFF 266.09%);
     box-shadow: 0px 21.52px 43.04px 0px #0000004D;

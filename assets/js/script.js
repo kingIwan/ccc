@@ -19,13 +19,16 @@ function loadLanguage(langCode) {
 }
 
 function applyTranslations(translations) {
-    const elements = document.querySelectorAll('[data-i18n]');
-
-    elements.forEach(element => {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-
         if (translations[key]) {
             element.innerText = translations[key];
+        }
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[key]) {
+            element.placeholder = translations[key];
         }
     });
 }
@@ -34,6 +37,7 @@ function getCountryCode() {
         .then(response => response.json())
         .then(data => {
             const countryCode = data.country;
+            // const countryCode = "BR";
             loadLanguage(countryCode);
         })
         .catch(error => {
