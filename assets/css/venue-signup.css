@@ -147,7 +147,7 @@ body {
     margin-top: 1rem;
 }
 .total-prices p:nth-child(2) {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 26.87px;
     text-align: left;
@@ -322,10 +322,10 @@ body {
     margin-top: 1.5rem;
 }
 .agree-terms span {
-    display: flex;
     gap: 4px;
 }
 .agree-terms p {
+    display: inline;
     color: #00A3FB;
 }
 .border {
@@ -465,10 +465,16 @@ input[type="checkbox"] {
     .venue-container {
         flex-direction: column; 
         gap: 15px; 
+        margin-top: 2rem;
     }
-
+    .form-control-flex .form-control {
+        width: 49%;
+    }
     .col-left, .col-right {
         flex: 1; 
+    }
+    .form-control-flex {
+        justify-content: space-between;
     }
 }
 

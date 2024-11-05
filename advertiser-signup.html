@@ -332,8 +332,8 @@
                         </label>
                     </div>
                     <div class="terms-checkbox terms-checkbox-margin-2">
-                        <input type="checkbox" id="agree-terms" required/>
-                        <label for="agree-terms" data-i18n="agree_terms_2">
+                        <input type="checkbox" id="agree-terms-2" required/>
+                        <label for="agree-terms-2" data-i18n="agree_terms_2">
                             I agree to receive information related to marketing communications, newsletter, and products update. I understand i can unsubscribe at any time.
                         </label>
                     </div>
@@ -600,17 +600,24 @@
         }
 
         async function submitForm(event) {
+            const formDiv = document.querySelector('.signup-form');
+            const successMessage = document.querySelector('.success-message');
             event.preventDefault(); 
             const button = document.getElementById('signupButton');
             const loader = button.querySelector('.loader');
             const buttonText = button.querySelector('.button-text');
-            
             loader.style.display = 'inline-block'; 
+            formDiv.classList.add('disabled');
             buttonText.style.display = 'none';
             button.disabled = true;
             const form = event.target;
             await ValidarSeUsuarioExiste();
             if(!validEmail){
+                loader.style.display = 'none'; 
+                formDiv.classList.remove('disabled');
+                successMessage.style.display = 'none';
+                buttonText.style.display = 'inline';
+                button.disabled = false;
                 return;
             }
             let isValid = true;
@@ -637,6 +644,8 @@
             });
             if (!isValid) {
                 loader.style.display = 'none'; 
+                successMessage.style.display = 'none';
+                formDiv.classList.remove('disabled');
                 buttonText.style.display = 'inline'; 
                 button.disabled = false;
                 return;
@@ -668,9 +677,9 @@
 
                 const data = await response.json(); 
                 if(data && data.data){
-                    const successMessage = document.querySelector('.success-message');
                     successMessage.style.display = 'flex';
-                    loader.style.display = 'none'; 
+                    loader.style.display = 'none';
+                    formDiv.classList.remove('disabled'); 
                     buttonText.style.display = 'inline';
                     button.disabled = false;
                 }
@@ -679,6 +688,7 @@
             }
             setTimeout(() => {
                 loader.style.display = 'none'; 
+                formDiv.classList.remove('disabled');
                 buttonText.style.display = 'inline';
                 button.disabled = false;
             }, 3000);

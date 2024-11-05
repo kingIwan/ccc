@@ -171,6 +171,10 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+.signup-form.disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+  }
 .signup-form {
     background-color: #FFFFFF;
     max-width: 629px;
@@ -407,13 +411,26 @@ input[type="checkbox"] {
         margin-top: 0rem;
     }
     .overview-box {
-        max-width: 460px;
+        max-width: 100%;
     }
     .overview-container {
         margin-top: 10.5rem;
     }
     .signup-form {
         max-width: 100%;
+        padding: 1rem;
+    }
+    .logo-box {
+        min-height: 46px;
+    }
+    .form-control-flex {
+        justify-content: space-between;
+    }
+    .form-control-flex .form-control  {
+        width: 49%;
+    }
+    .advertiser-image img {
+        width: 300px;
     }
     .column {
         width: 100%;
