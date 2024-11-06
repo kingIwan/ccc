@@ -21,8 +21,9 @@
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
    <body>
     <div id="loader">
+        <div id="progress-bar"></div>
         <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-     </div>
+    </div>
       <!-- Header Container -->
       <header id="header">
          <div class="container">
@@ -117,7 +118,7 @@
             <div class="venue-col col-left">
                 <div class="venue-signup">
                     <h2 data-i18n="advertiser_signup">Sign up</h2>
-                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>                <form onsubmit="submitForm(event)" class="submit-form" id="signupForm">
+                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span> 
                 </div>
                 <form onsubmit="submitFormVenue(event)" class="submit-form" id="venueSignupForm">
                     <h2 data-i18n="contact_info" style="margin-top: 1rem;">
@@ -162,7 +163,7 @@
                             <input type="text" id="website" placeholder="www.website.com" required/>
                         </div>
                     </div>
-                    <div class="form-control form-margin">
+                    <div class="form-control form-margin adress-field">
                         <label for="hq-Address" data-i18n="hq_address">HQ Address*</label>
                         <div class="input-wrapper">
                             <input type="text" id="hq-Address" class="hq-Address" data-i18n-placeholder="hq_address_placeholder" placeholder="Enter business HQ address" required/>
@@ -174,7 +175,7 @@
                         <div class="form-control form-margin">
                             <label for="neighbourhood" data-i18n="apt_address">Apt, Suite, Unit, Etc</label>
                             <div class="input-wrapper">
-                                <input type="text" name="address" id="address" placeholder="Unit 100" required/>
+                                <input style="width: 100%" type="text" name="address" id="address" placeholder="Unit 100" required/>
                             </div>
                         </div>
                         <div class="form-control-flex">
@@ -265,7 +266,7 @@
                         </label>
                     </div>
                     <div class="submit-button">
-                        <button id="signupButton" class="signup-button">
+                        <button type="submit" id="signupButton" class="signup-button">
                             <span class="button-text" style="display: inline;">Sign Up</span> 
                             <span class="loader" style="display: none;"></span> 
                         </button>
@@ -690,6 +691,10 @@
                 button.disabled = false;
                 return;
             }
+            const urlInput = document.getElementById('website').value;
+            const formattedUrl = urlInput.startsWith('https://') || urlInput.startsWith('http://') 
+            ? urlInput 
+            : `https://${urlInput}`;
             const formData = {
                 Email: document.getElementById('work-email').value,
                 FirstName: document.getElementById('first-name').value,
@@ -697,7 +702,7 @@
                 PhoneNumber: document.getElementById('phone').value,
                 CNPJ: document.getElementById('CPF/CNPJ').value,
                 BussinessName: document.getElementById('business-name').value,
-                Website: document.getElementById('website').value,
+                Website: formattedUrl,
                 TypeOfBussiness: document.getElementById('business-type').value,
                 VisitorsPerDay: document.getElementById('visitors-per-day').value,
                 ZipCode: document.getElementById('postal-code').value,
