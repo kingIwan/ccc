@@ -118,7 +118,7 @@
             <div class="venue-col col-left">
                 <div class="venue-signup">
                     <h2 data-i18n="advertiser_signup">Sign up</h2>
-                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>                <form onsubmit="submitForm(event)" class="submit-form" id="signupForm">
+                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span> 
                 </div>
                 <form onsubmit="submitFormVenue(event)" class="submit-form" id="venueSignupForm">
                     <h2 data-i18n="contact_info" style="margin-top: 1rem;">
@@ -266,7 +266,7 @@
                         </label>
                     </div>
                     <div class="submit-button">
-                        <button id="signupButton" class="signup-button">
+                        <button type="submit" id="signupButton" class="signup-button">
                             <span class="button-text" style="display: inline;">Sign Up</span> 
                             <span class="loader" style="display: none;"></span> 
                         </button>
@@ -411,11 +411,12 @@
             const options = {
                 method: 'GET',
                 headers: {
+                    "ngrok-skip-browser-warning": "69420",
                     'Content-Type': 'application/json',
                 },
             };
             try {
-                const response = await fetch(`https://iantvapi.azurewebsites.net/api/usuario/validate-email?email=${encodeURIComponent(email)}&tipoUsuario=4`, options);
+                const response = await fetch(`https://e201-2401-4900-1c70-c0e9-21ab-a9cc-3641-3c95.ngrok-free.app/api/usuario/validate-email?email=${encodeURIComponent(email)}&tipoUsuario=4`, options);
                 
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -691,6 +692,10 @@
                 button.disabled = false;
                 return;
             }
+            const urlInput = document.getElementById('website').value;
+            const formattedUrl = urlInput.startsWith('https://') || urlInput.startsWith('http://') 
+            ? urlInput 
+            : `https://${urlInput}`;
             const formData = {
                 Email: document.getElementById('work-email').value,
                 FirstName: document.getElementById('first-name').value,
@@ -698,7 +703,7 @@
                 PhoneNumber: document.getElementById('phone').value,
                 CNPJ: document.getElementById('CPF/CNPJ').value,
                 BussinessName: document.getElementById('business-name').value,
-                Website: document.getElementById('website').value,
+                Website: formattedUrl,
                 TypeOfBussiness: document.getElementById('business-type').value,
                 VisitorsPerDay: document.getElementById('visitors-per-day').value,
                 ZipCode: document.getElementById('postal-code').value,
@@ -718,9 +723,10 @@
             };
     
             try {
-                const response = await fetch('https://iantvapi.azurewebsites.net/api/Empresa/register-empresa', {
+                const response = await fetch('https://e201-2401-4900-1c70-c0e9-21ab-a9cc-3641-3c95.ngrok-free.app/api/Empresa/register-empresa', {
                     method: 'POST',
                     headers: {
+                        "ngrok-skip-browser-warning": "69420",
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify(formData),
