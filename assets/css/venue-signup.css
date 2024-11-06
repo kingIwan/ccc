@@ -157,7 +157,7 @@ body {
 .del {
     content: '';
     position: absolute;
-    top: 50%; 
+    top: 44%; 
     left: 0;
     right: 0;
     height: 2px; 

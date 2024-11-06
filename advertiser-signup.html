@@ -278,7 +278,7 @@
                         </div>
                         <div class="form-control">
                             <label for="website-url">Website</label>
-                            <input type="url" id="website-url" placeholder="www.website.com" data-i18n-placeholder="website_links" required/>
+                            <input type="text" id="website-url" placeholder="www.website.com" data-i18n-placeholder="website_links" required/>
                         </div>
                     </div>
                     <div class="form-control form-margin">
@@ -650,13 +650,17 @@
                 button.disabled = false;
                 return;
             }
+            const urlInput = document.getElementById('website-url').value;
+            const formattedUrl = urlInput.startsWith('https://') || urlInput.startsWith('http://') 
+            ? urlInput 
+            : `https://${urlInput}`;
             const formData = {
                 Email: document.getElementById('work-email').value,
                 FirstName: document.getElementById('first-name').value,
                 LastName: document.getElementById('last-name').value,
                 PhoneNumber: document.getElementById('phone').value,
                 CNPJ: document.getElementById('CPF/CNPJ').value,
-                Website: document.getElementById('website-url').value,
+                Website: formattedUrl,
                 BussinessName: document.getElementById('bussiness-name').value,
                 TypeOfBussiness: document.getElementById('business-type').value,
                 MonthlyBudget: document.getElementById('monthly-budget').value

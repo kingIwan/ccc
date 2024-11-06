@@ -3,5 +3,5 @@ window.addEventListener('load', function () {
     loader.style.opacity = '1';
     setTimeout(() => {
         loader.style.display = 'none';
-    }, 500); 
+    }, 700); 
 });
