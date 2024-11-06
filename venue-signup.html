@@ -20,6 +20,9 @@
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
    <body>
+    <div id="loader">
+        <img src="/assets/image/loader-overtv.png" alt="Loading..." />
+     </div>
       <!-- Header Container -->
       <header id="header">
          <div class="container">
@@ -113,29 +116,29 @@
         <div class="venue-container">
             <div class="venue-col col-left">
                 <div class="venue-signup">
-                    <h2>Sign up</h2>
-                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>
+                    <h2 data-i18n="advertiser_signup">Sign up</h2>
+                    <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>                <form onsubmit="submitForm(event)" class="submit-form" id="signupForm">
                 </div>
                 <form onsubmit="submitFormVenue(event)" class="submit-form" id="venueSignupForm">
                     <div class="form-control">
-                        <label for="work-email">Work Email</label>
+                        <label for="work-email" data-i18n="work_email">Work Email</label>
                         <input onchange="ValidarSeUsuarioExiste()" type="email" id="work-email" placeholder="Your work email" required />
                         <span id="msgValidacaoEmail" style="color: #e85347;font-size: 11px;font-style: italic;display:none"></span>
-                        <p class="input-description">This will be used as your username</p>
+                        <!-- <p class="input-description">This will be used as your username</p> -->
                     </div>
                     <div class="form-control-flex">
                         <div class="form-control">
-                            <label for="first-name">First Name</label>
+                            <label for="first-name" data-i18n="first_name">First Name</label>
                             <input type="text" id="first-name" placeholder="First Name" required/>
                         </div>
                         <div class="form-control">
-                            <label for="last-name">Last Name</label>
+                            <label for="last-name" data-i18n="last_name">Last Name</label>
                             <input type="text" id="last-name" placeholder="Last Name" required/>
                         </div>
                     </div>
                     <div class="form-control-flex">
                         <div class="form-control">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone" data-i18n="phone_number">Phone Number</label>
                             <input id="phone" type="tel" name="phone"  required/>
                         </div>
                         <div class="form-control">
@@ -143,57 +146,55 @@
                             <input type="text" id="CPF/CNPJ" placeholder="CPF/CNPJ" onkeyup="CPF(event)" onchange="CPF(event)" maxlength="18" required/>
                         </div>
                     </div>
-                    <h2>
+                    <h2 data-i18n="business_info" style="margin-top: 1rem;">
                         Business Info
                     </h2>
                     <div class="form-control-flex">
                         <div class="form-control">
-                            <label for="business-name">Business Name</label>
-                            <input type="text" id="business-name" placeholder="Business Name" required/>
+                            <label for="business-name" data-i18n="business_name">Business Name</label>
+                            <input type="text" id="business-name" placeholder="Business Name" data-i18n-placeholder="business_name" required/>
                         </div>
                         <div class="form-control">
                             <label for="website">Website</label>
                             <input type="text" id="website" placeholder="www.website.com" required/>
                         </div>
                     </div>
-                    <div>
-                        <div class="form-control form-margin">
-                            <label for="hq-Address">HQ Address*</label>
-                            <div class="input-wrapper">
-                                <input type="text" id="hq-Address" class="hq-Address" placeholder="Enter business HQ address" required/>
-                                <span class="edit-text"><button type="button" onclick="toggleEditAddress()">Edit</button></span>
-                            </div>
+                    <div class="form-control form-margin">
+                        <label for="hq-Address" data-i18n="hq_address">HQ Address*</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="hq-Address" class="hq-Address" data-i18n-placeholder="hq_address_placeholder" placeholder="Enter business HQ address" required/>
+                            <span class="edit-text"><button type="button" onclick="toggleEditAddress()" data-i18n="edit">Edit</button></span>
                         </div>
                         <div id="autocomplete-list" class="autocomplete-list"></div>
                     </div>
                     <div class="edit-address">
                         <div class="form-control form-margin">
-                            <label for="address">Apt, Suite, Unit, Etc</label>
+                            <label for="neighbourhood" data-i18n="apt_address">Apt, Suite, Unit, Etc</label>
                             <div class="input-wrapper">
                                 <input type="text" name="address" id="address" placeholder="Unit 100" required/>
                             </div>
                         </div>
                         <div class="form-control-flex">
                             <div class="form-control">
-                                <label for="city">City</label>
-                                <input type="text" id="city" placeholder="Choose City" required/>
+                                <label for="city" data-i18n="city">City</label>
+                                <input type="text" id="city" placeholder="Choose City" data-i18n-placeholder="choose_city" required/>
                             </div>
                             <div class="form-control">
-                                <label for="postal-code">Postal Code</label>
+                                <label for="postal-code" data-i18n="postal_code">Postal Code</label>
                                 <input type="text" id="postal-code" placeholder="00000-000" required/>
                             </div>
                         </div>
                         <div class="form-control form-margin">
-                            <label for="country">Country</label>
+                            <label for="country" data-i18n="country">Country</label>
                             <select name="country" class="form-select" id="country" required>
-                                <option value="" disabled selected style="color: #99A1B7;">Choose Country</option>
+                                <option value="" disabled selected style="color: #99A1B7;" data-i18n="country">Choose Country</option>
                             </select>
                         </div>
                         <div class="form-control-flex form-margin">
                             <div class="form-control">
-                                <label for="business-type">Type of business</label>
+                                <label for="business-type" data-i18n="business_type">Type of business</label>
                                 <select name="business-type" class="form-select" id="business-type" required>
-                                    <option value="" disabled selected style="color: #99A1B7;">Type of business</option>
+                                    <option value="" data-i18n="business_type" disabled selected style="color: #99A1B7;">Type of business</option>
                                     <option value="Restaurante">Restaurante</option>
                                     <option value="Bar">Bar</option>
                                     <option value="Entretenimento">Entretenimento</option>
@@ -208,9 +209,9 @@
                                 </select>                        
                             </div>
                             <div class="form-control">
-                                <label for="visitors-per-day">Average vistors per day</label>
+                                <label for="visitors-per-day" data-i18n="average_visitor">Average vistors per day</label>
                                 <select name="visitors-per-day" class="form-select" id="visitors-per-day" required>
-                                    <option value="" disabled selected style="color: #99A1B7;">Average vistors per day</option>
+                                    <option value="" data-i18n="visitor_placeholder" disabled selected style="color: #99A1B7;">Average vistors per day</option>
                                     <option value="0 - 100">0 - 100</option>
                                     <option value="101 - 500">101 - 500</option>
                                     <option value="501 - 1.000">501 - 1.000</option>
@@ -220,8 +221,8 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Payment info</h2>
-                    <div class="form-control form-margin">
+                    <h2 style="margin-top: 1rem;">Payment info</h2>
+                    <div class="form-control">
                         <label for="name-on-card">Name on card</label>
                         <input type="text" id="name-on-card" placeholder="Name on card" required/>
                     </div>
@@ -286,28 +287,33 @@
             </div>
             <div class="venue-col col-right">
                 <div class="summary-block">
-                    <p>Summary</p>
+                    <p data-i18n="summary">Summary</p>
                 <div class="overtv-device">
                     <img src="assets/image/overtv-box.png" alt="">
                     <span>
-                        <p>
+                        <p data-i18n="overtv_device">
                             OverTV Device
                         </p>
-                        <p>
+                        <p data-i18n="free_streaming">
                             Free Streaming
                         </p>
                     </span>
                 </div>
                  <div class="summary-border"></div>
                  <div class="prices">
-                    <span><p>Basic Plan</p><p>$0/Month*</p></span>
-                    <span><p>Activation Fee</p><p>$0*</p></span>
+                    <span><p data-i18n="basic_plan">Basic Plan</p><p>$0/Month*</p></span>
+                    <span><p data-i18n="activation_fee">Activation Fee</p><p>$0*</p></span>
+                    <span><p data-i18n="shipping">Shipping</p><p data-i18n="free">Free</p></span>
                  </div>
                  <div class="summary-border"></div>
                  <div class="total-prices">
                     <p>Total</p>
+                    <p style="color: #909090; position: relative; display: inline-block;">
+                        R$49.00
+                        <span class="del"></span>
+                    </p>
                     <p>R$00.00</p>
-                    <p>
+                    <p data-i18n="summary_terms">
                         *We only ask for your credit card details in case the device isn’t used for at least 40 hours a month, in which case a one-time fee will be charged.
                     </p>
                  </div>
@@ -376,6 +382,7 @@
         </div>
         </div>
      </div>
+    <script src="assets/js/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

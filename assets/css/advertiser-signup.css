@@ -76,6 +76,9 @@ body {
 .overview-content {
     padding: 1.5rem;
 }
+.logo-box {
+    min-height: 94px;
+}
 .overview-box .logo-box {
     text-align: end;
     padding-top: 1rem;
@@ -111,7 +114,7 @@ body {
 /* Positioning for the overlapping image */
 .overview-container {
     position: relative; 
-    margin-top: 16.5rem;
+    margin-top: 10.5rem;
     flex: 1 0 100%; 
     padding: 16px;
     box-sizing: border-box;
@@ -166,8 +169,11 @@ body {
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
 }
+.signup-form.disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+  }
 .signup-form {
     background-color: #FFFFFF;
     max-width: 629px;
@@ -404,16 +410,29 @@ input[type="checkbox"] {
         margin-top: 0rem;
     }
     .overview-box {
-        max-width: 460px;
+        max-width: 100%;
     }
     .overview-container {
         margin-top: 10.5rem;
     }
     .signup-form {
         max-width: 100%;
+        padding: 1rem;
+    }
+    .logo-box {
+        min-height: 46px;
+    }
+    .form-control-flex {
+        justify-content: space-between;
+    }
+    .form-control-flex .form-control  {
+        width: 49%;
+    }
+    .advertiser-image img {
+        width: 300px;
     }
     .column {
-        flex: 1 0 100%;
+        width: 100%;
     }
     .left-column h2 {
         font-size: 32px;
@@ -431,5 +450,6 @@ input[type="checkbox"] {
 
     .column {
         padding: 8px;
+        width: 100%;
     }
 }
