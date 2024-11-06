@@ -169,7 +169,6 @@ body {
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
 }
 .signup-form.disabled {
     pointer-events: none;
