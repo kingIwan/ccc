@@ -293,7 +293,7 @@ body {
     padding: 20px 0px 25px 0px;
 }
 .affiliate-rewards .affiliate-button {
-    width: 100%;
+    width: 100% !important;
 }
 .affiliate-container .affiliate-button {
     padding-left: 40px;
@@ -381,10 +381,10 @@ body {
     }
     .affiliate-video video {
         top: 40px;
-        width: calc(100% - 60px) !important;
+        width: calc(100% - 30px) !important;
     }
     .affiliate-video img:nth-child(1){
-        bottom: -13;
+        bottom: -13px;
     }
     .support-grow h2 {
         font-size: 24px;
