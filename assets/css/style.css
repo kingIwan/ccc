@@ -380,7 +380,17 @@ margin-bottom: 30px;
 	justify-content: space-between;
 	transition: .3s;
   }
-  
+  .affiliate-body .wrapper .container .title p {
+	width: 920px;
+	font-size: 20px;
+  }
+  .affiliate-body .title-under {
+	margin-top: 8px;
+  }
+  .affiliate-body .affiliate-button {
+	border-radius: 12px;
+	background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
+  }
   .dropdown-link:hover > a {
 	background-color: rgba(35, 35, 35, 1);
 	color: #fff;
