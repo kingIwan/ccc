@@ -420,15 +420,20 @@ input[type="checkbox"] {
 }
 
 .autocomplete-list {
-    border-radius: 4px; 
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white;
+    border-top: none; 
     max-height: 200px;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 1000;
-    background-color: #fff;
+    overflow-y: auto; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
-
+.adress-field {
+    position: relative; 
+}
 .autocomplete-item {
     padding: 10px;
     cursor: pointer;
