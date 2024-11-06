@@ -87,7 +87,7 @@
             </ul>
             </div>
             <div class="log-sign" style="--i: 1.8s">
-            <a href="/venue.html" class="btn transparent">
+            <a href="/venue-signup.html" class="btn transparent">
                <button class="contact-button"><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -102,7 +102,7 @@
          </div>
 
             <div class="hamburger-menu-container mb-head">
-            <a href="/venue.html" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
+            <a href="/venue-signup.html" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
             <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -120,6 +120,9 @@
                     <span><p>Already have an Over account?</p> <a href="https://admin.over.tv/" style="color: #498afd;">Login Here</a></span>                <form onsubmit="submitForm(event)" class="submit-form" id="signupForm">
                 </div>
                 <form onsubmit="submitFormVenue(event)" class="submit-form" id="venueSignupForm">
+                    <h2 data-i18n="contact_info" style="margin-top: 1rem;">
+                        Contact Info
+                    </h2>
                     <div class="form-control">
                         <label for="work-email" data-i18n="work_email">Work Email</label>
                         <input onchange="ValidarSeUsuarioExiste()" type="email" id="work-email" placeholder="Your work email" required />
@@ -187,14 +190,14 @@
                         <div class="form-control form-margin">
                             <label for="country" data-i18n="country">Country</label>
                             <select name="country" class="form-select" id="country" required>
-                                <option value="" disabled selected style="color: #99A1B7;" data-i18n="country">Choose Country</option>
+                                <option value="" hidden disabled selected  data-i18n="country">Choose Country</option>
                             </select>
                         </div>
                         <div class="form-control-flex form-margin">
                             <div class="form-control">
                                 <label for="business-type" data-i18n="business_type">Type of business</label>
                                 <select name="business-type" class="form-select" id="business-type" required>
-                                    <option value="" data-i18n="business_type" disabled selected style="color: #99A1B7;">Type of business</option>
+                                    <option value="" data-i18n="business_type" hidden disabled selected >Type of business</option>
                                     <option value="Restaurante">Restaurante</option>
                                     <option value="Bar">Bar</option>
                                     <option value="Entretenimento">Entretenimento</option>
@@ -211,7 +214,7 @@
                             <div class="form-control">
                                 <label for="visitors-per-day" data-i18n="average_visitor">Average vistors per day</label>
                                 <select name="visitors-per-day" class="form-select" id="visitors-per-day" required>
-                                    <option value="" data-i18n="visitor_placeholder" disabled selected style="color: #99A1B7;">Average vistors per day</option>
+                                    <option value="" hidden data-i18n="visitor_placeholder" disabled selected >Average vistors per day</option>
                                     <option value="0 - 100">0 - 100</option>
                                     <option value="101 - 500">101 - 500</option>
                                     <option value="501 - 1.000">501 - 1.000</option>
@@ -575,7 +578,7 @@
            }
          }
          function redirectToSignup() {
-            window.location.href = 'https://over.tv/venue-signup';
+            window.location.href = '/venue-signup.html';
          }
       </script>
       <script>

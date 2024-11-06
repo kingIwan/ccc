@@ -36,7 +36,6 @@
   "country":"País",
   "average_visitor":"Média de visitantes por dia",
   "visitor_placeholder":"Número de visitantes",
-
   "summary":"Resumo",
   "overtv_device":"Dispositivo OverTV",
   "free_streaming":"Transmissão Gratuita",
@@ -45,8 +44,7 @@
   "shipping":"Taxa de Envio",
   "free":"Gratuita",
   "summary_terms":"*Solicitamos apenas os dados do seu cartão de crédito caso o dispositivo não seja utilizado por pelo menos 40 horas por mês, caso em que será cobrada uma taxa única.",
-
-
+  "contact_info":"Informações de contato",
   "advertiser_signup":"Inscreva-se",
   "already_have_account":"Já tem uma conta Over?",
   "login_here":"Faça login aqui",

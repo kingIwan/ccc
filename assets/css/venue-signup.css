@@ -197,6 +197,7 @@ body {
 }
 .safesecure-box {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .margin-privacy {
     margin-top: 1rem;
@@ -258,9 +259,12 @@ body {
 .form-control-flex .form-control {
     flex: 1;
 }
+.form-control select:invalid{
+    color: #99A1B7;
+}
 .form-control label {
     font-size: 15.41px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 4px;
     color: #3C3C3C;
     line-height: 23.07px;
