@@ -771,42 +771,44 @@
 
             addressInput.addEventListener('input', () => {
                 const query = addressInput.value;
-
                 if (query.length > 2) {
-                    fetch(`https://us1.locationiq.com/v1/autocomplete.php?key=${apiKey}&q=${encodeURIComponent(query)}&format=json`)
-                        .then(response => response.json())
-                        .then(data => {
-                            autocompleteList.innerHTML = '';
-                            if(data){
-                                data.forEach(location => {
-                                    const item = document.createElement('div');
-                                    item.textContent = location.display_name;
-                                    item.className = 'autocomplete-item';
-                                    item.onclick = () => selectLocation(location);
-                                    autocompleteList.appendChild(item);
-                                });
-                            }   
-                        })
-                        .catch(err => {
-                            console.error(err);
-                        });
+                    fetch(`https://api.radar.io/v1/search/autocomplete?query=${encodeURIComponent(query)}`, {
+                        headers: {
+                            'Authorization': 'prj_live_pk_d86100697201b8c1806cc6052fc6fbf2b5a6c969'  
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        autocompleteList.innerHTML = '';
+                        if (data.addresses) {
+                            data.addresses.forEach(location => {
+                                const item = document.createElement('div');
+                                item.textContent = location.formattedAddress;
+                                item.className = 'autocomplete-item';
+                                item.onclick = () => selectLocation(location);
+                                autocompleteList.appendChild(item);
+                            });
+                        }
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    });
                 } else {
                     autocompleteList.innerHTML = '';
                 }
             });
 
             function selectLocation(location) {
-                addressInput.value = location.display_name;
-                autocompleteList.innerHTML = ''; 
-                const addressComponents = location.address;
-                document.getElementById('city').value = addressComponents.city || '';
-                document.getElementById('state').value = addressComponents.state || '';
-                document.getElementById('address').value = addressComponents.name || '';
-                document.getElementById('neighbourhood').value = addressComponents.neighbourhood || '';
-                document.getElementById('country').value = addressComponents.country_code ? addressComponents.country_code.toUpperCase() : '';
-                document.getElementById('postal-code').value = addressComponents.postcode || '';
-                document.getElementById('latitude').value = location.lat;
-                document.getElementById('longitude').value = location.lon;
+                addressInput.value = location.formattedAddress;
+                autocompleteList.innerHTML = '';
+                document.getElementById('city').value = location.city || '';
+                document.getElementById('state').value = location.stateCode || '';
+                document.getElementById('address').value = location.addressLabel || '';
+                document.getElementById('neighbourhood').value = location.neighbourhood || '';
+                document.getElementById('country').value = location.countryCode ? location.countryCode.toUpperCase() : '';
+                document.getElementById('postal-code').value = location.postalCode || '';
+                document.getElementById('latitude').value = location.latitude;
+                document.getElementById('longitude').value = location.longitude;
             }
             document.addEventListener('click', (e) => {
                 if (!addressInput.contains(e.target)) {
