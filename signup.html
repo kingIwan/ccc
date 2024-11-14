@@ -88,7 +88,7 @@
             </ul>
             </div>
             <div class="log-sign" style="--i: 1.8s">
-            <a href="/venue-signup.html" class="btn transparent">
+            <a href="/signup.html" class="btn transparent">
                <button class="contact-button"><span data-i18n="mb-header-button">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -103,7 +103,7 @@
          </div>
 
             <div class="hamburger-menu-container mb-head">
-            <a href="/venue-signup.html" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
+            <a href="/signup.html" class="contact-button mb-button" ><span data-i18n="mb-header-button">Get Your Free Player </span>
             <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -185,7 +185,7 @@
                             </div>
                             <div class="form-control">
                                 <label for="postal-code" data-i18n="postal_code">Postal Code</label>
-                                <input type="text" id="postal-code" placeholder="00000-000" required/>
+                                <input type="text" id="postal-code" placeholder="00000-000"/>
                             </div>
                         </div>
                         <div class="form-control form-margin">
@@ -530,13 +530,16 @@
                 displayErrorMessage(input, "Insira um CNPJ ou CPF válido.");
             }
         }
-        function toggleEditAddress() {
+        function toggleEditAddress(toggle = false) {
             const editAddressBox = document.querySelector(".edit-address");
             if (editAddressBox.style.display === "none" || editAddressBox.style.display === "") {
                 editAddressBox.style.display = "block"; 
             }
             else{
                 editAddressBox.style.display = "none"; 
+            }
+            if(toggle){
+                editAddressBox.style.display = "block"; 
             }
         }
         function CardNumber(event) {
@@ -579,7 +582,7 @@
            }
          }
          function redirectToSignup() {
-            window.location.href = '/venue-signup.html';
+            window.location.href = '/signup.html';
          }
       </script>
       <script>
@@ -685,6 +688,17 @@
                 }
                 input.value = input.value.trim();
             });
+            let hq_address = document.getElementById('hq-Address');
+            removeErrorMessage(hq_address);
+            let postalCode = document.getElementById('postal-code');
+            if (!postalCode.value.trim()) {
+                displayErrorMessage(postalCode, "Enter Postal code manually or select new address.")
+                toggleEditAddress(true);
+                loader.style.display = "none";
+                buttonText.style.display = 'inline'; 
+                button.disabled = false;
+                return;
+            }
             if (!isValid) {
                 loader.style.display = 'none'; 
                 buttonText.style.display = 'inline'; 
@@ -764,7 +778,6 @@
         }
         </script>
         <script>
-            const apiKey = 'pk.69b19c5c7d5e0aa1e63b915cb55908cf'; 
 
             const addressInput = document.getElementById('hq-Address');
             const autocompleteList = document.getElementById('autocomplete-list');
