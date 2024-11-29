@@ -17,10 +17,6 @@
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
    <body class="affiliate-body">
-      <div id="loader">
-         <div id="progress-bar"></div>
-         <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-     </div>
       <!-- ======= Header ======= -->
       <header id="header">
          <div class="container">
@@ -135,12 +131,12 @@
          </div>
          <div class="section-4" id="section-4">
             <div class="section-4-title wow fadeInUp">
-               <button class="btn-outline mb-1" data-i18n="Benefits">Benefits</button>
+               <button class="btn-outline mb-1" data-i18n="Benefits">Who trust us</button>
                <h1 data-i18n="start_earning_title">Start Earning Today as an Distribution Partner</h1>
                <p data-i18n="earning_resources_description">Everything you need to succeed with resources and
                   expert materials to connect with new venues, ensuring steady and growing earnings.
                </p>
-               <button class="affiliate-button" data-i18n="invite_friend">Invite a Friend</button>
+               <button class="affiliate-button" data-i18n="invite_friend">Get started  <span style="font-weight:100 ;">it`s free</span></button>
             </div>
             <div class="section-4-card-group">
                <div class="section-4-card wow fadeInUp">
@@ -235,6 +231,7 @@
             </div> -->
          <div class="affiliate-rewards margin-affiliate">
             <div class="reward-text wow fadeInUp" data-wow-delay="0.1s">
+               <button class="btn-outline wow fadeInUp newbutton" data-i18n="venu_who_trust_us" >Who trust us</button>
                <h2 >
                   <b data-i18n="revenue_share_title">Earn
                   rewards by
@@ -244,7 +241,7 @@
                <p data-i18n="revenue_share_description">Earn a guaranteed 5% on every ad displayed at any venue you
                   connect. The more screens, the more ads, the more you earn
                </p>
-               <button class="affiliate-button"><strong data-i18n="get_started_button">Get started</strong><a data-i18n="its_free"></a> </button>
+               <button class="affiliate-button"><strong data-i18n="get_started_button">Get started - <span style="font-weight: 100;">it`s free</span></strong><a data-i18n="its_free"></a> </button>
             </div>
             <div class="rewards-img wow fadeInUp" data-wow-delay="0.1s">
                <img src="assets/image/reward-section.png" alt="">
@@ -559,7 +556,9 @@
             </div>
          </div>
          <div class="section-7">
-            <button class="scale wow fadeInUp" data-i18n="venu_who_trust_us">Who trusts us</button>
+            <div class="faq-btn">
+               <button class="btn-outline wow fadeInUp" data-i18n="faq_button">Who trust us</button>
+            </div>
             <h1 class="wow fadeInUp pt-1" data-i18n="venu_partners_saying">What Are Other Partners Saying?</h1>
             <div class="section-7-card-group">
                 <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
@@ -600,7 +599,7 @@
          <div class="flip-on-mobile">
             <div class="section-8">
                <div class="faq-btn">
-                  <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
+                  <button class="btn-outline wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
                </div>
                <div class="faq-title">
                   <h1 data-i18n="faqs_title">FAQs</h1>
@@ -689,25 +688,25 @@
      </div>
  </div>
  <div class="section-10-content">
-     <div class="d-inline">
+     <div class="d-inline" style="flex-grow: 1;">
          <h5 data-i18n="explore">Explore</h5>
          <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');" data-i18n="home">Home</a></p>
          <p><a href="/advertiser.html" data-i18n="advertise_on_over">Advertise on Over</a></p>
          <p><a href="/channel.html" data-i18n="channels">Channels</a></p>
      </div>
-     <div class="d-inline mobile-margin">
+     <div class="d-inline mobile-margin" style="flex-grow: 1;">
          <h5 data-i18n="resources">Resources</h5>
          <p><a href="/helpcenter.html" data-i18n="help_center">Help Center</a></p>
          <a href="https://blog.over.tv/"><p data-i18n="blog">Blog</p></a> 
          <a href="mailto:contato@over.tv"><p data-i18n="press">Press</p></a>
          <p><a href="/affilate.html" data-i18n="distribution_partner">Distribution Partner</a></p>
      </div>
-     <div class="d-inline mobile-margin">
+     <div class="d-inline mobile-margin" style="flex-grow: 1;">
          <h5 data-i18n="legal">Legal</h5>
          <p><a href="/privacy-policy.html" data-i18n="terms_conditions">Terms & Conditions</a></p>
          <p><a href="/privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></p>
      </div>
-     <div class="d-inline mobile-margin">
+     <div class="d-inline mobile-margin" style="flex-grow: 2;">
          <h5 data-i18n="subscribe">Subscribe</h5>
          <div class="d-flex" style="gap:5px">
              <input type="email" placeholder="Your email" class="email-input" data-i18n="your_email_placeholder">
@@ -731,7 +730,6 @@
  </div>
 </div>
       </div>
-      <script src="assets/js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="assets/js/script.js"></script>
       <script src="assets/js/wow.js"></script>

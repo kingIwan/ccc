@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden">
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -17,10 +17,6 @@
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
    <body class="advertise-page"> 
-      <div id="loader">
-         <div id="progress-bar"></div>
-         <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-     </div>
       <header id="header">
          <div class="container">
            <input type="checkbox" name="check" id="check">
@@ -109,6 +105,7 @@
            <div>
          </div>
        </header>
+      <img class="background-pic" src="./assets/image/advertiser-bg.png" >
       <div class="wrapper">
          <div class="container hero-section">
             <div class="hero-container">
@@ -139,7 +136,7 @@
                </div>
                <div class="insights-section w-100">
                   <div class="mobile-ad-image">
-                     <img src="assets/image/insight-image.png">
+                     <img src="assets/image/Container.jpg">
                   </div>
                   <div class="accordion-box">
                      <div class="ads-accordion">
@@ -191,7 +188,7 @@
                      </div>
                   </div>
                   <div class=" image-insight-container">
-                     <img class="image-insight" src="assets/image/insight-image.png">
+                     <img class="image-insight" src="assets/image/Container.jpg">
                   </div>
                </div>
                <div class="hide-for-desktop">
@@ -202,7 +199,7 @@
                            <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                         </div>
                         <div class="d-flex justify-center pt-1">
-                           <img src="assets/image/control-section-1.png" width="96%">
+                           <img src="assets/image/schedule-budget.png" width="96%">
                         </div>
                      </div>
                      <div class="Targeting-section mt-2">
@@ -211,7 +208,7 @@
                            <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                         </div>
                         <div class="d-flex justify-center pt-1">
-                           <img src="assets/image/targeting-section.png" width="96%">
+                           <img src="assets/image/precision-targeting.png" width="96%">
                         </div>
                      </div>
                      <div class="Performance-section mt-2">
@@ -220,7 +217,7 @@
                            <p data-i18n="ads_total_control_manage">You have total control to manage your campaign schedule, budget, and status with ease. Start, pause, or adjust whenever you need.</p>
                         </div>
                         <div class="d-flex justify-center pt-1">
-                           <img src="assets/image/performance-section.png" width="96%">
+                           <img src="assets/image/realtime-section.png" width="96%">
                         </div>
                      </div>
                   </div>
@@ -255,7 +252,7 @@
             </div>
             <!-- ======= Section 7 ======= -->
             <div class="section-7">
-               <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
+               <button class="btn-outline wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
                <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
                <div class="section-7-card-group">
                   <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
@@ -269,7 +266,8 @@
                   </div>
                   <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
                      <div class="center-div">
-                        <h2><b data-i18n="annual_passive_income">+$1,200</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
+                        <img src="./assets/image/sign.png">
+                        <h2><b data-i18n="annual_passive_income">+R$3,000</b><span><strong data-i18n="annual_passive_income_strong">Annual Passive Income</strong></span></h2>
                         <p data-i18n="annual_passive_income_description">Effortlessly generate extra income through ads displayed on your screens.</p>
                         <h2 ><b data-i18n="boost_average_order_value">+20%</b> <span><strong data-i18n="boost_average_order_value_strong">Boost in Average Order Value</strong></span></h2>
                         <p data-i18n="boost_average_order_value_description">Keep guests entertained longer, encouraging them to spend more with every visit.</p>
@@ -289,7 +287,7 @@
             <div class="flip-on-mobile">
                <div class="section-8">
                   <div class="faq-btn">
-                     <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
+                     <button class="btn-outline wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
                   </div>
                   <div class="faq-title">
                      <h1 data-i18n="faqs_title">FAQs</h1>
@@ -360,7 +358,7 @@
          </div>
          <div class="footer-subscription">
             <div class="mb-button">
-               <button onclick="redirectToSignup()">Advertise with Over</button>
+               <button data-i18n="subscription_get_device" onclick="redirectToSignup()">Advertise with Over</button>
             </div>
             <div class="section-subscription">
                <div class="d-flex header-title">
@@ -432,7 +430,6 @@
       </div>
       </div>
       </div>
-      <script src="assets/js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="assets/js/wow.js"></script>
       <script src="assets/js/custom.js"></script>
@@ -590,7 +587,7 @@
          </script> -->
       <!-- Start of overtv Zendesk Widget script -->
       <script id="ze-snippet"
-         src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>
-      <!-- End of overtv Zendesk Widget script -->
+      src="https://static.zdassets.com/ekr/snippet.js?key=76ef79a5-aae8-4af0-9ca1-a346285c8ceb"> </script>
+   <!-- End of overtv Zendesk Widget script -->  
    </body>
 </html>

@@ -27,10 +27,7 @@
       defer
       ></script>
    <body class="channel">
-      <div id="loader">
-         <div id="progress-bar"></div>
-         <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-     </div>
+
       <!-- ======= Header ======= -->
       <header id="header">
          <div class="container">
@@ -111,24 +108,25 @@
      
            <div class="hamburger-menu-container mb-head">
             <a href="/signup.html" class="contact-button mb-button" >Get Your Free Player </span>
-           <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path
-                 d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
-                 fill="white" />
-             </svg>
-     </a>
+               <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
+                  fill="white" />
+               </svg>
+            </a>
            <div>
          </div>
        </header>
       <!-- End Header -->
+      <img src="./assets/image/channel-hero-bg.png" id="heroimage" style="width: 100%;position: absolute;z-index: -1;">
       <div class="wrapper">
-         <div class="hero-channel">
+         <div class="hero-channel" id="hero-channel">
             <video class="bg-video" width="" height="" loop autoplay muted>
                <source src="assets/image/channel-bg.mp4" type="video/mp4">
             </video>
             <div class="container">
                <div class="hero-content wow fadeInUp" data-wow-delay="0.1s">
-                  <img src="assets/svg/white-logo.svg" alt="Logo" />
+                  <img src="assets/svg/white-logo.svg"  alt="Logo" />
                   <h1 data-i18n="hero_see_why_the_future">Step Into the</h1>
                   <span data-i18n="hero_already_arrived">Future of Entertainment</span>
                   <p data-i18n="hero_over_60_channels">
@@ -161,7 +159,7 @@
                   </p>
                </div>
                <div class="video-content">
-                  <div class="addition-content wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="addition-content wow fadeInUp" data-wow-delay="0.1s" style="width: 60% !important;">
                      <div class="blue-circle blue-wd-5">
                         <img src="assets/svg/tv-channel.svg" alt="TV Channel Icon" />
                      </div>
@@ -174,7 +172,7 @@
                         engaging content.
                      </p>
                   </div>
-                  <div class="content-inner wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="content-inner wow fadeInUp" data-wow-delay="0.1s" style="width: 40% !important;">
                      <div class="content-card">
                         <h2 data-i18n="video_content">Content</h2>
                         <video width="100%" loop autoplay muted>
@@ -605,12 +603,26 @@
 </div>
          </div>
       </div>
-      <script src="assets/js/loader.js"></script>
       <script src="assets/js/script.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="assets/js/wow.js"></script>
       <script src="assets/js/custom.js"></script>
       <script src="assets/js/swiper.min.js"></script>
+      <script>
+         const dynamicDiv = document.getElementById("hero-channel");
+         const dynamicImg =document.getElementById("heroimage");
+         const updateHeight = () => {
+            const divHeight = dynamicDiv.offsetHeight;
+            console.log(divHeight);
+            
+            dynamicImg.style.height = `${divHeight}px`;
+            };
+
+         // Update on load and when resizing the window
+         window.addEventListener('load', updateHeight);
+         window.addEventListener('resize', updateHeight);
+         
+      </script>
       <script>
          var swiper = new Swiper(".text-slider", {
            slidesPerView: 4,

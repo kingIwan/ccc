@@ -413,4 +413,9 @@ input[type=text] {
     .need-support .support-text {
         margin-top: 2rem;
     }
+    .help-topic {
+        display: grid;
+        display: block;
+        gap: 10px;
+    }
 }

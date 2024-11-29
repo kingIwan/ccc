@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	font-family: "Poppins", sans-serif;
 	background: #161616;
-	background-image: url('/assets/image/ovetv-bg.png');
+	background-image: url('/assets/image/back.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	height: 100%;
@@ -19,6 +19,11 @@ body {
     --light-dark: #1D1D1D;
     --grey-text: #C4C3C3;
 	--dark-grey: #9b9b9b;
+}
+.background-pic{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
 }
 .d-flex{
 	display: flex;
@@ -127,8 +132,6 @@ button{
 	max-width: 1320px;
 }
 .container{
-	padding-left: 15px !important;
-	padding-right: 15px !important;
 	max-width: 933px;
 	width: 100%;
 	margin-left: auto;
@@ -167,9 +170,11 @@ button{
 }
 .overtv-overlays {
 	position: absolute;
-    top: 328px;
+    top: 265px;
     right: -2%;
     z-index: 9;
+	height: 32% !important;
+    width: 19% !important;
 }
 .btn-trns {
     padding: 6px 12px 6px 12px;
@@ -253,14 +258,14 @@ button{
 	width: 100%;
 	z-index: 1000;
 	background-color: #161616;
-	padding-bottom: 15px;
+	padding-bottom: 22px;
 	border-bottom: 1px solid #444444;
   }
   
   header .container {
 	max-width: 1100px;
 	width: 100%;
-	padding: 0 4rem;
+	padding: 0 25px;
 	margin: 0 auto;
 	display: flex;
 	position: relative;
@@ -372,7 +377,6 @@ margin-bottom: 30px;
 	position: absolute;
 	top: 100%;
 	left: 0;
-	width: 9rem;
 	transform: translateY(10px);
 	opacity: 0;
 	pointer-events: none;
@@ -473,7 +477,7 @@ margin-bottom: 30px;
 	}
   .mb-button  button {
 	background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
-	padding: 7px 15px;
+	padding: 7px 45px;
 	font-size: 13.4px;
 	font-weight: 600;
 	line-height: 18.68px;
@@ -563,6 +567,7 @@ margin-bottom: 30px;
 .wrapper{
 	width: 100%;
 	height: 100%;
+	padding:0 25px;
   }
   .wrapper .container{
 	
@@ -598,7 +603,7 @@ margin-bottom: 30px;
   .title-under{
 	  display: flex;
 	  justify-content: center;
-	  margin-top: 20px;
+	  margin: 34px;
   }
   .wrapper .container .title p{
 	position: absolute;
@@ -613,7 +618,7 @@ margin-bottom: 30px;
   }
   .section-1 {
 	text-align: center;
-	margin-top: 13%;
+	margin-top: 22%;
 	}
 	.section-1-title {
 		position: relative;
@@ -637,10 +642,10 @@ margin-bottom: 30px;
 		background-color: black;
 	}
 	.card-group{
-		margin-top: 5px;
+		margin-top: -22px;
 		width: 100%;
 		/* background-color: rgba(50, 164, 249, 1); */
-		padding: 7px 5px 7px 5px;
+		/* padding: 7px 5px 7px 5px; */
 		display: flex;
 		border-radius: 10px;
 		justify-content: space-between;
@@ -651,7 +656,7 @@ margin-bottom: 30px;
 		position: relative;
 	}
 	.more-card-group{
-		gap: 20px;
+		gap: 7px;
 	}
 	
 	.card::after {
@@ -779,15 +784,17 @@ margin-bottom: 30px;
 		width: 100%;
 		height: 306px;
 		background-color: rgba(35, 35, 35, 1);
-		padding: 28px 0px 0px 25px;
+		padding: 35px 0px 0px 33px;
 		display: flex;
 		border-radius: 8.41px;
-		margin-top: 50px;
+		margin-top: 44px;
 		margin-bottom: 20px;
+		letter-spacing: 1.3px;
 	}
+	
 	.section-2-card-left{
 		position: relative;
-		width: 43%;
+		width: 46%;
 	}
 	.section-2-card-left span{
 		width: 70%;
@@ -827,9 +834,10 @@ margin-bottom: 30px;
 		max-width: 80%;
 		text-align: start;
 		position: absolute;
-		left: 100px;
+		left: 58px;
 		top: 30px;
 		color: #fff;
+		letter-spacing: 1.7px;
 	}
 	.br-lang .section-2-card-right span h1 {
 		font-size: 38px;
@@ -852,7 +860,7 @@ margin-bottom: 30px;
 		font-weight: 200;
 		line-height: 20px;
 		text-align: left;
-		padding: 15px 0 25px 0;
+
 	}
 	.check-icon {
 		margin-left: 4%;
@@ -883,7 +891,8 @@ margin-bottom: 30px;
 	}
     .section-2-2-card-right{
 		position: relative;
-		width: 42%;
+		width: 47%;
+	
 	}
 	.section-2-2-card-right span{
 		width: 297.09px;
@@ -916,11 +925,12 @@ margin-bottom: 30px;
     	height: 210px;
 	} */
 	.section-2-2-card-left span{
-		max-width: 80%;
+		max-width: 92%;
 		text-align: start;
 		position: absolute;
-		right: 80px;
-		top: 0px;
+		/* right: 81px; */
+		left: 23px;
+		top: 5px;
 		color: #fff;
 	}
 	.section-2-2-card-left span h1{
@@ -1006,20 +1016,20 @@ margin-bottom: 30px;
 	}
 	.section-3-card-group{
 		width: 100%;
-		height: 470px;
-		display: flex;
+		height: 405px;
+		display: flex	;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-top: 53px;
+		margin-top: 24px;
 	}
 	.section-3-card{
 		width: 49%;
-		height: 170px;
+		height: 155px;
 		background-color: #ffffff;
 		border-radius: 8px;
 		min-width: 350px;
 		display: flex;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
 	.swiper-slide{
 		display: flex;
@@ -1103,6 +1113,7 @@ margin-bottom: 30px;
 	.affiliate-container .section-4-title button{
 		display: block;
 	}
+	
 	.section-4-title h1{
 		font-size: 40px;
 		font-weight: 600;
@@ -1530,21 +1541,20 @@ margin-bottom: 30px;
 		display: flex;
 		justify-content: center;
 		padding-bottom: 10px;
+		padding-right: 10px;
 	}
 	.section-7-card-content{
 		width: 100%;
-		padding-top: 10px;
+		/* padding-top: 10px; */
 	}
 
 	.section-7 .section-7-card:nth-child(1)
 		{
 		width: 32%;
-	
-		height: 338px;
 		border-radius: 8px;
 		background-color: #fff;
 		color: #146EF5;
-		padding: 35px;
+		padding: 25px;
 		display: flex;
 		flex-direction: column;
 		text-align: start;
@@ -1558,6 +1568,9 @@ margin-bottom: 30px;
 		text-align: left;
 
 	}
+	.newbutton{
+		display: none;
+	}
 	.section-7 .section-7-card:nth-child(1) p{
 		font-size: 11.61px;
 		font-weight: 500;
@@ -1570,7 +1583,6 @@ margin-bottom: 30px;
 	}
 	.section-7 .section-7-card:nth-child(2){
 		width: 32%;
-		height: 338px;
 		border-radius: 8px;
 		background: linear-gradient(180deg, #00A3FB 0%, #0077FF 100%);
 		padding: 25px;
@@ -1578,6 +1590,19 @@ margin-bottom: 30px;
 		align-items: center;
 		text-align: start;
 		color: #fff;
+	}
+	.section-7 .section-7-card:nth-child(3){
+		width: 32%;
+		border-radius: 8px;
+		padding: 25px;
+		display: flex;
+		align-items: center;
+		text-align: start;
+	}
+	.section-7 .faq-btn {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 12px;
 	}
 	.section-8 .faq-btn {
 		display: flex;
@@ -1629,9 +1654,9 @@ margin-bottom: 30px;
 	}
 	.affiliate-body .section-7 .section-7-card:nth-child(2) {
 		width: 32%;
-		height: 338px;
+		/* height: 338px; */
 		border-radius: 8px;
-		padding: 35px;
+		/* padding: 35px; */
 		display: flex;
 		flex-direction: column;
 		text-align: start;
@@ -1654,11 +1679,10 @@ margin-bottom: 30px;
 	.section-7 .section-7-card:nth-child(3)
 	{
 		width: 32%;
-		height: 338px;
 		border-radius: 8px;
 		background-color: #fff;
 		color: #146EF5;
-		padding: 40px;
+
 		text-align: start;
 		display: flex;
 		flex-direction: column;
@@ -1692,8 +1716,9 @@ margin-bottom: 30px;
 	}
 	.accordion-item {
 		background: #007AFE;
-		padding: 10px 20px 10px 25px;
+		padding: 10px 36px 22px 42px;
 		border-radius: 15px;
+	
 	}
 	.section-8 p {
 		max-width: 547px;
@@ -1729,11 +1754,9 @@ margin-bottom: 30px;
 		/* background: #146EF5; */
 	}
 	.section-8-wrapper{
-		padding-top: 50px;
+		padding-top: 71px;
 		padding-bottom: 40px;
 		width: 100%;
-		/* padding-left: 10%;
-		padding-right: 10%; */
 	}
 	.section-8-wrapper h1{
 		font-size: 45.27px;
@@ -1849,13 +1872,14 @@ margin-bottom: 30px;
 		will-change: opacity, max-height;
 	  }
 	  .accordion .accordion-content p {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 300;
 		line-height: 30px;
-		padding: 0px 0px 30px 0px;
+		padding: 0px 0px 0px 0px;
 		max-width: 100%;
 		color: #EFEFEB;
 		text-align: start;
+	}
 	  }
 		/* ------------ FAQ Question END ------------- */
 
@@ -1954,7 +1978,7 @@ margin-bottom: 30px;
 		border-radius: 30px; 
 		height: 30px;
 		font-size: 16px; 
-		width: 250px; 
+		width: 100%;
 	}
 	.close-btn {
 		display: none;
@@ -2018,7 +2042,7 @@ margin-bottom: 30px;
 	}
 	@media screen and (min-width: 1920px) {
 		.section-subscription {
-			width: 61%;
+			width: 75%;
 		}
 		.footer-subscription {
 			max-width: 100% !important;
@@ -2264,7 +2288,9 @@ margin-bottom: 30px;
 	display: none;
   }
   .kenwheeler{
-	overflow: hidden;
+    overflow: hidden;
+    /* height: 44px; */
+    line-height: 20px;
   }
 .kenwheeler .swiper-wrapper{
     transition-timing-function: linear !important;
@@ -2287,7 +2313,7 @@ margin-bottom: 30px;
 	height: 26px;
 }
 .text-slider2{
-	margin-top: 30px;
+	margin-top: 43px;
 }
 .text-slider2 span{
 	max-width: 100% !important;
@@ -2299,7 +2325,7 @@ display: none;
    
    @media only screen and (max-width: 600px) {
 	 .container {
-	   padding: 80px;
+	   /* padding: 0 25px !important; */
 	 }
    }
    
@@ -2353,8 +2379,8 @@ display: none;
 		display: none;
 	}
 	.wrapper .container{
-		padding-left: 3%;
-		padding-right: 3%;
+		/* padding-left: 3%;
+		padding-right: 3%; */
 	}
 	.hamburger-menu-container {
 	  display: flex;
@@ -3125,20 +3151,21 @@ display: none;
         padding: 40px 20px;
     }
 	.section-7 .section-7-card:nth-child(1){
-		height: 192px !important;
-		min-width: 165px;
+		/* height: 192px !important; */
+        width: 50% !important;
+
 	}
 	.section-7 .section-7-card:nth-child(2){
-		min-width: 165px;
-		height: 192px;
-		padding:  3% !important;
+        /* height: 192px; */
+        padding: 3% !important;
+        width: 50% !important;
 	}
 	.center-div b {
 		font-size: 12px;
 	}
 	.section-7 .section-7-card:nth-child(3){
-		height: 192px;
-		min-width: 165px;
+		/* height: 192px; */
+		display: none;
 	}
 	.section-7 .section-7-card:nth-child(3) h3 {
 		font-size: 10.66px;
@@ -3238,6 +3265,19 @@ display: none;
 	}
   }
   @media (max-width: 768px){
+	.newbutton{
+		display: block;
+		margin-bottom: 10px;
+		font-size: 11px;
+	}
+	.affiliate-container .section-4-title button{
+		display: block;
+		font-size: 8px !important;
+		padding: 5px !important;
+		width: 110px !important;
+		border-radius: 4px !important;
+		height: 25px;
+	}
 	.section-1-title img:nth-child(2) {
         top: 110px;
     }
@@ -3574,7 +3614,8 @@ display: none;
 	.section-7 .section-7-card:nth-child(2) p {
 		line-height: 11px;
 		margin-top: -10px;
-		font-size: 7px;;
+		font-size: 7px;
+		padding-right: 20px;
 	}
 	.center-div strong {
 		font-weight: 600;
@@ -3696,7 +3737,7 @@ display: none;
 		max-width: 82%;
 	}
 	.section-7 .section-7-card:nth-child(1) {
-		height: 230px !important;
+		/* height: 230px !important; */
 	}
 	.section-7 .section-7-card:nth-child(1) h3 {
         font-size: 14.66px;
@@ -3704,7 +3745,7 @@ display: none;
         line-height: 20.98px;
     }
 	.section-7 .section-7-card:nth-child(2) {
-		height: 230px !important;
+		/* height: 230px !important; */
 	}
 	.hidepcmb h1 {
 		font-size: 30px;
@@ -4203,22 +4244,17 @@ display: none;
 		display: none;
 	}
 	.section-7-card-group {
-        overflow: auto;
         gap: 20px;
-        scroll-snap-type: x mandatory;
     }
 	.section-7-card-group {
 		display: flex; 
 		gap: 20px;
-		overflow-x: auto; 
-		scroll-snap-type: x mandatory;
 		padding: 10px; 
-		-webkit-overflow-scrolling: touch;
 	}
 	
 	.section-7-card {
 		flex: 0 0 45%;
-		min-width: 300px;
+		/* min-width: 300px; */
 		scroll-snap-align: start;
 		background-color: #fff;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -4229,7 +4265,7 @@ display: none;
 		font-size: 12px;
 	}
 	.section-7 .section-7-card:nth-child(3) {
-		height: 230px;
+		/* height: 230px; */
 	}
 	.section-7 .section-7-card:nth-child(3) h3 {
 		font-size: 14.66px;
@@ -4270,7 +4306,7 @@ display: none;
 
 	}
 	.section-2 .d-inline:nth-child(2) .section-2-card:nth-child(1) {
-		height: 270px;
+		/* height: 270px; */
 	}
 	.section-2-card-right {
 		width: 74%;
@@ -4354,7 +4390,6 @@ display: none;
         text-align: left;
 	}
 	.affiliate-body .section-7 .section-7-card:nth-child(2) {
-		height: 280px;
 		border-radius: 8px;
 		padding: 35px;
 		display: flex;
@@ -4521,8 +4556,8 @@ display: none;
 		border-radius: 15px;
 	}
 	.section-2-card-left img {
-		width: 303px !important;
-		height: 298px !important;
+		width: 261px !important;
+		height: 233px !important;
 	}
 	.contact-button {
 		padding: 14px 17px 14px 17px;
@@ -4767,22 +4802,18 @@ display: none;
 		display: none;
 	}
 	.section-7-card-group {
-        overflow: auto;
         gap: 20px;
-        scroll-snap-type: x mandatory;
     }
 	.section-7-card-group {
 		display: flex; 
 		gap: 20px;
-		overflow-x: auto; 
-		scroll-snap-type: x mandatory;
 		padding: 10px; 
 		-webkit-overflow-scrolling: touch;
 	}
 	
 	.section-7-card {
 		flex: 0 0 45%;
-		min-width: 300px;
+		/* min-width: 300px; */
 		scroll-snap-align: start;
 		background-color: #fff;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -4799,8 +4830,9 @@ display: none;
 	}
 	.section-7 .section-7-card:nth-child(1) , .section-7 .section-7-card:nth-child(2),
 	.section-7 .section-7-card:nth-child(3) {
-		height: 280px !important;
-		min-width: 227px;
+		max-width:32%;
+
+
 	}
 	.section-7 .section-7-card:nth-child(1) h3 {
 		font-size: 14.62px;

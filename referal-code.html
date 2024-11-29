@@ -21,10 +21,6 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 <body>
-  <div id="loader">
-    <div id="progress-bar"></div>
-    <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-  </div>
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -119,7 +115,7 @@
     <div class="container referal-sections">
       <div class="referal-section-1">
         <div class="referal-content wow fadeInUp" data-wow-delay="0.1s">
-          <h2 data-i18n="invite_future">Ian, This is Your Invite to the Future of Streaming</h2>
+          <h2 data-i18n="invite_future">This is Your Invite to the Future of Streaming</h2>
           <p data-i18n="streaming_invite_description">
             You’ve been invited to join the next generation of business streaming. Claim your device now and stay ahead
             of the curve.
@@ -144,7 +140,8 @@
           </div>
         </div>
       </div>
-      <button class="scale wow fadeInUp" data-i18n="how_it_works">How it works</button>
+      <button class="scale wow fadeInUp how_button" data-i18n="how_it_works">How it works</button>
+      <button class="btn-outline wow fadeInUp new_see_button" data-i18n="how_it_works">See what's waiting for you</button>
       <div class="referal-section-2">
         <div class="venue-text referal-text wow fadeInUp" data-wow-delay="0.1s">
           <h1 data-i18n="make_every_screen">Make Every Screen Work for You</h1>
@@ -187,7 +184,7 @@
       </div>
       <!-- ======= Section 7 ======= -->
       <div class="section-7">
-        <button class="scale wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
+        <button class="btn-outline wow fadeInUp" data-i18n="who_trust_us">Who trust us</button>
         <h1 class="wow fadeInUp pt-1" data-i18n="engage_earn_more">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
           <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
@@ -227,7 +224,7 @@
       <div class="flip-on-mobile">
         <div class="section-8">
           <div class="faq-btn">
-            <button class="scale wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
+            <button class="btn-outline wow fadeInUp" data-i18n="faq_button">All You Need to Know</button>
           </div>
           <div class="faq-title">
           <h1 data-i18n="faqs_title">FAQs</h1>
@@ -304,6 +301,11 @@
           </div>
         </div>
       </div>
+      <div class="footer-subscription">
+        <div class="mb-button">
+           <button data-i18n="subscription_get_device" onclick="redirectToSignup()">Get Your Free OverTV Device Now! </button>
+        </div>
+        </div>
       <div class="section-10" id="contact">
         <div class="footer-bod-div">
         <div class="footer-border">
